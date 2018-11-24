@@ -4,11 +4,23 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/*
+    This code is created and owned by RandomHashTags, and is licensed under the GNU Affero General Public License v3.0 (https://choosealicense.com/licenses/agpl-3.0/)
+    You can find RandomHashTags (me) at
+        Discord - RandomHashTags#1948
+        Email - imrandomhashtags@gmail.com
+        GitHub - https://github.com/RandomHashTags
+        GitLab - https://gitlab.com/RandomHashTags
+        MCMarket - https://www.mc-market.org/members/20858/
+        PayPal - imrandomhashtags@gmail.com
+        SpigotMC - https://www.spigotmc.org/members/randomhashtags.76364/
+        Twitter - https://twitter.com/irandomhashtags
+ */
 public enum UMaterial {
-    // <item>(1.8.8, 1.9, 1.10, 1.11, 1.12, 1.13)
+    // <item>(1.8.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14)
     // 1.8 = http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Material.html
     // 1.13 = https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
-    // 1.13 displayed = https://www.digminecraft.com/lists/item_id_list_pc.php
+    // 1.13 visual = https://www.digminecraft.com/lists/item_id_list_pc.php
     // Terracotta (Renamed from Stained Clay) = https://minecraft.gamepedia.com/Terracotta
     // Glazed Terracotta = https://minecraft.gamepedia.com/Glazed_Terracotta
     // Shulker boxes = https://minecraft.gamepedia.com/Shulker_Box
