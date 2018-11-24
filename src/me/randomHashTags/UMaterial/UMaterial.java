@@ -342,6 +342,7 @@ public enum UMaterial {
     GOLD_ORE("GOLD_ORE", 0),
     GOLDEN_APPLE("GOLDEN_APPLE", 1),
     GOLDEN_AXE(Arrays.asList("GOLD_AXE", null, null, null, null, "GOLDEN_AXE"), 0),
+
     ;
     private final ArrayList<String> names = new ArrayList<>();
     private final String version = Bukkit.getVersion();
