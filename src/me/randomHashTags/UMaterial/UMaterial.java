@@ -5,7 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /*
-    This code is created and owned by RandomHashTags, and is licensed under the GNU Affero General Public License v3.0 (https://choosealicense.com/licenses/agpl-3.0/)
+    This software is created and owned by RandomHashTags, and is licensed under the GNU Affero General Public License v3.0 (https://choosealicense.com/licenses/agpl-3.0/)
+    You can only find this software at https://gitlab.com/RandomHashTags/umaterial
     You can find RandomHashTags (me) at
         Discord - RandomHashTags#1948
         Email - imrandomhashtags@gmail.com
@@ -342,7 +343,6 @@ public enum UMaterial {
     GOLD_ORE("GOLD_ORE", 0),
     GOLDEN_APPLE("GOLDEN_APPLE", 1),
     GOLDEN_AXE(Arrays.asList("GOLD_AXE", null, null, null, null, "GOLDEN_AXE"), 0),
-
     ;
     private final ArrayList<String> names = new ArrayList<>();
     private final String version = Bukkit.getVersion();
