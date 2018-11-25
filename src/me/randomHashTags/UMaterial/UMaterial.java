@@ -1,5 +1,9 @@
 package me.randomHashTags.UMaterial;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -110,7 +114,7 @@ public enum UMaterial {
     BLUE_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "BLUE_STAINED_GLASS_PANE"), 11),
     BLUE_TERRACOTTA(Arrays.asList("LAPIS_BLOCK", null, null, null, null, "BLUE_TERRACOTTA"), 0),
     BLUE_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "BLACK_WALL_BANNER"), 4),
-    BLUE_WOOL(Arrays.asList("WOOL", null, null, "BLUE_WOOL", null, null), 11),
+    BLUE_WOOL(Arrays.asList("WOOL", null, null, "BLUE_WOOL"), 11),
     BONE("BONE", 0),
     BONE_BLOCK(Arrays.asList(null, null, "BONE_BLOCK", null, null, null), 0),
     BONE_MEAL(Arrays.asList("INK_SACK", null, null, null, null, "BONE_MEAL"), 15),
@@ -343,6 +347,131 @@ public enum UMaterial {
     GOLD_ORE("GOLD_ORE", 0),
     GOLDEN_APPLE("GOLDEN_APPLE", 1),
     GOLDEN_AXE(Arrays.asList("GOLD_AXE", null, null, null, null, "GOLDEN_AXE"), 0),
+    GOLDEN_BOOTS(Arrays.asList("GOLD_BOOTS", null, null, null, null, "GOLDEN_BOOTS"), 0),
+    GOLDEN_CARROT("GOLDEN_CARROT", 0),
+    GOLDEN_CHESTPLATE(Arrays.asList("GOLD_CHESTPLATE", null, null, null, null, "GOLDEN_CHESTPLATE"), 0),
+    GOLDEN_HELMET(Arrays.asList("GOLD_HELMET", null, null, null, null, "GOLDEN_HELMET"), 0),
+    GOLDEN_HOE(Arrays.asList("GOLD_HOE", null, null, null, null, "GOLDEN_HOE"), 0),
+    GOLDEN_HORSE_ARMOR(Arrays.asList("GOLD_BARDING", null, null, null, null, "GOLDEN_HORSE_ARMOR"), 0),
+    GOLDEN_LEGGINGS(Arrays.asList("GOLD_LEGGINGS", null, null, null, null, "GOLDEN_LEGGINGS"), 0),
+    GOLDEN_PICKAXE(Arrays.asList("GOLD_PICKAXE", null, null, null, null, "GOLDEN_PICKAXE"), 0),
+    GOLDEN_SHOVEL(Arrays.asList("GOLD_SPADE", null, null, null, null, "GOLDEN_SPADE"), 0),
+    GOLDEN_SWORD(Arrays.asList("GOLD_SWORD", null, null, null, null, "GOLDEN_SWORD"), 0),
+    GRANITE(Arrays.asList("STONE", null, null, null, null, "GRANITE"), 1),
+    GRASS("GRASS", 0),
+    GRASS_BLOCK(Arrays.asList("GRASS", null, null, null, null, "GRASS_BLOCK"), 0),
+    GRASS_PATH(Arrays.asList(null, "GRASS_PATH"), 0),
+    GRAVEL("GRAVEL", 0),
+    GRAY_BANNER(Arrays.asList("BANNER", null, null, null, null, "GRAY_BANNER"), 8),
+    GRAY_BED(Arrays.asList("BED", null, null, null, "GRAY_BED"), 0),
+    GRAY_CARPET(Arrays.asList("CARPET", null, null, null, null, "GRAY_CARPET"), 7),
+    GRAY_CONCRETE(Arrays.asList(null, null, null, null, "CONCRETE", "GRAY_CONCRETE"), 7),
+    GRAY_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "GRAY_CONCRETE_POWDER"), 7),
+    GRAY_DYE(Arrays.asList("INK_SACK", null, null, null, null, "GRAY_DYE"), 8),
+    GRAY_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "GRAY_GLAZED_TERRACOTTA"), 7),
+    GRAY_SHULKER_BOX(Arrays.asList(null, null, null, "GRAY_SHULKER_BOX"), 0),
+    GRAY_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "GRAY_STAINED_GLASS"), 7),
+    GRAY_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "GRAY_STAINED_GLASS_PANE"), 7),
+    GRAY_TERRACOTTA(Arrays.asList(null, null, null, null, null, "GRAY_TERRACOTTA"), 0),
+    GRAY_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "GRAY_WALL_BANNER"), 8),
+    GRAY_WOOL(Arrays.asList("WOOL", null, null, "GRAY_WOOL"), 7),
+    GREEN_BANNER(Arrays.asList("BANNER", null, null, null, null, "GREEN_BANNER"), 2),
+    GREEN_BED(Arrays.asList("BED", null, null, null, "GREEN_BED"), 0),
+    GREEN_CARPET(Arrays.asList("CARPET", null, null, null, null, "GREEN_CARPET"), 13),
+    GREEN_CONCRETE(Arrays.asList(null, null, null, null, "CONCRETE", "GREEN_CONCRETE"), 13),
+    GREEN_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "GREEN_CONCRETE_POWDER"), 13),
+    GREEN_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "GREEN_GLAZED_TERRACOTTA"), 0),
+    GREEN_SHULKER_BOX(Arrays.asList(null, null, null, "GREEN_SHULKER_BOX"), 0),
+    GREEN_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "GREEN_STAINED_GLASS"), 13),
+    GREEN_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "GREEN_STAINED_GLASS_PANE"), 13),
+    GREEN_TERRACOTTA(Arrays.asList(null, null, null, null, null, "GREEN_TERRACOTTA"), 0),
+    GREEN_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "GREEN_WALL_BANNER"), 2),
+    GREEN_WOOL(Arrays.asList("WOOL", null, null, "GREEN_WOOL"), 13),
+    GUARDIAN_SPAWN_EGG(Arrays.asList("MONSTER_EGG", null, null, null, null, "GUARDIAN_SPAWN_EGG"), 68),
+    GUNPOWDER(Arrays.asList("SULPHUR", null, null, null, null, "GUNPOWDER"), 0),
+    HAY_BLOCK("HAY_BLOCK", 0),
+    HEART_OF_THE_SEA(Arrays.asList(null, null, null, null, null, "HEART_OF_THE_SEA"), 0),
+    HEAVY_WEIGHTED_PRESSURE_PLATE(Arrays.asList("IRON_PLATE", null, null, null, null, "HEAVY_WEIGHTED_PRESSURE_PLATE"), 0),
+    HOPPER("HOPPER", 0),
+    HOPPER_MINECART("HOPPER_MINECART", 0),
+    HORN_CORAL(Arrays.asList(null, null, null, null, null, "HORN_CORAL"), 0),
+    HORN_CORAL_BLOCK(Arrays.asList(null, null, null, null, null, "HORN_CORAL_BLOCK"), 0),
+    HORN_CORAL_FAN(Arrays.asList(null, null, null, null, null, "HORN_CORAL_FAN"), 0),
+    HORN_CORAL_WALL_FAN(Arrays.asList(null, null, null, null, null, "HORN_CORAL_WALL_FAN"), 0),
+    HORSE_SPAWN_EGG(Arrays.asList("MONSTER_EGG", null, null, null, null, "HORSE_SPAWN_EGG"), 100),
+    HUSK_SPAWN_EGG(Arrays.asList(null, null, null, "MONSTER_EGG", null, "HUSK_SPAWN_EGG"), 60),
+    ICE("ICE", 0),
+    INFESTED_CHISELED_STONE_BRICKS(Arrays.asList("MONSTER_EGGS", null, null, null, null, "INFESTED_CHISELED_STONE_BRICKS"), 5),
+    INFESTED_COBBLESTONE(Arrays.asList("MONSTER_EGGS", null, null, null, null, "INFESTED_COBBLESTONE"), 1),
+    INFESTED_CRACKED_STONE_BRICKS(Arrays.asList("MONSTER_EGGS", null, null, null, null, "INFESTED_CRACKED_STONE_BRICKS"), 4),
+    INFESTED_MOSSY_STONE_BRICKS(Arrays.asList("MONSTER_EGGS", null, null, null, null, "INFESTED_MOSSY_STONE_BRICKS"), 3),
+    INFESTED_STONE(Arrays.asList("MONSTER_EGGS", null, null, null, null, "INFESTED_STONE"), 0),
+    INFESTED_STONE_BRICKS(Arrays.asList("MONSTER_EGGS", null, null, null, null, "INFESTED_STONE_BRICKS"), 2),
+    INK_SAC(Arrays.asList("INK_SACk", null, null, null, null, "INK_SAC"), 0),
+    IRON_AXE("IRON_AXE", 0),
+    IRON_BARS(Arrays.asList("IRON_FENCE", null, null, null, null, "IRON_BARS"), 0),
+    IRON_BLOCK("IRON_BLOCK", 0),
+    IRON_BOOTS("IRON_BOOTS", 0),
+    IRON_CHESTPLATE("IRON_CHESTPLATE", 0),
+    IRON_DOOR("IRON_DOOR", 0),
+    IRON_DOOR_BLOCK(Arrays.asList("IRON_DOOR_BLOCK", null, null, null, null, "IRON_DOOR"), 0),
+    IRON_HELMET("IRON_HELMET", 0),
+    IRON_HOE("IRON_HOE", 0),
+    IRON_HORSE_ARMOR(Arrays.asList("IRON_BARDING", null, null, null, null, "IRON_HORSE_ARMOR"), 0),
+    IRON_INGOT("IRON_INGOT", 0),
+    IRON_LEGGINGS("IRON_LEGGINGS", 0),
+    IRON_NUGGET(Arrays.asList(null, null, null, "IRON_NUGGET"), 0),
+    IRON_ORE("IRON_ORE", 0),
+    IRON_PICKAXE("IRON_PICKAXE", 0),
+    IRON_SHOVEL(Arrays.asList("IRON_SPADE", null, null, null, null, "IRON_SHOVEL"), 0),
+    IRON_SWORD("IRON_SWORD", 0),
+    IRON_TRAPDOOR("IRON_TRAPDOOR", 0),
+    ITEM_FRAME("ITEM_FRAME", 0),
+    JACK_O_LANTERN("JACK_O_LANTERN", 0),
+    JUKEBOX("JUKEBOX", 0),
+    JUNGLE_BOAT(Arrays.asList("BOAT", null, null, null, null, "JUNGLE_BOAT"), 0),
+    JUNGLE_BUTTON(Arrays.asList("WOOD_BUTTON", null, null, null, null, "JUNGLE_BUTTON"), 0),
+    JUNGLE_DOOR("JUNGLE_DOOR", 0),
+    JUNGLE_DOOR_ITEM(Arrays.asList("JUNGLE_DOOR_ITEM", null, null, null, null, "JUNGLE_DOOR"), 0),
+    JUNGLE_FENCE("JUNGLE_FENCE", 0),
+    JUNGLE_FENCE_GATE("JUNGLE_FENCE_GATE", 0),
+    JUNGLE_LEAVES(Arrays.asList("LEAVES", null, null, null, null, "JUNGLE_LEAVES"), 3),
+    JUNGLE_LOG(Arrays.asList("LOG", null, null, null, null, "JUNGLE_LOG"), 3),
+    JUNGLE_PLANKS(Arrays.asList("WOOD", null, null, null, null, "JUNGLE_PLANKS"), 3),
+    JUNGLE_PRESSURE_PLATE(Arrays.asList("WOOD_PLATE", null, null, null, null, "JUNGLE_PRESSURE_PLATE"), 0),
+    JUNGLE_SAPLING(Arrays.asList("SAPLING", null, null, null, null, "JUNGLE_SAPLING"), 3),
+    JUNGLE_SLAB(Arrays.asList("WOOD_STEP", null, null, null, null, "JUNGLE_SLAB"), 3),
+    JUNGLE_STAIRS(Arrays.asList("JUNGLE_WOOD_STAIRS", null, null, null, null, "JUNGLE_STAIRS"), 0),
+    KELP(Arrays.asList(null, null, null, null, null, "KELP"), 0),
+    KELP_PLANT(Arrays.asList(null, null, null, null, null, "KELP_PLANT"), 0),
+    KNOWLEDGE_BOOK(Arrays.asList(null, null, null, null, "KNOWLEDGE_BOOK"), 0),
+    LADDER("LADDER", 0),
+    LAPIS_BLOCK("LAPIS_BLOCK", 0),
+    LAPIS_LAZULI(Arrays.asList("INK_SACK", null, null, null, null, "LAPIS_LAZULI"), 4),
+    LAPIS_ORE("LAPIS_ORE", 0),
+    LARGE_FERN(Arrays.asList("DOUBLE_PLANT", null, null, null, null, "LARGE_FERN"), 3),
+    LAVA("LAVA", 0),
+    LAVA_BUCKET("LAVA_BUCKET", 0),
+    LEAD(Arrays.asList("LEASH", null, null, null, null, "LEAD"), 0),
+    LEATHER("LEATHER", 0),
+    LEATHER_BOOTS("LEATHER_BOOTS", 0),
+    LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 0),
+    LEATHER_HELMET("LEATHER_HELMET", 0),
+    LEATHER_LEGGINGS("LEATHER_LEGGINGS", 0),
+    LEVER("LEVER", 0),
+    LIGHT_BLUE_BANNER(Arrays.asList("BANNER", null, null, null, null, "LIGHT_BLUE_BANNER"), 12),
+    LIGHT_BLUE_BED(Arrays.asList("BED", null, null, null, "LIGHT_BLUE_BED"), 0),
+    LIGHT_BLUE_CARPET(Arrays.asList("CARPET", null, null, null, "LIGHT_BLUE_CARPET"), 3),
+    LIGHT_BLUE_CONCRETE(Arrays.asList(null, null, null, null, "CONCRETE", "LIGHT_BLUE_CONCRETE"), 3),
+    LIGHT_BLUE_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE", "LIGHT_BLUE_CONCRETE_POWDER"), 3),
+    LIGHT_BLUE_DYE(Arrays.asList("INK_SACK", null, null, null, null, "LIGHT_BLUE_DYE"), 12),
+    LIGHT_BLUE_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, "LIGHT_BLUE_GLAZED_TERRACOTTA"), 0),
+    LIGHT_BLUE_SHULKER_BOX(Arrays.asList(null, null, null, "LIGHT_BLUE_SHULKER_BOX"), 0),
+    LIGHT_BLUE_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "LIGHT_BLUE_STAINED_GLASS"), 3),
+    LIGHT_BLUE_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "LIGHT_BLUE_STAINED_GLASS_PANE"), 3),
+    LIGHT_BLUE_TERRACOTTA(Arrays.asList(null, null, null, null, null, "LIGHT_BLUE_TERRACOTTA"), 0),
+    LIGHT_BLUE_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "LIGHT_BLUE_WALL_BANNER"), 12),
+    LIGHT_BLUE_WOOL(Arrays.asList("WOOL", null, null, "LIGHT_BLUE_WOOL"), 3),
     ;
     private final ArrayList<String> names = new ArrayList<>();
     private final String version = Bukkit.getVersion();
@@ -361,13 +490,13 @@ public enum UMaterial {
                     realver = i;
             }
         }
-        // 0 = 1.8
-        // 1 = 1.9
-        // 2 = 1.10
-        // 3 = 1.11
-        // 4 = 1.12
-        // 5 = 1.13
-        // 6 = 1.14
+        // 0 = 1.8.8
+        // 1 = 1.9.4
+        // 2 = 1.10.2
+        // 3 = 1.11.2
+        // 4 = 1.12.2
+        // 5 = 1.13.2
+        // 6 = 1.14.0
         if(names.get(realver) != null) {
             is = new ItemStack(Material.valueOf(names.get(realver)), 1, (byte) data);
         }
