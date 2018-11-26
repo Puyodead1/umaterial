@@ -39,13 +39,13 @@ public enum UMaterial {
     // Concrete Powder = https://minecraft.gamepedia.com/Concrete_powder
     // Command Block = https://minecraft.gamepedia.com/Command_Block
     // Special blocks = https://www.planetminecraft.com/blog/secret-blocks-vanilla/
-    ACACIA_BOAT(Arrays.asList("BOAT", null, null, null, null, "BOAT_ACACIA", "ACACIA_BOAT"), 0),
+    ACACIA_BOAT(Arrays.asList("BOAT", null, null, null, null, "ACACIA_BOAT"), 0),
     ACACIA_BUTTON(Arrays.asList("WOOD_BUTTON", null, null, null, null, "ACACIA_BUTTON"), 0),
     ACACIA_DOOR(Arrays.asList("ACACIA_DOOR_ITEM", null, null, null, null, "ACACIA_DOOR"), 0),
     ACACIA_FENCE("ACACIA_FENCE", 0),
     ACACIA_FENCE_GATE("ACACIA_FENCE_GATE", 0),
     ACACIA_LEAVES(Arrays.asList("LEAVES_2", null, null, null, null, "ACACIA_LEAVES"), 0),
-    ACACIA_LOG(Arrays.asList("LOG_2", null, null, null, null, "ACACIA_LOG"), 4),
+    ACACIA_LOG(Arrays.asList("LOG_2", null, null, null, null, "ACACIA_LOG"), 0),
     ACACIA_PLANKS(Arrays.asList("WOOD", null, null, null, null, "ACACIA_PLANKS"), 4),
     ACACIA_PRESSURE_PLATE(Arrays.asList("WOOD_PLATE", null, null, null, null, "ACACIA_PRESSURE_PLATE"), 0),
     ACACIA_SAPLING(Arrays.asList("SAPLING", null, null, null, null, "ACACIA_SAPLING"), 4),
@@ -74,7 +74,7 @@ public enum UMaterial {
     BEETROOT_SEEDS(Arrays.asList(null, null, null, null, null, "BEETROOT_SEEDS"), 0),
     BEETROOT_SOUP(Arrays.asList(null, null, null, null, null, "BEETROOT_SOUP"), 0),
     BEETROOTS(Arrays.asList(null, null, null, null, null, "BEETROOTS"), 0),
-    BIRCH_BOAT(Arrays.asList("BOAT", null, null, null, null, "BOAT_BIRCH", "BIRCH_BOAT"), 0),
+    BIRCH_BOAT(Arrays.asList("BOAT", null, null, null, null, "BIRCH_BOAT"), 0),
     BIRCH_BUTTON(Arrays.asList("WOOD_BUTTON", null, null, null, null, "BIRCH_BUTTON"), 0),
     BIRCH_DOOR(Arrays.asList("BIRCH_DOOR_ITEM", null, null, null, null, "BIRCH_DOOR"), 0),
     BIRCH_FENCE("BIRCH_FENCE", 0),
@@ -82,7 +82,7 @@ public enum UMaterial {
     BIRCH_LEAVES(Arrays.asList("LEAVES", null, null, null, null, "BIRCH_LEAVES"), 2),
     BIRCH_LOG(Arrays.asList("LOG", null, null, null, null, "BIRCH_LOG"), 2),
     BIRCH_PLANKS(Arrays.asList("WOOD", null, null, null, null, "BIRCH_PLANKS"), 2),
-    BIRCH_PRESSURE_PLATE(Arrays.asList("WOOD_PLATE", null, null, null, null, "BIRCH_PRESSURE_PLANK"), 0),
+    BIRCH_PRESSURE_PLATE(Arrays.asList("WOOD_PLATE", null, null, null, null, "BIRCH_PRESSURE_PLATE"), 0),
     BIRCH_SAPLING(Arrays.asList("SAPLING", null, null, null, null, "BIRCH_SAPLING"), 2),
     BIRCH_SLAB(Arrays.asList("WOOD_STEP", null, null, null, null, "BIRCH_SLAB"), 2),
     BIRCH_STAIRS(Arrays.asList("BIRCH_WOOD_STAIRS", null, null, null, null, "BIRCH_STAIRS"), 2),
@@ -97,7 +97,7 @@ public enum UMaterial {
     BLACK_SHULKER_BOX(Arrays.asList(null, null, null, "BLACK_SHULKER_BOX"), 0),
     BLACK_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "BLACK_STAINED_GLASS"), 15),
     BLACK_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "BLACK_STAINED_GLASS_PANE"), 15),
-    BLACK_TERRACOTTA(Arrays.asList(null, null, null, null, null, "BLACK_TERRACOTTA"), 0),
+    BLACK_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "BLACK_TERRACOTTA"), 15),
     BLACK_WOOL(Arrays.asList("WOOL", null, null, null, null, "BLACK_WOOL"), 15),
     BLAZE_POWDER("BLAZE_POWDER", 0),
     BLAZE_ROD("BLAZE_ROD", 0),
@@ -113,7 +113,7 @@ public enum UMaterial {
     BLUE_SHULKER_BOX(Arrays.asList(null, null, null, "BLUE_SHULKER_BOX"), 0),
     BLUE_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "BLUE_STAINED_GLASS"), 11),
     BLUE_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "BLUE_STAINED_GLASS_PANE"), 11),
-    BLUE_TERRACOTTA(Arrays.asList(null, null, null, null, null, "BLUE_TERRACOTTA"), 0),
+    BLUE_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "BLUE_TERRACOTTA"), 11),
     BLUE_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "BLACK_WALL_BANNER"), 4),
     BLUE_WOOL(Arrays.asList("WOOL", null, null, null, null, "BLUE_WOOL"), 11),
     BONE("BONE", 0),
@@ -143,7 +143,7 @@ public enum UMaterial {
     BROWN_SHULKER_BOX(Arrays.asList(null, null, null, "BROWN_SHULKER_BOX"), 0),
     BROWN_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "BROWN_STAINED_GLASS"), 12),
     BROWN_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "BROWN_STAINED_GLASS_PANE"), 12),
-    BROWN_TERRACOTTA(Arrays.asList(null, null, null, null, null, "BROWN_TERRACOTTA"), 0),
+    BROWN_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "BROWN_TERRACOTTA"), 12),
     BROWN_WOOL(Arrays.asList("WOOL", null, null, null, null, "BROWN_WOOL"), 12),
     BUBBLE_COLUMN(Arrays.asList(null, null, null, null, null, "BUBBLE_COLUMN"), 0),
     BUBBLE_CORAL(Arrays.asList(null, null, null, null, null, "BUBBLE_CORAL"), 0),
@@ -195,6 +195,7 @@ public enum UMaterial {
     COBBLESTONE_WALL(Arrays.asList("COBBLE_WALL", null, null, null, null, "COBBLESTONE_WALL"), 0),
     COBWEB(Arrays.asList("WEB", null, null, null, null, "COBWEB"), 0),
     COCOA("COCOA", 0),
+    COCOA_BEANS(Arrays.asList("INK_SACK", null, null, null, null, "COCOA_BEANS"), 3),
     COMMAND_BLOCK(Arrays.asList("COMMAND", null, null, null, null, "COMMAND_BLOCK"), 0),
     COMMAND_BLOCK_MINECART(Arrays.asList("COMMAND_MINECART", null, null, null, null, "COMMAND_BLOCK_MINECART"), 0),
     COMPARATOR(Arrays.asList("REDSTONE_COMPARATOR", null, null, null, null, "COMPARATOR"), 0),
@@ -221,13 +222,20 @@ public enum UMaterial {
     CYAN_CARPET(Arrays.asList("CARPET", null, null, null, null, "CYAN_CARPET"), 9),
     CYAN_CONCRETE(Arrays.asList(null, null, null, null, "CONCRETE", "CYAN_CONCRETE"), 9),
     CYAN_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "CYAN_CONCRETE_POWDER"), 9),
+    CYAN_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "CYAN_GLAZED_TERRACOTTA"), 0),
+    CYAN_SHULKER_BOX(Arrays.asList(null, null, null, "CYAN_SHULKER_BOX"), 0),
+    CYAN_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "CYAN_STAINED_GLASS"), 9),
+    CYAN_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "CYAN_STAINED_GLASS_PANE"), 9),
+    CYAN_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "CYAN_TERRACOTTA"), 9),
+    CYAN_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "CYAN_WALL_BANNER"), 6),
+    CYAN_WOOL(Arrays.asList("WOOL", null, null, null, null, "CYAN_WOOL"), 9),
     CYAN_DYE(Arrays.asList("INK_SACK", null, null, null, null, "CYAN_DYE"), 6),
     DAMAGED_ANVIL(Arrays.asList("ANVIL", null, null, null, null, "DAMAGED_ANVIL"), 2),
     DANDELION(Arrays.asList("YELLOW_FLOWER", null, null, null, null, "DANDELION"), 0),
     DANDELION_YELLOW(Arrays.asList("INK_SACK", null, null, null, null, "DANDELION_YELLOW"), 11),
     DARK_OAK_BOAT(Arrays.asList("BOAT", null, null, null, null, "DARK_OAK_BOAT"), 0),
     DARK_OAK_BUTTON(Arrays.asList("WOOD_BUTTON", null, null, null, null, "DARK_OAK_BUTTON"), 0),
-    DARK_OAK_DOOR(Arrays.asList(null, null, null, null, null, "DARK_ORK_DOOR"), 0),
+    DARK_OAK_DOOR(Arrays.asList(null, null, null, null, null, "DARK_OAK_DOOR"), 0),
     DARK_OAK_DOOR_ITEM(Arrays.asList("DARK_OAK_DOOR_ITEM", null, null, null, null, "DARK_OAK_DOOR"), 0),
     DARK_OAK_FENCE("DARK_OAK_FENCE", 0),
     DARK_OAK_FENCE_GATE("DARK_OAK_FENCE_GATE", 0),
@@ -282,7 +290,7 @@ public enum UMaterial {
     DOLPHIN_SPAWN_EGG(Arrays.asList(null, null, null, null, null, "DOLPHIN_SPAWN_EGG"), 0),
     DONKEY_SPAWN_EGG(Arrays.asList("MONSTER_EGG", null, null, null, null, "DONKEY_SPAWN_EGG"), 31),
     DRAGON_BREATH(Arrays.asList(null, "DRAGONS_BREATH", null, null, null, "DRAGON_BREATH"), 0),
-    DRAGON_HEAD(Arrays.asList(null, "SKULL", null, null, null, null, "DRAGON_HEAD"), 5),
+    DRAGON_HEAD(Arrays.asList(null, "SKULL", null, null, null, "DRAGON_HEAD"), 5),
     DRAGON_HEAD_ITEM(Arrays.asList(null, "SKULL_ITEM", null, null, null, "DRAGON_HEAD"), 5),
     DRAGON_WALL_HEAD(Arrays.asList(null, "SKULL", null, null, null, "DRAGON_WALL_HEAD"), 5),
     DRIED_KELP(Arrays.asList(null, null, null, null, null, "DRIED_KELP"), 0),
@@ -336,9 +344,10 @@ public enum UMaterial {
     GHAST_SPAWN_EGG(Arrays.asList("MONSTER_EGG", null, null, null, null, "GHAST_SPAWN_EGG"), 56),
     GHAST_TEAR("GHAST_TEAR", 0),
     GLASS("GLASS", 0),
+    GLASS_PANE(Arrays.asList("THIN_GLASS", null, null, null, null, "GLASS_PANE"), 0),
     GLASS_BOTTLE("GLASS_BOTTLE", 0),
     GLISTERING_MELON_SLICE(Arrays.asList("SPECKLED_MELON", null, null, null, null, "GLISTERING_MELON_SLICE"), 0),
-    GLOWING_REDSTONE_ORE("GLOWING_REDSTONE_ORE", 0),
+    GLOWING_REDSTONE_ORE(Arrays.asList("GLOWING_REDSTONE_ORE", null, null, null, null, "REDSTONE_ORE"), 0),
     GLOWSTONE("GLOWSTONE", 0),
     GLOWSTONE_DUST("GLOWSTONE_DUST", 0),
     GOLD_BLOCK("GOLD_BLOCK", 0),
@@ -355,7 +364,7 @@ public enum UMaterial {
     GOLDEN_HORSE_ARMOR(Arrays.asList("GOLD_BARDING", null, null, null, null, "GOLDEN_HORSE_ARMOR"), 0),
     GOLDEN_LEGGINGS(Arrays.asList("GOLD_LEGGINGS", null, null, null, null, "GOLDEN_LEGGINGS"), 0),
     GOLDEN_PICKAXE(Arrays.asList("GOLD_PICKAXE", null, null, null, null, "GOLDEN_PICKAXE"), 0),
-    GOLDEN_SHOVEL(Arrays.asList("GOLD_SPADE", null, null, null, null, "GOLDEN_SPADE"), 0),
+    GOLDEN_SHOVEL(Arrays.asList("GOLD_SPADE", null, null, null, null, "GOLDEN_SHOVEL"), 0),
     GOLDEN_SWORD(Arrays.asList("GOLD_SWORD", null, null, null, null, "GOLDEN_SWORD"), 0),
     GRANITE(Arrays.asList("STONE", null, null, null, null, "GRANITE"), 1),
     GRASS("GRASS", 0),
@@ -372,7 +381,7 @@ public enum UMaterial {
     GRAY_SHULKER_BOX(Arrays.asList(null, null, null, "GRAY_SHULKER_BOX"), 0),
     GRAY_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "GRAY_STAINED_GLASS"), 7),
     GRAY_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "GRAY_STAINED_GLASS_PANE"), 7),
-    GRAY_TERRACOTTA(Arrays.asList(null, null, null, null, null, "GRAY_TERRACOTTA"), 0),
+    GRAY_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "GRAY_TERRACOTTA"), 7),
     GRAY_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "GRAY_WALL_BANNER"), 8),
     GRAY_WOOL(Arrays.asList("WOOL", null, null, null, null, "GRAY_WOOL"), 7),
     GREEN_BANNER(Arrays.asList("BANNER", null, null, null, null, "GREEN_BANNER"), 2),
@@ -384,7 +393,7 @@ public enum UMaterial {
     GREEN_SHULKER_BOX(Arrays.asList(null, null, null, "GREEN_SHULKER_BOX"), 0),
     GREEN_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "GREEN_STAINED_GLASS"), 13),
     GREEN_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "GREEN_STAINED_GLASS_PANE"), 13),
-    GREEN_TERRACOTTA(Arrays.asList(null, null, null, null, null, "GREEN_TERRACOTTA"), 0),
+    GREEN_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "GREEN_TERRACOTTA"), 13),
     GREEN_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "GREEN_WALL_BANNER"), 2),
     GREEN_WOOL(Arrays.asList("WOOL", null, null, null, null, "GREEN_WOOL"), 13),
     GUARDIAN_SPAWN_EGG(Arrays.asList("MONSTER_EGG", null, null, null, null, "GUARDIAN_SPAWN_EGG"), 68),
@@ -429,7 +438,7 @@ public enum UMaterial {
     ITEM_FRAME("ITEM_FRAME", 0),
     JACK_O_LANTERN("JACK_O_LANTERN", 0),
     JUKEBOX("JUKEBOX", 0),
-    JUNGLE_BOAT(Arrays.asList("BOAT", null, null, null, null, "BOAT_JUNGLE", "JUNGLE_BOAT"), 0),
+    JUNGLE_BOAT(Arrays.asList("BOAT", null, null, null, null, "JUNGLE_BOAT"), 0),
     JUNGLE_BUTTON(Arrays.asList("WOOD_BUTTON", null, null, null, null, "JUNGLE_BUTTON"), 0),
     JUNGLE_DOOR("JUNGLE_DOOR", 0),
     JUNGLE_DOOR_ITEM(Arrays.asList("JUNGLE_DOOR_ITEM", null, null, null, null, "JUNGLE_DOOR"), 0),
@@ -471,7 +480,7 @@ public enum UMaterial {
     LIGHT_BLUE_SHULKER_BOX(Arrays.asList(null, null, null, "LIGHT_BLUE_SHULKER_BOX"), 0),
     LIGHT_BLUE_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "LIGHT_BLUE_STAINED_GLASS"), 3),
     LIGHT_BLUE_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "LIGHT_BLUE_STAINED_GLASS_PANE"), 3),
-    LIGHT_BLUE_TERRACOTTA(Arrays.asList(null, null, null, null, null, "LIGHT_BLUE_TERRACOTTA"), 0),
+    LIGHT_BLUE_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "LIGHT_BLUE_TERRACOTTA"), 3),
     LIGHT_BLUE_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "LIGHT_BLUE_WALL_BANNER"), 12),
     LIGHT_BLUE_WOOL(Arrays.asList("WOOL", null, null, null, null, "LIGHT_BLUE_WOOL"), 3),
     LIGHT_GRAY_BANNER(Arrays.asList("BANNER", null, null, null, null, "LIGHT_GRAY_BANNER"), 7),
@@ -481,10 +490,10 @@ public enum UMaterial {
     LIGHT_GRAY_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "LIGHT_GRAY_CONCRETE_POWDER"), 8),
     LIGHT_GRAY_DYE(Arrays.asList("INK_SACK", null, null, null, null, "LIGHT_GRAY_DYE"), 7),
     LIGHT_GRAY_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "LIGHT_GRAY_GLAZED_TERRACOTTA"), 0),
-    LIGHT_GRAY_SHULKER_BOX(Arrays.asList(null, null, null, "SILVER_SHULKER_BOX"), 0),
+    LIGHT_GRAY_SHULKER_BOX(Arrays.asList(null, null, null, "SILVER_SHULKER_BOX", null, "LIGHT_GRAY_SHULKER_BOX"), 0),
     LIGHT_GRAY_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "LIGHT_GRAY_STAINED_GLASS"), 8),
     LIGHT_GRAY_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "LIGHT_GRAY_STAINED_GLASS_PANE"), 8),
-    LIGHT_GRAY_TERRACOTTA(Arrays.asList(null, null, null, null, null, "LIGHT_GRAY_TERRACOTTA"), 0),
+    LIGHT_GRAY_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "LIGHT_GRAY_TERRACOTTA"), 8),
     LIGHT_GRAY_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "LIGHT_GRAY_WALL_BANNER"), 7),
     LIGHT_GRAY_WOOL(Arrays.asList("WOOL", null, null, null, null, "LIGHT_GRAY_WOOL"), 8),
     LIGHT_WEIGHTED_PRESSURE_PLATE(Arrays.asList("GOLD_PLATE", null, null, null, null, "LIGHT_WEIGHTED_PRESSURE_PLATE"), 0),
@@ -500,7 +509,7 @@ public enum UMaterial {
     LIME_SHULKER_BOX(Arrays.asList(null, null, null, "LIME_SHULKER_BOX"), 0),
     LIME_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "LIME_STAINED_GLASS"), 5),
     LIME_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "LIME_STAINED_GLASS_PANE"), 5),
-    LIME_TERRACOTTA(Arrays.asList(null, null, null, null, null, "LIME_TERRACOTTA"), 0),
+    LIME_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "LIME_TERRACOTTA"), 5),
     LIME_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "LIME_WALL_BANNER"), 10),
     LIME_WOOL(Arrays.asList("WOOL", null, null, null, null, "LIME_WOOL"), 5),
     LINGERING_POTION(Arrays.asList(null, "LINGERING_POTION"), 0),
@@ -515,7 +524,7 @@ public enum UMaterial {
     MAGENTA_SHULKER_BOX(Arrays.asList(null, null, null, "MAGENTA_SHULKER_BOX"), 0),
     MAGENTA_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "MAGENTA_STAINED_GLASS"), 2),
     MAGENTA_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "MAGENTA_STAINED_GLASS_PANE"), 2),
-    MAGENTA_TERRACOTTA(Arrays.asList(null, null, null, null, null, "MAGENTA_TERRACOTTA"), 0),
+    MAGENTA_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "MAGENTA_TERRACOTTA"), 2),
     MAGENTA_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "MAGENTA_WALL_BANNER"), 13),
     MAGENTA_WOOL(Arrays.asList("WOOL", null, null, null, null, "MAGENTA_WOOL"), 2),
     MAGMA_BLOCK(Arrays.asList(null, null, "MAGMA", null, null, "MAGMA_BLOCK"), 0),
@@ -536,10 +545,10 @@ public enum UMaterial {
     MULE_SPAWN_EGG(Arrays.asList("MONSTER_EGG", null, null, null, null, "MULE_SPAWN_EGG"), 32),
     MUSHROOM_STEM(Arrays.asList(null, null, null, null, null, "MUSHROOM_STEM"), 0),
     MUSHROOM_STEW(Arrays.asList("MUSHROOM_SOUP", null, null, null, null, "MUSHROOM_STEW"), 0),
-    MUSIC_DISC_11(Arrays.asList("RECORD_11", null, null, null, null, null, "MUSIC_DISC_11"), 0),
-    MUSIC_DISC_13(Arrays.asList("GOLD_RECORD", null, null, null, null, null, "MUSIC_DISC_13"), 0),
+    MUSIC_DISC_11(Arrays.asList("RECORD_11", null, null, null, null, "MUSIC_DISC_11"), 0),
+    MUSIC_DISC_13(Arrays.asList("GOLD_RECORD", null, null, null, null, "MUSIC_DISC_13"), 0),
     MUSIC_DISC_BLOCKS(Arrays.asList("RECORD_3", null, null, null, null, "MUSIC_DISC_BLOCKS"), 0),
-    MUSIC_DISC_CAT(Arrays.asList("GREEN_RECORD", null, null, null, null, "MUSIC_DISC_RECORD"), 0),
+    MUSIC_DISC_CAT(Arrays.asList("GREEN_RECORD", null, null, null, null, "MUSIC_DISC_CAT"), 0),
     MUSIC_DISC_CHIRP(Arrays.asList("RECORD_4", null, null, null, null, "MUSIC_DISC_CHIRP"), 0),
     MUSIC_DISC_FAR(Arrays.asList("RECORD_5", null, null, null, null, "MUSIC_DISC_FAR"), 0),
     MUSIC_DISC_MALL(Arrays.asList("RECORD_6", null, null, null, null, "MUSIC_DISC_MALL"), 0),
@@ -564,7 +573,7 @@ public enum UMaterial {
     NETHER_WART_BLOCK(Arrays.asList("NETHER_WARTS", null, null, null, null, "NETHER_WART_BLOCK"), 0),
     NETHERRACK("NETHERRACK", 0),
     NOTE_BLOCK("NOTE_BLOCK", 0),
-    OAK_BOAT(Arrays.asList("BOAT", null, null, null, null, null, "OAK_BOAT"), 0),
+    OAK_BOAT(Arrays.asList("BOAT", null, null, null, null, "OAK_BOAT"), 0),
     OAK_BUTTON(Arrays.asList("WOOD_BUTTON", null, null, null, null, "OAK_BUTTON"), 0),
     OAK_DOOR(Arrays.asList("WOOD_DOOR", null, null, null, null, "OAK_DOOR"), 0),
     OAK_FENCE(Arrays.asList("FENCE", null, null, null, null, "OAK_FENCE"), 0),
@@ -589,13 +598,13 @@ public enum UMaterial {
     ORANGE_DYE(Arrays.asList("INK_SACK", null, null, null, null, "ORANGE_DYE"), 14),
     ORANGE_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "ORANGE_GLAZED_TERRACOTTA"), 0),
     ORANGE_SHULKER_BOX(Arrays.asList(null, null, null, "ORANGE_SHULKER_BOX"), 0),
-    ORANGE_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "STAINED_GLASS_PANE"), 1),
+    ORANGE_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "ORANGE_STAINED_GLASS"), 1),
     ORANGE_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "ORANGE_STAINED_GLASS_PANE"), 1),
-    ORANGE_TERRACOTTA(Arrays.asList(null, null, null, null, null, "ORANGE_TERRACOTTA"), 0),
+    ORANGE_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "ORANGE_TERRACOTTA"), 1),
     ORANGE_TULIP(Arrays.asList("RED_ROSE", null, null, null, null, "ORANGE_TULIP"), 5),
     ORANGE_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "ORANGE_WALL_BANNER"), 14),
     ORANGE_WOOL(Arrays.asList("WOOL", null, null, null, null, "ORANGE_WOOL"), 1),
-    OXEYE_DAISY(Arrays.asList("RED_ROSE", null, null, null, null, null, "OXEYE_DAISY"), 8),
+    OXEYE_DAISY(Arrays.asList("RED_ROSE", null, null, null, null, "OXEYE_DAISY"), 8),
     PACKED_ICE("PACKED_ICE", 0),
     PAINTING("PAINTING", 0),
     PAPER("PAPER", 0),
@@ -615,7 +624,7 @@ public enum UMaterial {
     PINK_SHULKER_BOX(Arrays.asList(null, null, null, "PINK_SHULKER_BOX"), 0),
     PINK_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "PINK_STAINED_GLASS"), 6),
     PINK_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "PINK_STAINED_GLASS_PANE"), 6),
-    PINK_TERRACOTTA(Arrays.asList(null, null, null, null, null, "PINK_TERRACOTTA"), 0),
+    PINK_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "PINK_TERRACOTTA"), 6),
     PINK_TULIP(Arrays.asList("RED_ROSE", null, null, null, null, "PINK_TULIP"), 7),
     PINK_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "PINK_WALL_BANNER"), 9),
     PINK_WOOL(Arrays.asList("WOOL", null, null, null, null, "PINK_WOOL"), 6),
@@ -629,7 +638,7 @@ public enum UMaterial {
     POLAR_BEAR_SPAWN_EGG(Arrays.asList(null, null, "MONSTER_EGG", null, null, "POLAR_BEAR_SPAWN_EGG"), 102),
     POLISHED_ANDESITE(Arrays.asList("STONE", null, null, null, null, "POLISHED_ANDESITE"), 6),
     POLISHED_DIORITE(Arrays.asList("STONE", null, null, null, null, "POLISHED_DIORITE"), 4),
-    POLISHED_GRANITE(Arrays.asList("STONE", null, null, null, null, "PLOISHED_GRANITE"), 2),
+    POLISHED_GRANITE(Arrays.asList("STONE", null, null, null, null, "POLISHED_GRANITE"), 2),
     POPPED_CHORUS_FRUIT(Arrays.asList(null, "CHORUS_FRUIT_POPPED", null, null, null, "POPPED_CHORUS_FRUIT"), 0),
     POPPY(Arrays.asList("RED_ROSE", null, null, null, null, "POPPY"), 0),
     PORKCHOP(Arrays.asList("PORK", null, null, null, null, "PORKCHOP"), 0),
@@ -661,7 +670,7 @@ public enum UMaterial {
     POTTED_WHITE_TULIP(Arrays.asList(null, null, null, null, null, "POTTED_WHITE_TULIP"), 0),
     POWERED_RAIL("POWERED_RAIL", 0),
     PRISMARINE("PRISMARINE", 0),
-    PRISMARINE_BRICK_SLAB(Arrays.asList(null, null, null, null, null, "PRISMARINE_BRICK_SLABS"), 0),
+    PRISMARINE_BRICK_SLAB(Arrays.asList(null, null, null, null, null, "PRISMARINE_BRICK_SLAB"), 0),
     PRISMARINE_BRICK_STAIRS(Arrays.asList(null, null, null, null, null, "PRISMARINE_BRICK_STAIRS"), 0),
     PRISMARINE_BRICKS(Arrays.asList("PRISMARINE", null, null, null, null, "PRISMARINE_BRICKS"), 1),
     PRISMARINE_CRYSTALS("PRISMARINE_CRYSTALS", 0),
@@ -685,7 +694,7 @@ public enum UMaterial {
     PURPLE_SHULKER_BOX(Arrays.asList(null, null, null, "PURPLE_SHULKER_BOX"), 0),
     PURPLE_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "PURPLE_STAINED_GLASS"), 10),
     PURPLE_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "PURPLE_STAINED_GLASS_PANE"), 10),
-    PURPLE_TERRACOTTA(Arrays.asList(null, null, null, null, null, "PURPLE_TERRACOTTA"), 0),
+    PURPLE_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "PURPLE_TERRACOTTA"), 10),
     PURPLE_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "PURPLE_WALL_BANNER"), 5),
     PURPLE_WOOL(Arrays.asList("WOOL", null, null, null, null, "PURPLE_WOOL"), 10),
     PURPUR_BLOCK(Arrays.asList(null, "PURPUR_BLOCK"), 0),
@@ -719,14 +728,14 @@ public enum UMaterial {
     RED_SHULKER_BOX(Arrays.asList(null, null, null, "RED_SHULKER_BOX"), 0),
     RED_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "RED_STAINED_GLASS"), 14),
     RED_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "RED_STAINED_GLASS_PANE"), 14),
-    RED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "RED_TERRACOTTA"), 0),
+    RED_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "RED_TERRACOTTA"), 14),
     RED_TULIP(Arrays.asList("RED_ROSE", null, null, null, null, "RED_TULIP"), 4),
     RED_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "RED_WALL_BANNER"), 1),
     RED_WOOL(Arrays.asList("WOOL", null, null, null, null, "RED_WOOL"), 14),
     REDSTONE("REDSTONE", 0),
     REDSTONE_BLOCK("REDSTONE_BLOCK", 0),
     REDSTONE_LAMP(Arrays.asList("REDSTONE_LAMP_OFF", null, null, null, null, "REDSTONE_LAMP"), 0),
-    REDSTONE_LAMP_ON(Arrays.asList("REDSTONE_LAMP_ON", null, null, null, null, "REDSTONE_LAMP_ON"), 0),
+    REDSTONE_LAMP_ON(Arrays.asList("REDSTONE_LAMP_ON", null, null, null, null, "REDSTONE_LAMP"), 0),
     REDSTONE_ORE("REDSTONE_ORE", 0),
     REDSTONE_TORCH(Arrays.asList("REDSTONE_TORCH_OFF", null, null, null, null, "REDSTONE_TORCH"), 0),
     REDSTONE_TORCH_ON(Arrays.asList("REDSTONE_TORCH_ON", null, null, null, null, "REDSTONE_TORCH"), 0),
@@ -747,7 +756,7 @@ public enum UMaterial {
     SANDSTONE_STAIRS("SANDSTONE_STAIRS", 0),
     SCUTE(Arrays.asList(null, null, null, null, null, "SCUTE"), 0),
     SEA_LANTERN("SEA_LANTERN", 0),
-    SEA_PICKLE(Arrays.asList(null, null, null, null, null, "SEA_PICKEL"), 0),
+    SEA_PICKLE(Arrays.asList(null, null, null, null, null, "SEA_PICKLE"), 0),
     SEAGRASS(Arrays.asList(null, null, null, null, null, "SEAGRASS"), 0),
     SHEARS("SHEARS", 0),
     SHEEP_SPAWN_EGG(Arrays.asList("MONSTER_EGG", null, null, null, null, "SHEEP_SPAWN_EGG"), 91),
@@ -780,7 +789,7 @@ public enum UMaterial {
     SPIDER_SPAWN_EGG(Arrays.asList("MONSTER_EGG", null, null, null, null, "SPIDER_SPAWN_EGG"), 52),
     SPLASH_POTION(Arrays.asList(null, "SPLASH_POTION"), 0),
     SPONGE("SPONGE", 0),
-    SPRUCE_BOAT(Arrays.asList("BOAT", null, null, null, null, "BOAT_SPRUCE", "SPRUCE_BOAT"), 0),
+    SPRUCE_BOAT(Arrays.asList("BOAT", null, null, null, null, "SPRUCE_BOAT"), 0),
     SPRUCE_BUTTON(Arrays.asList("WOOD_BUTTON", null, null, null, null, "SPRUCE_BUTTON"), 0),
     SPRUCE_DOOR("SPRUCE_DOOR", 0),
     SPRUCE_DOOR_ITEM(Arrays.asList("SPRUCE_DOOR_ITEM", null, null, null, null, "SPRUCE_DOOR"), 0),
@@ -831,10 +840,10 @@ public enum UMaterial {
     SUNFLOWER(Arrays.asList("DOUBLE_PLANT", null, null, null, null, "SUNFLOWER"), 0),
     TALL_GRASS(Arrays.asList("LONG_GRASS", null, null, null, null, "TALL_GRASS"), 0),
     TALL_SEAGRASS(Arrays.asList(null, null, null, null, null, "TALL_SEAGRASS"), 0),
-    TERRACOTTA(Arrays.asList(null, null, null, null, null, "TERRACOTTA"), 0),
+    TERRACOTTA(Arrays.asList("HARD_CLAY", null, null, null, null, "TERRACOTTA"), 0),
     TIPPED_ARROW(Arrays.asList("ARROW", null, null, null, "TIPPED_ARROW"), 0),
     TNT("TNT", 0),
-    TNT_MINECART(Arrays.asList("EXPLOSIVE_MINECART", null, null, null, null, "TNT_MINCART"), 0),
+    TNT_MINECART(Arrays.asList("EXPLOSIVE_MINECART", null, null, null, null, "TNT_MINECART"), 0),
     TORCH("TORCH", 0),
     TOTEM_OF_UNDYING(Arrays.asList(null, null, null, "TOTEM", null, "TOTEM_OF_UNDYING"), 0),
     TRAPPED_CHEST("TRAPPED_CHEST", 0),
@@ -864,7 +873,7 @@ public enum UMaterial {
     WHEAT("WHEAT", 0),
     WHEAT_SEEDS(Arrays.asList("SEEDS", null, null, null, null, "WHEAT_SEEDS"), 0),
     WHITE_BANNER(Arrays.asList("BANNER", null, null, null, null, "WHITE_BANNER"), 15),
-    WHITE_BED(Arrays.asList("BED", null, null, null, null, "WHITE_BED"), 1),
+    WHITE_BED(Arrays.asList("BED", null, null, null, null, "WHITE_BED"), 0),
     WHITE_CARPET(Arrays.asList("CARPET", null, null, null, null, "WHITE_CARPET"), 0),
     WHITE_CONCRETE(Arrays.asList(null, null, null, null, "CONCRETE", "WHITE_CONCRETE"), 0),
     WHITE_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "WHITE_CONCRETE_POWDER"), 0),
@@ -872,7 +881,7 @@ public enum UMaterial {
     WHITE_SHULKER_BOX(Arrays.asList(null, null, null, "WHITE_SHULKER_BOX"), 0),
     WHITE_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "WHITE_STAINED_GLASS"), 0),
     WHITE_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "WHITE_STAINED_GLASS_PANE"), 0),
-    WHITE_TERRACOTTA(Arrays.asList(null, null, null, null, null, "WHITE_TERRACOTTA"), 0),
+    WHITE_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "WHITE_TERRACOTTA"), 0),
     WHITE_TULIP(Arrays.asList("RED_ROSE", null, null, null, null, "WHITE_TULIP"), 6),
     WHITE_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "WHITE_WALL_BANNER"), 0),
     WHITE_WOOL(Arrays.asList("WOOL", null, null, null, null, "WHITE_WOOL"), 0),
@@ -898,7 +907,7 @@ public enum UMaterial {
     YELLOW_SHULKER_BOX(Arrays.asList(null, null, null, "YELLOW_SHULKER_BOX"), 0),
     YELLOW_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "YELLOW_STAINED_GLASS"), 4),
     YELLOW_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "YELLOW_STAINED_GLASS_PANE"), 4),
-    YELLOW_TERRACOTTA(Arrays.asList(null, null, null, null, null, "YELLOW_TERRACOTTA"), 0),
+    YELLOW_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "YELLOW_TERRACOTTA"), 4),
     YELLOW_WALL_BANNER(Arrays.asList("BANNER", null, null, null, null, "YELLOW_WALL_BANNER"), 11),
     YELLOW_WOOL(Arrays.asList("WOOL", null, null, null, null, "YELLOW_WOOL"), 4),
     ZOMBIE_HEAD(Arrays.asList("SKULL", null, null, null, null, "ZOMBIE_HEAD"), 2),
@@ -912,10 +921,12 @@ public enum UMaterial {
     private final ArrayList<String> names = new ArrayList<>();
     private final String version = Bukkit.getVersion();
     private ItemStack is;
+    private int data;
     UMaterial(String name, int data) {
         names.add(name);
+        this.data = data;
         final Material m = Material.valueOf(name);
-        is = version.contains("1.8") || version.contains("1.9") || version.contains("1.10") || version.contains("1.11") || version.contains("1.12") ? new ItemStack(m, 1, (byte) data) : new ItemStack(m);
+        is = (version.contains("1.8") || version.contains("1.9") || version.contains("1.10") || version.contains("1.11") || version.contains("1.12") ? new ItemStack(m, 1, (byte) data) : new ItemStack(m)).clone();
     }
     // 0 = 1.8.8
     // 1 = 1.9.4
@@ -926,6 +937,7 @@ public enum UMaterial {
     // 6 = 1.14.0
     UMaterial(List<String> names, int data) {
         this.names.addAll(names);
+        this.data = data;
         final int ver = version.contains("1.8") ? 0 : version.contains("1.9") ? 1 : version.contains("1.10") ? 2 : version.contains("1.11") ? 3 : version.contains("1.12") ? 4 : version.contains("1.13") ? 5 : version.contains("1.14") ? 6 : names.size()-1;
         int realver = names.size() <= ver ? names.size()-1 : ver;
         if(names.get(realver) == null) {
@@ -937,13 +949,13 @@ public enum UMaterial {
                 }
             }
         }
-        final String t = names.get(realver);
-        if(t != null) {
-            is = new ItemStack(Material.valueOf(t), 1, (byte) data);
-        }
+        final String t = names.get(realver), t2 = names.size() > ver ? names.get(ver) : names.get(names.size()-1);
+        final Material m = Material.valueOf(t != null ? t : t2 != null ? t2 : "AIR");
+        is = t != null ? new ItemStack(m, 1, (byte) data) : t2 != null ? new ItemStack(m) : null;
+        if(is != null) is = is.clone();
     }
     public ItemStack getItemStack() { return is; }
-
+    public byte getData() { return (byte) data; }
 
     @Deprecated
     public static ItemStack valueOf(String name, byte data) {
@@ -951,7 +963,7 @@ public enum UMaterial {
         for(UMaterial u : UMaterial.values()) {
             if(u.names.contains(name)) {
                 final ItemStack i = u.getItemStack();
-                if(i.getData().getData() == data)
+                if(u.getData() == data)
                     return i;
             }
         }
