@@ -1280,7 +1280,7 @@ class UPotion {
             org.bukkit.potion.PotionData pd = null;
             if(a) {
                 pm = (org.bukkit.inventory.meta.PotionMeta) is.getItemMeta();
-                pd = new org.bukkit.potion.PotionData(type, extended, upgraded);
+                pd = new org.bukkit.potion.PotionData(type, type.isExtendable() ? extended : false, type.isUpgradeable() ? upgraded : false);
             }
             potiondata = pd;
             if(a) {
