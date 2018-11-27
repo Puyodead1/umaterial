@@ -1,4 +1,4 @@
-package me.randomHashTags.UMaterial;
+package me.randomHashTags.RandomPackage.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -1255,7 +1255,7 @@ public enum UMaterial {
     @Deprecated
     public static ItemStack valueOf(String name, byte data) {
         name = name.toUpperCase();
-        if(inMemory.keySet().contains(name + data)) return inMemory.get(name);
+        if(inMemory.keySet().contains(name + data)) return inMemory.get(name + data);
         for(UMaterial u : UMaterial.values()) {
             if(u.names.contains(name)) {
                 final ItemStack i = u.getItemStack();
