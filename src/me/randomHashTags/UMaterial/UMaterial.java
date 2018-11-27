@@ -1,4 +1,4 @@
-package me.randomHashTags.RandomPackage.utils;
+package me.randomHashTags.UMaterial;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -9,6 +9,7 @@ import org.bukkit.potion.Potion;
 import org.bukkit.potion.PotionType;
 
 import java.util.*;
+
 /*
     This software is created and owned by RandomHashTags, and is licensed under the GNU Affero General Public License v3.0 (https://choosealicense.com/licenses/agpl-3.0/)
     You can only find this software at https://gitlab.com/RandomHashTags/umaterial
@@ -293,7 +294,113 @@ public enum UMaterial {
     EMERALD_BLOCK("EMERALD_BLOCK", 0),
     EMERALD_ORE("EMERALD_ORE", 0),
     ENCHANTED_BOOK("ENCHANTED_BOOK", 0),
+    ENCHANTED_BOOK_AQUA_AFFINITY("ENCHANTED_BOOK", 0, Enchantment.WATER_WORKER, 1),
+    ENCHANTED_BOOK_BANE_OF_ARTHROPODS_1("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_ARTHROPODS, 1),
+    ENCHANTED_BOOK_BANE_OF_ARTHROPODS_2("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_ARTHROPODS, 2),
+    ENCHANTED_BOOK_BANE_OF_ARTHROPODS_3("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_ARTHROPODS, 3),
+    ENCHANTED_BOOK_BANE_OF_ARTHROPODS_4("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_ARTHROPODS, 4),
+    ENCHANTED_BOOK_BANE_OF_ARTHROPODS_5("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_ARTHROPODS, 5),
+    ENCHANTED_BOOK_BLAST_PROTECTION_1("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_EXPLOSIONS, 1),
+    ENCHANTED_BOOK_BLAST_PROTECTION_2("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_EXPLOSIONS, 2),
+    ENCHANTED_BOOK_BLAST_PROTECTION_3("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_EXPLOSIONS, 3),
+    ENCHANTED_BOOK_BLAST_PROTECTION_4("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_EXPLOSIONS, 4),
+    ENCHANTED_BOOK_CHANNELING("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("CHANNELING") != null ? "CHANNELING" : "PROTECTION_EXPLOSIONS"), 1),
+    ENCHANTED_BOOK_CURSE_OF_BINDING("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("BINDING_CURSE") != null ? "BINDING_CURSE" : "PROTECTION_EXPLOSIONS"), 1),
+    ENCHANTED_BOOK_CURSE_OF_VANISHING("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("VANISHING_CURSE") != null ? "VANISHING_CURSE" : "PROTECTION_EXPLOSIONS"), 1),
+    ENCHANTED_BOOK_DEPTH_STRIDER_1("ENCHANTED_BOOK", 0, Enchantment.DEPTH_STRIDER, 1),
+    ENCHANTED_BOOK_DEPTH_STRIDER_2("ENCHANTED_BOOK", 0, Enchantment.DEPTH_STRIDER, 2),
+    ENCHANTED_BOOK_DEPTH_STRIDER_3("ENCHANTED_BOOK", 0, Enchantment.DEPTH_STRIDER, 3),
+    ENCHANTED_BOOK_EFFICIENCY_1("ENCHANTED_BOOK", 0, Enchantment.DIG_SPEED, 1),
+    ENCHANTED_BOOK_EFFICIENCY_2("ENCHANTED_BOOK", 0, Enchantment.DIG_SPEED, 2),
+    ENCHANTED_BOOK_EFFICIENCY_3("ENCHANTED_BOOK", 0, Enchantment.DIG_SPEED, 3),
+    ENCHANTED_BOOK_EFFICIENCY_4("ENCHANTED_BOOK", 0, Enchantment.DIG_SPEED, 4),
+    ENCHANTED_BOOK_EFFICIENCY_5("ENCHANTED_BOOK", 0, Enchantment.DIG_SPEED, 5),
+    ENCHANTED_BOOK_FEATHER_FALLING_1("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_FALL, 1),
+    ENCHANTED_BOOK_FEATHER_FALLING_2("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_FALL, 2),
+    ENCHANTED_BOOK_FEATHER_FALLING_3("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_FALL, 3),
+    ENCHANTED_BOOK_FEATHER_FALLING_4("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_FALL, 4),
+    ENCHANTED_BOOK_FIRE_ASPECT_1("ENCHANTED_BOOK", 0, Enchantment.FIRE_ASPECT, 1),
+    ENCHANTED_BOOK_FIRE_ASPECT_2("ENCHANTED_BOOK", 0, Enchantment.FIRE_ASPECT, 2),
+    ENCHANTED_BOOK_FIRE_PROTECTION_1("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_FIRE, 1),
+    ENCHANTED_BOOK_FIRE_PROTECTION_2("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_FIRE, 2),
+    ENCHANTED_BOOK_FIRE_PROTECTION_3("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_FIRE, 3),
+    ENCHANTED_BOOK_FIRE_PROTECTION_4("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_FIRE, 4),
+    ENCHANTED_BOOK_FLAME("ENCHANTED_BOOK", 0, Enchantment.ARROW_FIRE, 1),
+    ENCHANTED_BOOK_FORTUNE_1("ENCHANTED_BOOK", 0, Enchantment.LOOT_BONUS_BLOCKS, 1),
+    ENCHANTED_BOOK_FORTUNE_2("ENCHANTED_BOOK", 0, Enchantment.LOOT_BONUS_BLOCKS, 2),
+    ENCHANTED_BOOK_FORTUNE_3("ENCHANTED_BOOK", 0, Enchantment.LOOT_BONUS_BLOCKS, 3),
+    ENCHANTED_BOOK_FROST_WALKER_1("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("FROST_WALKER") != null ? "FROST_WALKER" : "LOOT_BONUS_BLOCKS"), 1),
+    ENCHANTED_BOOK_FROST_WALKER_2("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("FROST_WALKER") != null ? "FROST_WALKER" : "LOOT_BONUS_BLOCKS"), 2),
+    ENCHANTED_BOOK_IMPALING_1("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("IMPALING") != null ? "IMPALING" : "LOOT_BONUS_BLOCKS"), 1),
+    ENCHANTED_BOOK_IMPALING_2("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("IMPALING") != null ? "IMPALING" : "LOOT_BONUS_BLOCKS"), 2),
+    ENCHANTED_BOOK_IMPALING_3("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("IMPALING") != null ? "IMPALING" : "LOOT_BONUS_BLOCKS"), 3),
+    ENCHANTED_BOOK_IMPALING_4("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("IMPALING") != null ? "IMPALING" : "LOOT_BONUS_BLOCKS"), 4),
+    ENCHANTED_BOOK_IMPALING_5("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("IMPALING") != null ? "IMPALING" : "LOOT_BONUS_BLOCKS"), 5),
+    ENCHANTED_BOOK_INFINITY("ENCHANTED_BOOK", 0, Enchantment.ARROW_INFINITE, 1),
+    ENCHANTED_BOOK_KNOCKBACK_1("ENCHANTED_BOOK", 0, Enchantment.KNOCKBACK, 1),
+    ENCHANTED_BOOK_KNOCKBACK_2("ENCHANTED_BOOK", 0, Enchantment.KNOCKBACK, 2),
+    ENCHANTED_BOOK_LOOTING_1("ENCHANTED_BOOK", 0, Enchantment.LOOT_BONUS_MOBS, 1),
+    ENCHANTED_BOOK_LOOTING_2("ENCHANTED_BOOK", 0, Enchantment.LOOT_BONUS_MOBS, 2),
+    ENCHANTED_BOOK_LOOTING_3("ENCHANTED_BOOK", 0, Enchantment.LOOT_BONUS_MOBS, 3),
+    ENCHANTED_BOOK_LOYALTY_1("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("LOYALTY") != null ? "LOYALTY" : "LOOT_BONUS_MOBS"), 1),
+    ENCHANTED_BOOK_LOYALTY_2("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("LOYALTY") != null ? "LOYALTY" : "LOOT_BONUS_MOBS"), 2),
+    ENCHANTED_BOOK_LOYALTY_3("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("LOYALTY") != null ? "LOYALTY" : "LOOT_BONUS_MOBS"), 3),
+    ENCHANTED_BOOK_LUCK_OF_THE_SEA_1("ENCHANTED_BOOK", 0, Enchantment.LUCK, 1),
+    ENCHANTED_BOOK_LUCK_OF_THE_SEA_2("ENCHANTED_BOOK", 0, Enchantment.LUCK, 2),
+    ENCHANTED_BOOK_LUCK_OF_THE_SEA_3("ENCHANTED_BOOK", 0, Enchantment.LUCK, 3),
+    ENCHANTED_BOOK_LURE_1("ENCHANTED_BOOK", 0, Enchantment.LURE, 1),
+    ENCHANTED_BOOK_LURE_2("ENCHANTED_BOOK", 0, Enchantment.LURE, 2),
+    ENCHANTED_BOOK_LURE_3("ENCHANTED_BOOK", 0, Enchantment.LURE, 3),
+    ENCHANTED_BOOK_MENDING("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("MENDING") != null ? "MENDING" : "LURE"), 1),
+    ENCHANTED_BOOK_MULTI_SHOT("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("MULTI_SHOT") != null ? "MULTI_SHOT" : "LURE"), 1),
+    ENCHANTED_BOOK_PIERCING_1("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("PIERCING") != null ? "PIERCING" : "LURE"), 1),
+    ENCHANTED_BOOK_PIERCING_2("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("PIERCING") != null ? "PIERCING" : "LURE"), 2),
+    ENCHANTED_BOOK_PIERCING_3("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("PIERCING") != null ? "PIERCING" : "LURE"), 3),
+    ENCHANTED_BOOK_PIERCING_4("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("PIERCING") != null ? "PIERCING" : "LURE"), 4),
+    ENCHANTED_BOOK_POWER_1("ENCHANTED_BOOK", 0, Enchantment.ARROW_DAMAGE, 1),
+    ENCHANTED_BOOK_POWER_2("ENCHANTED_BOOK", 0, Enchantment.ARROW_DAMAGE, 2),
+    ENCHANTED_BOOK_POWER_3("ENCHANTED_BOOK", 0, Enchantment.ARROW_DAMAGE, 3),
+    ENCHANTED_BOOK_POWER_4("ENCHANTED_BOOK", 0, Enchantment.ARROW_DAMAGE, 4),
+    ENCHANTED_BOOK_POWER_5("ENCHANTED_BOOK", 0, Enchantment.ARROW_DAMAGE, 5),
+    ENCHANTED_BOOK_PROJECTILE_PROTECTION_1("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_PROJECTILE, 1),
+    ENCHANTED_BOOK_PROJECTILE_PROTECTION_2("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_PROJECTILE, 2),
+    ENCHANTED_BOOK_PROJECTILE_PROTECTION_3("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_PROJECTILE, 3),
+    ENCHANTED_BOOK_PROJECTILE_PROTECTION_4("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_PROJECTILE, 4),
     ENCHANTED_BOOK_PROTECTION_1("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_ENVIRONMENTAL, 1),
+    ENCHANTED_BOOK_PROTECTION_2("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_ENVIRONMENTAL, 2),
+    ENCHANTED_BOOK_PROTECTION_3("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_ENVIRONMENTAL, 3),
+    ENCHANTED_BOOK_PROTECTION_4("ENCHANTED_BOOK", 0, Enchantment.PROTECTION_ENVIRONMENTAL, 4),
+    ENCHANTED_BOOK_PUNCH_1("ENCHANTED_BOOK", 0, Enchantment.ARROW_KNOCKBACK, 1),
+    ENCHANTED_BOOK_PUNCH_2("ENCHANTED_BOOK", 0, Enchantment.ARROW_KNOCKBACK, 2),
+    ENCHANTED_BOOK_QUICK_CHARGE_1("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("QUICK_CHARGE") != null ? "QUICK_CHARGE" : "ARROW_KNOCKBACK"), 1),
+    ENCHANTED_BOOK_QUICK_CHARGE_2("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("QUICK_CHARGE") != null ? "QUICK_CHARGE" : "ARROW_KNOCKBACK"), 2),
+    ENCHANTED_BOOK_QUICK_CHARGE_3("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("QUICK_CHARGE") != null ? "QUICK_CHARGE" : "ARROW_KNOCKBACK"), 3),
+    ENCHANTED_BOOK_RESPIRATION_1("ENCHANTED_BOOK", 0, Enchantment.OXYGEN, 1),
+    ENCHANTED_BOOK_RESPIRATION_2("ENCHANTED_BOOK", 0, Enchantment.OXYGEN, 2),
+    ENCHANTED_BOOK_RESPIRATION_3("ENCHANTED_BOOK", 0, Enchantment.OXYGEN, 3),
+    ENCHANTED_BOOK_RIPTIDE_1("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("RIPTIDE") != null ? "RIPTIDE" : "OXYGEN"), 1),
+    ENCHANTED_BOOK_RIPTIDE_2("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("RIPTIDE") != null ? "RIPTIDE" : "OXYGEN"), 2),
+    ENCHANTED_BOOK_RIPTIDE_3("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("RIPTIDE") != null ? "RIPTIDE" : "OXYGEN"), 3),
+    ENCHANTED_BOOK_SHARPNESS_1("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_ALL, 1),
+    ENCHANTED_BOOK_SHARPNESS_2("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_ALL, 2),
+    ENCHANTED_BOOK_SHARPNESS_3("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_ALL, 3),
+    ENCHANTED_BOOK_SHARPNESS_4("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_ALL, 4),
+    ENCHANTED_BOOK_SHARPNESS_5("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_ALL, 5),
+    ENCHANTED_BOOK_SILK_TOUCH("ENCHANTED_BOOK", 0, Enchantment.SILK_TOUCH, 1),
+    ENCHANTED_BOOK_SMITE_1("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_UNDEAD, 1),
+    ENCHANTED_BOOK_SMITE_2("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_UNDEAD, 2),
+    ENCHANTED_BOOK_SMITE_3("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_UNDEAD, 3),
+    ENCHANTED_BOOK_SMITE_4("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_UNDEAD, 4),
+    ENCHANTED_BOOK_SMITE_5("ENCHANTED_BOOK", 0, Enchantment.DAMAGE_UNDEAD, 5),
+    ENCHANTED_BOOK_SWEEPING_EDGE_1("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("SWEEPING_EDGE") != null ? "SWEEPING_EDGE" : "DAMAGE_UNDEAD"), 1),
+    ENCHANTED_BOOK_SWEEPING_EDGE_2("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("SWEEPING_EDGE") != null ? "SWEEPING_EDGE" : "DAMAGE_UNDEAD"), 2),
+    ENCHANTED_BOOK_SWEEPING_EDGE_3("ENCHANTED_BOOK", 0, Enchantment.getByName(Enchantment.getByName("SWEEPING_EDGE") != null ? "SWEEPING_EDGE" : "DAMAGE_UNDEAD"), 3),
+    ENCHANTED_BOOK_THORNS_1("ENCHANTED_BOOK", 0, Enchantment.THORNS, 1),
+    ENCHANTED_BOOK_THORNS_2("ENCHANTED_BOOK", 0, Enchantment.THORNS, 2),
+    ENCHANTED_BOOK_THORNS_3("ENCHANTED_BOOK", 0, Enchantment.THORNS, 3),
+    ENCHANTED_BOOK_UNBREAKING_1("ENCHANTED_BOOK", 0, Enchantment.DURABILITY, 1),
+    ENCHANTED_BOOK_UNBREAKING_2("ENCHANTED_BOOK", 0, Enchantment.DURABILITY, 2),
+    ENCHANTED_BOOK_UNBREAKING_3("ENCHANTED_BOOK", 0, Enchantment.DURABILITY, 3),
     ENCHANTED_GOLDEN_APPLE(Arrays.asList("GOLDEN_APPLE", null, null, null, null, "ENCHANTED_GOLDEN_APPLE"), 1),
     ENCHANTING_TABLE(Arrays.asList("ENCHANTMENT_TABLE", null, null, null, null, "ENCHANTING_TABLE"), 0),
     END_CRYSTAL(Arrays.asList(null, null, null, "END_CRYSTAL"), 0),
@@ -1127,6 +1234,7 @@ public enum UMaterial {
         final Material m = Material.valueOf(t != null ? t : t2 != null ? t2 : "AIR");
         return t != null ? new ItemStack(m, 1, (byte) data) : t2 != null ? new ItemStack(m) : null;
     }
+
     public static ItemStack getEnchantmentBook(Enchantment enchant, int level, int amount) {
         final ItemStack s = new ItemStack(Material.ENCHANTED_BOOK, amount);
         final EnchantmentStorageMeta sm = (EnchantmentStorageMeta) s;
@@ -1142,7 +1250,6 @@ public enum UMaterial {
         s.setItemMeta(sm);
         return s;
     }
-
     @Deprecated
     public static ItemStack valueOf(String name, byte data) {
         name = name.toUpperCase();
@@ -1158,15 +1265,15 @@ public enum UMaterial {
     public enum PotionBase { NORMAL, ARROW, LINGERING, SPLASH, }
 }
 class UPotion {
-    private static final String version = Bukkit.getVersion();
+    private static final String v = Bukkit.getVersion();
     private final ItemStack potion;
     private final Object potiondata;
     public UPotion(UMaterial.PotionBase base, PotionType type, boolean extended, boolean upgraded) {
-        if(version.contains("1.8")) {
-            potion = type.name().equalsIgnoreCase("WATER") ? new Potion(type).toItemStack(1) : new Potion(type, upgraded ? 2 : 1, base.name().equals("SPLASH")).toItemStack(1);
+        if(v.contains("1.8")) {
+            potion = type.name().equals("WATER") ? new Potion(type).toItemStack(1) : new Potion(type, upgraded ? 2 : 1, base.name().equals("SPLASH")).toItemStack(1);
             potiondata = potion.getItemMeta();
         } else {
-            final ItemStack is = new ItemStack(Material.valueOf(base.name().equals("NORMAL") ? "POTION" : base.name().equals("ARROW") ? version.contains("1.8") || version.contains("1.9") || version.contains("1.11") ? "ARROW" : "TIPPED_ARROW" : base.name() + "_POTION"));
+            final ItemStack is = new ItemStack(Material.valueOf(base.name().equals("NORMAL") ? "POTION" : base.name().equals("ARROW") ? v.contains("1.8") || v.contains("1.9") || v.contains("1.11") ? "ARROW" : "TIPPED_ARROW" : base.name() + "_POTION"));
             final boolean a = !is.getType().equals(Material.ARROW);
             org.bukkit.inventory.meta.PotionMeta pm = null;
             org.bukkit.potion.PotionData pd = null;
