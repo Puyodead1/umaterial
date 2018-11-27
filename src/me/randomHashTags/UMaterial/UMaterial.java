@@ -1176,6 +1176,7 @@ public enum UMaterial {
     ZOMBIE_VILLAGER_SPAWN_EGG(Arrays.asList(null, null, null, null, null, "ZOMBIE_VILLAGER_SPAWN_EGG"), 0),
     ZOMBIE_WALL_HEAD(Arrays.asList("SKULL", null, null, null, null, "ZOMBIE_WALL_HEAD"), 2),
     ;
+    private static final HashMap<String, ItemStack> inMemory = new HashMap<>();
     private final ArrayList<String> names = new ArrayList<>();
     private final String version = Bukkit.getVersion();
     private ItemStack is;
@@ -1254,11 +1255,14 @@ public enum UMaterial {
     @Deprecated
     public static ItemStack valueOf(String name, byte data) {
         name = name.toUpperCase();
+        if(inMemory.keySet().contains(name + data)) return inMemory.get(name);
         for(UMaterial u : UMaterial.values()) {
             if(u.names.contains(name)) {
                 final ItemStack i = u.getItemStack();
-                if(u.getData() == data)
+                if(u.getData() == data) {
+                    inMemory.put(name + data, i);
                     return i;
+                }
             }
         }
         return null;
