@@ -1127,7 +1127,6 @@ public enum UMaterial {
         final Material m = Material.valueOf(t != null ? t : t2 != null ? t2 : "AIR");
         return t != null ? new ItemStack(m, 1, (byte) data) : t2 != null ? new ItemStack(m) : null;
     }
-
     public static ItemStack getEnchantmentBook(Enchantment enchant, int level, int amount) {
         final ItemStack s = new ItemStack(Material.ENCHANTED_BOOK, amount);
         final EnchantmentStorageMeta sm = (EnchantmentStorageMeta) s;
