@@ -1142,6 +1142,7 @@ public enum UMaterial {
         s.setItemMeta(sm);
         return s;
     }
+
     @Deprecated
     public static ItemStack valueOf(String name, byte data) {
         name = name.toUpperCase();
