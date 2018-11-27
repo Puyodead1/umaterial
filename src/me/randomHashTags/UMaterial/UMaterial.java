@@ -280,6 +280,7 @@ public enum UMaterial {
     DOLPHIN_SPAWN_EGG(Arrays.asList(null, null, null, null, null, "DOLPHIN_SPAWN_EGG"), 0),
     DONKEY_SPAWN_EGG(Arrays.asList("MONSTER_EGG", null, null, null, null, "DONKEY_SPAWN_EGG"), 31),
     DRAGON_BREATH(Arrays.asList(null, "DRAGONS_BREATH", null, null, null, "DRAGON_BREATH"), 0),
+    DRAGON_EGG("DRAGON_EGG", 0),
     DRAGON_HEAD(Arrays.asList(null, "SKULL", null, null, null, "DRAGON_HEAD"), 5),
     DRAGON_HEAD_ITEM(Arrays.asList(null, "SKULL_ITEM", null, null, null, "DRAGON_HEAD"), 5),
     DRAGON_WALL_HEAD(Arrays.asList(null, "SKULL", null, null, null, "DRAGON_WALL_HEAD"), 5),
