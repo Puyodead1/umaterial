@@ -1,4 +1,4 @@
-package me.randomHashTags.RandomPackage.utils;
+package me.randomHashTags.UMaterial;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
