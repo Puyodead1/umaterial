@@ -1,10 +1,12 @@
 package me.randomHashTags.UMaterial;
 
 import org.bukkit.Bukkit;
+import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.EnchantmentStorageMeta;
+import org.bukkit.inventory.meta.LeatherArmorMeta;
 import org.bukkit.potion.Potion;
 import org.bukkit.potion.PotionType;
 
@@ -84,6 +86,10 @@ public enum UMaterial {
     BLACK_CONCRETE(Arrays.asList(null, null, null, null, null, "BLACK_CONCRETE"), 15),
     BLACK_CONCRETE_POWDER(Arrays.asList(null, null, null, null, null, "BLACK_CONCRETE_POWDER"), 15),
     BLACK_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, "BLACK_GLAZED_TERRACOTTA"), 0),
+    BLACK_LEATHER_BOOTS("LEATHER_BOOTS", 15, Color.fromRGB(25, 25, 25)),
+    BLACK_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 15, Color.fromRGB(25, 25, 25)),
+    BLACK_LEATHER_HELMET("LEATHER_HELMET", 15, Color.fromRGB(25, 25, 25)),
+    BLACK_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 15, Color.fromRGB(25, 25, 25)),
     BLACK_SHULKER_BOX(Arrays.asList(null, null, null, "BLACK_SHULKER_BOX"), 0),
     BLACK_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "BLACK_STAINED_GLASS"), 15),
     BLACK_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "BLACK_STAINED_GLASS_PANE"), 15),
@@ -98,6 +104,10 @@ public enum UMaterial {
     BLUE_CONCRETE(Arrays.asList(null, null, null, null, "CONCRETE", "BLUE_CONCRETE"), 11),
     BLUE_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "BLUE_CONCRETE_POWDER"), 11),
     BLUE_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "BLUE_GLAZED_TERRACOTTA"), 11),
+    BLUE_LEATHER_BOOTS("LEATHER_BOOTS", 11, Color.fromRGB(51, 76, 178)),
+    BLUE_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 11, Color.fromRGB(51, 76, 178)),
+    BLUE_LEATHER_HELMET("LEATHER_HELMET", 11, Color.fromRGB(51, 76, 178)),
+    BLUE_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 11, Color.fromRGB(51, 76, 178)),
     BLUE_ICE(Arrays.asList(null, null, null, null, null, "BLUE_ICE"), 0),
     BLUE_ORCHID(Arrays.asList("RED_ROSE", null, null, null, null, "BLUE_ORCHID"), 1),
     BLUE_SHULKER_BOX(Arrays.asList(null, null, null, "BLUE_SHULKER_BOX"), 0),
@@ -128,6 +138,10 @@ public enum UMaterial {
     BROWN_CONCRETE(Arrays.asList(null, null, null, null, "CONCRETE", "BROWN_CONCRETE"), 12),
     BROWN_CONCRETE_POWDER(Arrays.asList(null, null, null, null, null, "BROWN_CONCRETE_POWDER"), 0),
     BROWN_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "BROWN_GLAZED_TERRACOTTA"), 0),
+    BROWN_LEATHER_BOOTS("LEATHER_BOOTS", 12, Color.fromRGB(102, 76, 51)),
+    BROWN_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 12, Color.fromRGB(102, 76, 51)),
+    BROWN_LEATHER_HELMET("LEATHER_HELMET", 12, Color.fromRGB(102, 76, 51)),
+    BROWN_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 12, Color.fromRGB(102, 76, 51)),
     BROWN_MUSHROOM("BROWN_MUSHROOM", 0),
     BROWN_MUSHROOM_BLOCK(Arrays.asList("HUGE_MUSHROOM_1", null, null, null, null, "BROWN_MUSHROOM_BLOCK"), 0),
     BROWN_SHULKER_BOX(Arrays.asList(null, null, null, "BROWN_SHULKER_BOX"), 0),
@@ -213,6 +227,10 @@ public enum UMaterial {
     CYAN_CONCRETE(Arrays.asList(null, null, null, null, "CONCRETE", "CYAN_CONCRETE"), 9),
     CYAN_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "CYAN_CONCRETE_POWDER"), 9),
     CYAN_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "CYAN_GLAZED_TERRACOTTA"), 0),
+    CYAN_LEATHER_BOOTS("LEATHER_BOOTS", 9, Color.fromRGB(76, 127, 153)),
+    CYAN_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 9, Color.fromRGB(76, 127, 153)),
+    CYAN_LEATHER_HELMET("LEATHER_HELMET", 9, Color.fromRGB(76, 127, 153)),
+    CYAN_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 9, Color.fromRGB(76, 127, 153)),
     CYAN_SHULKER_BOX(Arrays.asList(null, null, null, "CYAN_SHULKER_BOX"), 0),
     CYAN_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "CYAN_STAINED_GLASS"), 9),
     CYAN_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "CYAN_STAINED_GLASS_PANE"), 9),
@@ -476,6 +494,10 @@ public enum UMaterial {
     GRAY_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "GRAY_CONCRETE_POWDER"), 7),
     GRAY_DYE(Arrays.asList("INK_SACK", null, null, null, null, "GRAY_DYE"), 8),
     GRAY_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "GRAY_GLAZED_TERRACOTTA"), 7),
+    GRAY_LEATHER_BOOTS("LEATHER_BOOTS", 7, Color.fromRGB(76, 76, 76)),
+    GRAY_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 7, Color.fromRGB(76, 76, 76)),
+    GRAY_LEATHER_HELMET("LEATHER_HELMET", 7, Color.fromRGB(76, 76, 76)),
+    GRAY_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 7, Color.fromRGB(76, 76, 76)),
     GRAY_SHULKER_BOX(Arrays.asList(null, null, null, "GRAY_SHULKER_BOX"), 0),
     GRAY_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "GRAY_STAINED_GLASS"), 7),
     GRAY_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "GRAY_STAINED_GLASS_PANE"), 7),
@@ -488,6 +510,10 @@ public enum UMaterial {
     GREEN_CONCRETE(Arrays.asList(null, null, null, null, "CONCRETE", "GREEN_CONCRETE"), 13),
     GREEN_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "GREEN_CONCRETE_POWDER"), 13),
     GREEN_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "GREEN_GLAZED_TERRACOTTA"), 0),
+    GREEN_LEATHER_BOOTS("LEATHER_BOOTS", 13, Color.fromRGB(102, 127, 51)),
+    GREEN_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 13, Color.fromRGB(102, 127, 51)),
+    GREEN_LEATHER_HELMET("LEATHER_HELMET", 13, Color.fromRGB(102, 127, 51)),
+    GREEN_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 13, Color.fromRGB(102, 127, 51)),
     GREEN_SHULKER_BOX(Arrays.asList(null, null, null, "GREEN_SHULKER_BOX"), 0),
     GREEN_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "GREEN_STAINED_GLASS"), 13),
     GREEN_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "GREEN_STAINED_GLASS_PANE"), 13),
@@ -576,6 +602,10 @@ public enum UMaterial {
     LIGHT_BLUE_DYE(Arrays.asList("INK_SACK", null, null, null, null, "LIGHT_BLUE_DYE"), 12),
     LIGHT_BLUE_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, "LIGHT_BLUE_GLAZED_TERRACOTTA"), 0),
     LIGHT_BLUE_SHULKER_BOX(Arrays.asList(null, null, null, "LIGHT_BLUE_SHULKER_BOX"), 0),
+    LIGHT_BLUE_LEATHER_BOOTS("LEATHER_BOOTS", 3, Color.fromRGB(102, 153, 216)),
+    LIGHT_BLUE_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 3, Color.fromRGB(102, 153, 216)),
+    LIGHT_BLUE_LEATHER_HELMET("LEATHER_HELMET", 3, Color.fromRGB(102, 153, 216)),
+    LIGHT_BLUE_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 3, Color.fromRGB(102, 153, 216)),
     LIGHT_BLUE_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "LIGHT_BLUE_STAINED_GLASS"), 3),
     LIGHT_BLUE_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "LIGHT_BLUE_STAINED_GLASS_PANE"), 3),
     LIGHT_BLUE_TERRACOTTA(Arrays.asList("STAINED_CLAY", null, null, null, null, "LIGHT_BLUE_TERRACOTTA"), 3),
@@ -588,6 +618,10 @@ public enum UMaterial {
     LIGHT_GRAY_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "LIGHT_GRAY_CONCRETE_POWDER"), 8),
     LIGHT_GRAY_DYE(Arrays.asList("INK_SACK", null, null, null, null, "LIGHT_GRAY_DYE"), 7),
     LIGHT_GRAY_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "LIGHT_GRAY_GLAZED_TERRACOTTA"), 0),
+    LIGHT_GRAY_LEATHER_BOOTS("LEATHER_BOOTS", 8, Color.fromRGB(153, 153, 153)),
+    LIGHT_GRAY_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 8, Color.fromRGB(153, 153, 153)),
+    LIGHT_GRAY_LEATHER_HELMET("LEATHER_HELMET", 8, Color.fromRGB(153, 153, 153)),
+    LIGHT_GRAY_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 8, Color.fromRGB(153, 153, 153)),
     LIGHT_GRAY_SHULKER_BOX(Arrays.asList(null, null, null, "SILVER_SHULKER_BOX", null, "LIGHT_GRAY_SHULKER_BOX"), 0),
     LIGHT_GRAY_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "LIGHT_GRAY_STAINED_GLASS"), 8),
     LIGHT_GRAY_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "LIGHT_GRAY_STAINED_GLASS_PANE"), 8),
@@ -604,6 +638,10 @@ public enum UMaterial {
     LIME_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE", "LIME_CONCRETE_POWDER"), 10),
     LIME_DYE(Arrays.asList("INK_SACK", null, null, null, null, "LIME_DYE"), 10),
     LIME_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "LIME_GLAZED_TERRACOTTA"), 0),
+    LIME_LEATHER_BOOTS("LEATHER_BOOTS", 5, Color.fromRGB(127, 204, 25)),
+    LIME_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 5, Color.fromRGB(127, 204, 25)),
+    LIME_LEATHER_HELMET("LEATHER_HELMET", 5, Color.fromRGB(127, 204, 25)),
+    LIME_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 5, Color.fromRGB(127, 204, 25)),
     LIME_SHULKER_BOX(Arrays.asList(null, null, null, "LIME_SHULKER_BOX"), 0),
     LIME_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "LIME_STAINED_GLASS"), 5),
     LIME_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "LIME_STAINED_GLASS_PANE"), 5),
@@ -660,6 +698,10 @@ public enum UMaterial {
     MAGENTA_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "MAGENTA_CONCRETE_POWDER"), 2),
     MAGENTA_DYE(Arrays.asList("INK_SACK", null, null, null, null, "MAGENTA_DYE"), 13),
     MAGENTA_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "MAGENTA_GLAZED_TERRACOTTA"), 0),
+    MAGENTA_LEATHER_BOOTS("LEATHER_BOOTS", 2, Color.fromRGB(178, 76, 216)),
+    MAGENTA_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 2, Color.fromRGB(178, 76, 216)),
+    MAGENTA_LEATHER_HELMET("LEATHER_HELMET", 2, Color.fromRGB(178, 76, 216)),
+    MAGENTA_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 2, Color.fromRGB(178, 76, 216)),
     MAGENTA_SHULKER_BOX(Arrays.asList(null, null, null, "MAGENTA_SHULKER_BOX"), 0),
     MAGENTA_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "MAGENTA_STAINED_GLASS"), 2),
     MAGENTA_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "MAGENTA_STAINED_GLASS_PANE"), 2),
@@ -736,6 +778,10 @@ public enum UMaterial {
     ORANGE_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "ORANGE_CONCRETE_POWDER"), 1),
     ORANGE_DYE(Arrays.asList("INK_SACK", null, null, null, null, "ORANGE_DYE"), 14),
     ORANGE_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "ORANGE_GLAZED_TERRACOTTA"), 0),
+    ORANGE_LEATHER_BOOTS("LEATHER_BOOTS", 1, Color.fromRGB(216, 127, 51)),
+    ORANGE_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 1, Color.fromRGB(216, 127, 51)),
+    ORANGE_LEATHER_HELMET("LEATHER_HELMET", 1, Color.fromRGB(216, 127, 51)),
+    ORANGE_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 1, Color.fromRGB(216, 127, 51)),
     ORANGE_SHULKER_BOX(Arrays.asList(null, null, null, "ORANGE_SHULKER_BOX"), 0),
     ORANGE_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "ORANGE_STAINED_GLASS"), 1),
     ORANGE_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "ORANGE_STAINED_GLASS_PANE"), 1),
@@ -760,6 +806,10 @@ public enum UMaterial {
     PINK_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "PINK_CONCRETE_POWDER"), 6),
     PINK_DYE(Arrays.asList("INK_SACK", null, null, null, null, "PINK_DYE"), 9),
     PINK_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "PINK_GLAZED_TERRACOTTA"), 0),
+    PINK_LEATHER_BOOTS("LEATHER_BOOTS", 6, Color.fromRGB(242, 127, 165)),
+    PINK_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 6, Color.fromRGB(242, 127, 165)),
+    PINK_LEATHER_HELMET("LEATHER_HELMET", 6, Color.fromRGB(242, 127, 165)),
+    PINK_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 6, Color.fromRGB(242, 127, 165)),
     PINK_SHULKER_BOX(Arrays.asList(null, null, null, "PINK_SHULKER_BOX"), 0),
     PINK_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "PINK_STAINED_GLASS"), 6),
     PINK_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "PINK_STAINED_GLASS_PANE"), 6),
@@ -870,6 +920,10 @@ public enum UMaterial {
     PURPLE_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "PURPLE_CONCRETE_POWDER"), 10),
     PURPLE_DYE(Arrays.asList("INK_SACK", null, null, null, null, "PURPLE_DYE"), 5),
     PURPLE_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "PURPLE_GLAZED_TERRACOTTA"), 0),
+    PURPLE_LEATHER_BOOTS("LEATHER_BOOTS", 10, Color.fromRGB(127, 63, 178)),
+    PURPLE_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 10, Color.fromRGB(127, 63, 178)),
+    PURPLE_LEATHER_HELMET("LEATHER_HELMET", 10, Color.fromRGB(127, 63, 178)),
+    PURPLE_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 10, Color.fromRGB(127, 63, 178)),
     PURPLE_SHULKER_BOX(Arrays.asList(null, null, null, "PURPLE_SHULKER_BOX"), 0),
     PURPLE_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "PURPLE_STAINED_GLASS"), 10),
     PURPLE_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "PURPLE_STAINED_GLASS_PANE"), 10),
@@ -897,6 +951,10 @@ public enum UMaterial {
     RED_CONCRETE(Arrays.asList(null, null, null, null, "CONCRETE", "RED_CONCRETE"), 14),
     RED_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "RED_CONCRETE_POWDER"), 14),
     RED_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "RED_GLAZED_TERRACOTTA"), 0),
+    RED_LEATHER_BOOTS("LEATHER_BOOTS", 14, Color.fromRGB(153, 51, 51)),
+    RED_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 14, Color.fromRGB(153, 51, 51)),
+    RED_LEATHER_HELMET("LEATHER_HELMET", 14, Color.fromRGB(153, 51, 51)),
+    RED_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 14, Color.fromRGB(153, 51, 51)),
     RED_MUSHROOM("RED_MUSHROOM", 0),
     RED_MUSHROOM_BLOCK(Arrays.asList("HUGE_MUSHROOM_2", null, null, null, null, "RED_MUSHROOM_BLOCK"), 14),
     RED_NETHER_BRICKS(Arrays.asList(null, null, "RED_NETHER_BRICK", null, null, "RED_NETHER_BRICKS"), 0),
@@ -1136,6 +1194,10 @@ public enum UMaterial {
     WHITE_CONCRETE(Arrays.asList(null, null, null, null, "CONCRETE", "WHITE_CONCRETE"), 0),
     WHITE_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "WHITE_CONCRETE_POWDER"), 0),
     WHITE_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "WHITE_GLAZED_TERRACOTTA"), 0),
+    WHITE_LEATHER_BOOTS("LEATHER_BOOTS", 0, Color.fromRGB(255, 255, 255)),
+    WHITE_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 0, Color.fromRGB(255, 255, 255)),
+    WHITE_LEATHER_HELMET("LEATHER_HELMET", 0, Color.fromRGB(255, 255, 255)),
+    WHITE_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 0, Color.fromRGB(255, 255, 255)),
     WHITE_SHULKER_BOX(Arrays.asList(null, null, null, "WHITE_SHULKER_BOX"), 0),
     WHITE_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "WHITE_STAINED_GLASS"), 0),
     WHITE_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "WHITE_STAINED_GLASS_PANE"), 0),
@@ -1162,6 +1224,10 @@ public enum UMaterial {
     YELLOW_CONCRETE(Arrays.asList(null, null, null, null, "CONCRETE", "YELLOW_CONCRETE"), 4),
     YELLOW_CONCRETE_POWDER(Arrays.asList(null, null, null, null, "CONCRETE_POWDER", "YELLOW_CONCRETE_POWDER"), 4),
     YELLOW_GLAZED_TERRACOTTA(Arrays.asList(null, null, null, null, null, "YELLOW_GLAZED_TERRACOTTA"), 0),
+    YELLOW_LEATHER_BOOTS("LEATHER_BOOTS", 4, Color.fromRGB(229, 229, 51)),
+    YELLOW_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 4, Color.fromRGB(229, 229, 51)),
+    YELLOW_LEATHER_HELMET("LEATHER_HELMET", 4, Color.fromRGB(229, 229, 51)),
+    YELLOW_LEATHER_LEGGINGS("LEATHER_LEGGINGS", 4, Color.fromRGB(229, 229, 51)),
     YELLOW_SHULKER_BOX(Arrays.asList(null, null, null, "YELLOW_SHULKER_BOX"), 0),
     YELLOW_STAINED_GLASS(Arrays.asList("STAINED_GLASS", null, null, null, null, "YELLOW_STAINED_GLASS"), 4),
     YELLOW_STAINED_GLASS_PANE(Arrays.asList("STAINED_GLASS_PANE", null, null, null, null, "YELLOW_STAINED_GLASS_PANE"), 4),
@@ -1187,7 +1253,15 @@ public enum UMaterial {
         final Material m = Material.valueOf(name);
         is = version.contains("1.8") || version.contains("1.9") || version.contains("1.10") || version.contains("1.11") || version.contains("1.12") ? new ItemStack(m, 1, (byte) data) : new ItemStack(m);
     }
-
+    UMaterial(String name, int spoofedData, Color color) {
+        names.add(name);
+        this.data = spoofedData;
+        final Material m = Material.valueOf(name);
+        is = new ItemStack(m);
+        final LeatherArmorMeta lam = (LeatherArmorMeta) is.getItemMeta();
+        lam.setColor(color);
+        is.setItemMeta(lam);
+    }
     UMaterial(List<String> names, int data) {
         is = setItemStack(names, data);
     }
@@ -1238,11 +1312,9 @@ public enum UMaterial {
     }
 
     public static ItemStack getEnchantmentBook(Enchantment enchant, int level, int amount) {
-        final ItemStack s = new ItemStack(Material.ENCHANTED_BOOK, amount);
-        final EnchantmentStorageMeta sm = (EnchantmentStorageMeta) s;
-        sm.addStoredEnchant(enchant, level, true);
-        s.setItemMeta(sm);
-        return s;
+        final LinkedHashMap<Enchantment, Integer> e = new LinkedHashMap<>();
+        e.put(enchant, level);
+        return getEnchantmentBook(e, amount);
     }
     public static ItemStack getEnchantmentBook(LinkedHashMap<Enchantment, Integer> enchants, int amount) {
         final ItemStack s = new ItemStack(Material.ENCHANTED_BOOK, amount);
@@ -1251,6 +1323,13 @@ public enum UMaterial {
             sm.addStoredEnchant(enchant, enchants.get(enchant), true);
         s.setItemMeta(sm);
         return s;
+    }
+    public static ItemStack getColoredLeather(Material m, int amount, int red, int green, int blue) {
+        final ItemStack i = new ItemStack(m, amount);
+        final LeatherArmorMeta lam = (LeatherArmorMeta) i.getItemMeta();
+        lam.setColor(Color.fromRGB(red, green, blue));
+        i.setItemMeta(lam);
+        return i;
     }
     @Deprecated
     public static ItemStack valueOf(String name, byte data) {
