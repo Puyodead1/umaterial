@@ -1242,6 +1242,7 @@ public enum UMaterial {
     ZOMBIE_VILLAGER_SPAWN_EGG(null, null, null, null, null, "ZOMBIE_VILLAGER_SPAWN_EGG"),
     ZOMBIE_WALL_HEAD(2, "SKULL", null, null, null, "ZOMBIE_WALL_HEAD"),
     ;
+    private static final HashMap<String, UMaterial> inUMemory = new HashMap<>();
     private static final HashMap<String, ItemStack> inMemory = new HashMap<>();
     private final String version = Bukkit.getVersion();
     private String[] names = new String[7];
@@ -1353,6 +1354,20 @@ public enum UMaterial {
         return i;
     }
     @Deprecated
+    public static UMaterial matchUMaterial(String name, byte data) {
+        name = name.toUpperCase();
+        if(inUMemory.keySet().contains(name + data)) return inUMemory.get(name + data);
+        for(UMaterial u : UMaterial.values()) {
+            for(String n : u.names) {
+                if(n != null && n.equals(name) && u.getData() == data) {
+                    inUMemory.put(name + data, u);
+                    return u;
+                }
+            }
+        }
+        return null;
+    }
+    @Deprecated
     public static ItemStack valueOf(String name, byte data) {
         name = name.toUpperCase();
         if(inMemory.keySet().contains(name + data)) return inMemory.get(name + data).clone();
@@ -1399,6 +1414,7 @@ class UPotion {
     public ItemStack getItemStack() { return potion; }
     public Object getPotionData() { return potiondata; }
 }
+
 /*
 class Spawner {
     public Spawner() {
@@ -1416,12 +1432,11 @@ class Spawner {
     }
     public Spawner valueOf(Block b) {
         final CreatureSpawner s = (CreatureSpawner) b.getState();
+        return null;
     }
 }
-public interface SpawnerMeta extends ItemMeta {
+interface SpawnerMeta extends ItemMeta {
     void setType(EntityType type);
     EntityType getType();
     SpawnerMeta clone();
-}
-
-*/
+}*/
