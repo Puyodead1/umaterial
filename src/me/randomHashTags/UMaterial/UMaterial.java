@@ -1283,7 +1283,6 @@ public enum UMaterial {
         this.data = data;
         final Material m = getMaterialName();
         material = m;
-        Bukkit.broadcastMessage("data=" + data + ";umaterial=" + this.name());
         is = version.contains("1.8") || version.contains("1.9") || version.contains("1.10") || version.contains("1.11") || version.contains("1.12") ? new ItemStack(m, 1, (byte) data) : new ItemStack(m);
     }
     private void doPotion(ItemStack m, UPotion up) {
