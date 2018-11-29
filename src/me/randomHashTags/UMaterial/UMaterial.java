@@ -1240,7 +1240,7 @@ public enum UMaterial {
     ZOMBIE_PIGMAN_SPAWN_EGG(57, "MONSTER_EGG", null, null, null, null, "ZOMBIE_PIGMAN_SPAWN_EGG"),
     ZOMBIE_SPAWN_EGG(54, "MONSTER_EGG", null, null, null, null, "ZOMBIE_SPAWN_EGG"),
     ZOMBIE_VILLAGER_SPAWN_EGG(null, null, null, null, null, "ZOMBIE_VILLAGER_SPAWN_EGG"),
-    ZOMBIE_WALL_HEAD(2, "SKULL", null, null, null, "ZOMBIE_WALL_HEAD"),
+    ZOMBIE_WALL_HEAD(2, "SKULL", null, null, null, null, "ZOMBIE_WALL_HEAD"),
     ;
     private static final HashMap<String, UMaterial> inUMemory = new HashMap<>();
     private static final HashMap<String, ItemStack> inMemory = new HashMap<>();
@@ -1283,6 +1283,7 @@ public enum UMaterial {
         this.data = data;
         final Material m = getMaterialName();
         material = m;
+        Bukkit.broadcastMessage("data=" + data + ";umaterial=" + this.name());
         is = version.contains("1.8") || version.contains("1.9") || version.contains("1.10") || version.contains("1.11") || version.contains("1.12") ? new ItemStack(m, 1, (byte) data) : new ItemStack(m);
     }
     private void doPotion(ItemStack m, UPotion up) {
