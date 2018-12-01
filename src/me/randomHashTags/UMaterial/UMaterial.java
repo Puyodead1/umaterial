@@ -13,6 +13,8 @@ import org.bukkit.potion.PotionType;
 import java.util.*;
 
 /*
+    UMaterial Version: 1
+
     This software is created and owned by RandomHashTags, and is licensed under the GNU Affero General Public License v3.0 (https://choosealicense.com/licenses/agpl-3.0/)
     You can only find this software at https://gitlab.com/RandomHashTags/umaterial
     You can find RandomHashTags (me) at
@@ -26,11 +28,13 @@ import java.util.*;
         Twitter - https://twitter.com/irandomhashtags
  */
 public enum UMaterial {
-    // <item>(1.8.8, 1.9.4, 1.10.2, 1.11.2, 1.12.2, 1.13.2, 1.14.0)
-    // 1.8.8 = http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Material.html
-    // 1.13.2 = https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
-    // visual = https://www.digminecraft.com/lists/item_id_list_pc.php
-    // Special blocks = https://www.planetminecraft.com/blog/secret-blocks-vanilla/
+    /*
+        <item>(1.8.8, 1.9.4, 1.10.2, 1.11.2, 1.12.2, 1.13.2, 1.14.0)
+        1.8.8 = http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Material.html
+        1.13.2 = https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+        visual = https://www.digminecraft.com/lists/item_id_list_pc.php
+        Special blocks = https://www.planetminecraft.com/blog/secret-blocks-vanilla/
+    */
     ACACIA_BOAT("BOAT", null, null, null, null, "ACACIA_BOAT"),
     ACACIA_BUTTON("WOOD_BUTTON", null, null, null, null, "ACACIA_BUTTON"),
     ACACIA_DOOR("ACACIA_DOOR_ITEM", null, null, null, null, "ACACIA_DOOR"),
@@ -1377,7 +1381,7 @@ public enum UMaterial {
                     final ItemStack i = u.getItemStack();
                     if(u.getData() == data) {
                         inMemory.put(name + data, i);
-                        return i.clone();
+                        return i;
                     }
                 }
             }
@@ -1414,25 +1418,43 @@ class UPotion {
     public ItemStack getItemStack() { return potion; }
     public Object getPotionData() { return potiondata; }
 }
-
 /*
-class Spawner {
-    public Spawner() {
-
+class USpawner extends ItemStack {
+    private EntityType type;
+    private final ItemStack is;
+    private final SpawnerMeta sm;
+    public USpawner(EntityType type) {
+        this.type = type;
+        final ItemStack is = UMaterial.SPAWNER.getItemStack();
+        final SpawnerMeta sm = (SpawnerMeta) is.getItemMeta();
+        sm.setType(type);
+        this.sm = sm;
+        this.is = is;
     }
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        } else if (!(o instanceof Spawner)) {
-            return false;
-        } else {
-            Spawner that = (Spawner) o;
-            return this.type.equals(that.type) && this.ambient == that.ambient && this.amplifier == that.amplifier && this.duration == that.duration && this.particles == that.particles && this.icon == that.icon;
+    public void setType(EntityType type) { this.type = type; }
+    public ItemStack getItemStack() { return is.clone(); }
+    public SpawnerMeta getSpawnerMeta() { return sm; }
+}
+class UCreatureSpawner {
+    private CreatureSpawner cs;
+    private EntityType type;
+    public UCreatureSpawner(Block b) {
+        if(b.getType().name().contains("SPAWNER")) {
+            cs = (CreatureSpawner) b.getState();
+            this.type = cs.getSpawnedType();
         }
     }
-    public Spawner valueOf(Block b) {
-        final CreatureSpawner s = (CreatureSpawner) b.getState();
-        return null;
+    public UCreatureSpawner(EntityType type) {
+        this.type = type;
+    }
+    public CreatureSpawner getCreatureSpawner() { return cs; }
+    private ItemStack getItemStack(EntityType type) { return new USpawner(type).getItemStack(); }
+    public void setType(EntityType type) {
+        this.type = type;
+        if(cs != null) {
+            cs.setSpawnedType(type);
+            cs.update();
+        }
     }
 }
 interface SpawnerMeta extends ItemMeta {
