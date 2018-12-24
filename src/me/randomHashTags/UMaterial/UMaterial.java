@@ -13,7 +13,7 @@ import org.bukkit.potion.PotionType;
 import java.util.*;
 
 /*
-    UMaterial Version: 2
+    UMaterial Version: 3
 
     This software is created and owned by RandomHashTags, and is licensed under the GNU Affero General Public License v3.0 (https://choosealicense.com/licenses/agpl-3.0/)
     You can only find this software at https://gitlab.com/RandomHashTags/umaterial
@@ -25,6 +25,7 @@ import java.util.*;
         MCMarket - https://www.mc-market.org/members/20858/
         PayPal - imrandomhashtags@gmail.com
         SpigotMC - https://www.spigotmc.org/members/randomhashtags.76364/
+        Twitch - https://www.twitch.tv/randomhashtags
         Twitter - https://twitter.com/irandomhashtags
  */
 public enum UMaterial {
@@ -204,6 +205,7 @@ public enum UMaterial {
     COBWEB("WEB", null, null, null, null, "COBWEB"),
     COCOA("COCOA"),
     COCOA_BEANS(3, "INK_SACK", null, null, null, null, "COCOA_BEANS"),
+    COD("RAW_FISH", null, null, null, null, "COD"),
     COMMAND_BLOCK("COMMAND", null, null, null, null, "COMMAND_BLOCK"),
     COMMAND_BLOCK_MINECART("COMMAND_MINECART", null, null, null, null, "COMMAND_BLOCK_MINECART"),
     COMPARATOR("REDSTONE_COMPARATOR", null, null, null, null, "COMPARATOR"),
@@ -949,7 +951,6 @@ public enum UMaterial {
     RABBIT_SPAWN_EGG(101, "MONSTER_EGG", null, null, null, null, "RABBIT_SPAWN_EGG"),
     RABBIT_STEW("RABBIT_STEW"),
     RAIL("RAILS", null, null, null, null, "RAIL"),
-    RAW_COD("RAW_FISH", null, null, null, null, "RAW_COD"),
     RED_BANNER(1, "BANNER", null, null, null, null, "RED_BANNER"),
     RED_BED(14, "BED", null, null, null, null, "RED_BED"),
     RED_CARPET(14, "CARPET", null, null, null, null, "RED_CARPET"),
@@ -1119,8 +1120,7 @@ public enum UMaterial {
     STRIPPED_SPRUCE_WOOD(null, null, null, null, null, "STRIPPED_SPRUCE_WOOD"),
     STRUCTURE_BLOCK(null, "STRUCTURE_BLOCK"),
     SUGAR("SUGAR"),
-    SUGAR_CANE("SUGAR_CANE_BLOCK", null, null, null, null, "SUGAR_CANE"),
-    SUGAR_CANE_ITEM("SUGAR_CANE", null, null, null, null, "SUGAR_CANE"),
+    SUGAR_CANE_ITEM("SUGAR_CANE"),
     SUNFLOWER("DOUBLE_PLANT", null, null, null, null, "SUNFLOWER"),
     TALL_GRASS("LONG_GRASS", null, null, null, null, "TALL_GRASS"),
     TALL_SEAGRASS(null, null, null, null, null, "TALL_SEAGRASS"),
@@ -1171,7 +1171,7 @@ public enum UMaterial {
     TRIDENT(null, null, null, null, null, "TRIDENT"),
     TRIPWIRE("TRIPWIRE"),
     TRIPWIRE_HOOK("TRIPWIRE_HOOK"),
-    TROPICAL_FISH(2, "RAW_FISH", null, null, null, null, "TROPICAL_FISH"),
+    TROPICAL_FISH("RAW_FISH", null, null, null, null, "TROPICAL_FISH"),
     TROPICAL_FISH_BUCKET(null, null, null, null, null, "TROPICAL_FISH_BUCKET"),
     TROPICAL_FISH_SPAWN_EGG(null, null, null, null, null, "TROPICAL_FISH_SPAWN_EGG"),
     TUBE_CORAL(null, null, null, null, null, "TUBE_CORAL"),
