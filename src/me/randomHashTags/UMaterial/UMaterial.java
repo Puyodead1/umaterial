@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 /*
-    UMaterial Version: 5
+    UMaterial Version: 6
 
     This software is created and owned by RandomHashTags, and is licensed under the GNU Affero General Public License v3.0 (https://choosealicense.com/licenses/agpl-3.0/)
     You can only find this software at https://gitlab.com/RandomHashTags/umaterial
@@ -713,48 +713,48 @@ public enum UMaterial {
     LIME_WALL_BANNER(10, "BANNER", null, null, null, null, "LIME_WALL_BANNER"),
     LIME_WOOL(5, "WOOL", null, null, null, null, "LIME_WOOL"),
     LINGERING_POTION(null, null, null, null, null, null, "LINGERING_POTION"),
-    LINGERING_POTION_AWKWARD(new UPotion(PotionBase.LINGERING,"AWKWARD", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_FIRE_RESISTANCE(new UPotion(PotionBase.LINGERING, "FIRE_RESISTANCE", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_FIRE_RESISTANCE_EXTENDED(new UPotion(PotionBase.LINGERING, "FIRE_RESISTANCE", true, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_HARMING_1(new UPotion(PotionBase.LINGERING, "INSTANT_DAMAGE", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_HARMING_2(new UPotion(PotionBase.LINGERING, "INSTANT_DAMAGE", false, true), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_HEALING_1(new UPotion(PotionBase.LINGERING, "INSTANT_HEAL", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_HEALING_2(new UPotion(PotionBase.LINGERING, "INSTANT_HEAL", false, true), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_INVISIBILITY(new UPotion(PotionBase.LINGERING, "INVISIBILITY", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_INVISIBILITY_EXTENDED(new UPotion(PotionBase.LINGERING, "INVISIBILITY", true, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_LEAPING_1(new UPotion(PotionBase.LINGERING, "JUMP", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_LEAPING_1_EXTENDED(new UPotion(PotionBase.LINGERING, "JUMP", true, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_LEAPING_2(new UPotion(PotionBase.LINGERING, "JUMP", false, true), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_LUCK(new UPotion(PotionBase.LINGERING, "LUCK", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_MUNDANE(new UPotion(PotionBase.LINGERING, "MUNDANE", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_NIGHT_VISION(new UPotion(PotionBase.LINGERING, "NIGHT_VISION", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_NIGHT_VISION_EXTENDED(new UPotion(PotionBase.LINGERING, "NIGHT_VISION", true, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_POISON_1(new UPotion(PotionBase.LINGERING, "POISON", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_POISON_1_EXTENDED(new UPotion(PotionBase.LINGERING, "POISON", true, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_POISON_2(new UPotion(PotionBase.LINGERING, "POISON", false, true), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_REGENERATION_1(new UPotion(PotionBase.LINGERING, "REGEN", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_REGENERATION_1_EXTENDED(new UPotion(PotionBase.LINGERING, "REGEN", true, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_REGENERATION_2(new UPotion(PotionBase.LINGERING, "REGEN", false, true), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_SLOW_FALLING(new UPotion(PotionBase.LINGERING, "SLOW_FALLING", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_SLOW_FALLING_EXTENDED(new UPotion(PotionBase.LINGERING, "SLOW_FALLING", true, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_SLOWNESS_1(new UPotion(PotionBase.LINGERING, "SLOWNESS", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_SLOWNESS_1_EXTENDED(new UPotion(PotionBase.LINGERING, "SLOWNESS", true, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_SLOWNESS_2(new UPotion(PotionBase.LINGERING, "SLOWNESS", false, true), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_STRENGTH_1(new UPotion(PotionBase.LINGERING, "STRENGTH", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_STRENGTH_1_EXTENDED(new UPotion(PotionBase.LINGERING, "STRENGTH", true, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_STRENGTH_2(new UPotion(PotionBase.LINGERING, "STRENGTH", false, true), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_SWIFTNESS_1(new UPotion(PotionBase.LINGERING, "SPEED", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_SWIFTNESS_1_EXTENDED(new UPotion(PotionBase.LINGERING, "SPEED", true, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_SWIFTNESS_2(new UPotion(PotionBase.LINGERING, "SPEED", false, true), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_THICK(new UPotion(PotionBase.LINGERING, "THICK", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_TURTLE_MASTER_1(new UPotion(PotionBase.LINGERING, "TURTLE_MASTER", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_TURTLE_MASTER_1_EXTENDED(new UPotion(PotionBase.LINGERING, "TURTLE_MASTER", true, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_TURTLE_MASTER_2(new UPotion(PotionBase.LINGERING, "TURTLE_MASTER", false, true), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_WATER(new UPotion(PotionBase.LINGERING, "WATER", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_WATER_BREATHING(new UPotion(PotionBase.LINGERING, "WATER_BREATHING", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_WATER_BREATHING_EXTENDED(new UPotion(PotionBase.LINGERING, "WATER_BREATHING", true, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_WEAKNESS(new UPotion(PotionBase.LINGERING, "WEAKNESS", false, false), 0, null, "LINGERING_POTION"),
-    LINGERING_POTION_WEAKNESS_EXTENDED(new UPotion(PotionBase.LINGERING, "WEAKNESS", true, false), 0, null, "LINGERING_POTION"),
+    LINGERING_POTION_AWKWARD(PotionBase.LINGERING,"AWKWARD", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_FIRE_RESISTANCE(PotionBase.LINGERING, "FIRE_RESISTANCE", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_FIRE_RESISTANCE_EXTENDED(PotionBase.LINGERING, "FIRE_RESISTANCE", true, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_HARMING_1(PotionBase.LINGERING, "INSTANT_DAMAGE", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_HARMING_2(PotionBase.LINGERING, "INSTANT_DAMAGE", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_HEALING_1(PotionBase.LINGERING, "INSTANT_HEAL", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_HEALING_2(PotionBase.LINGERING, "INSTANT_HEAL", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_INVISIBILITY(PotionBase.LINGERING, "INVISIBILITY", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_INVISIBILITY_EXTENDED(PotionBase.LINGERING, "INVISIBILITY", true, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_LEAPING_1(PotionBase.LINGERING, "JUMP", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_LEAPING_1_EXTENDED(PotionBase.LINGERING, "JUMP", true, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_LEAPING_2(PotionBase.LINGERING, "JUMP", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_LUCK(PotionBase.LINGERING, "LUCK", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_MUNDANE(PotionBase.LINGERING, "MUNDANE", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_NIGHT_VISION(PotionBase.LINGERING, "NIGHT_VISION", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_NIGHT_VISION_EXTENDED(PotionBase.LINGERING, "NIGHT_VISION", true, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_POISON_1(PotionBase.LINGERING, "POISON", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_POISON_1_EXTENDED(PotionBase.LINGERING, "POISON", true, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_POISON_2(PotionBase.LINGERING, "POISON", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_REGENERATION_1(PotionBase.LINGERING, "REGEN", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_REGENERATION_1_EXTENDED(PotionBase.LINGERING, "REGEN", true, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_REGENERATION_2(PotionBase.LINGERING, "REGEN", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_SLOW_FALLING(PotionBase.LINGERING, "SLOW_FALLING", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_SLOW_FALLING_EXTENDED(PotionBase.LINGERING, "SLOW_FALLING", true, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_SLOWNESS_1(PotionBase.LINGERING, "SLOWNESS", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_SLOWNESS_1_EXTENDED(PotionBase.LINGERING, "SLOWNESS", true, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_SLOWNESS_2(PotionBase.LINGERING, "SLOWNESS", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_STRENGTH_1(PotionBase.LINGERING, "STRENGTH", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_STRENGTH_1_EXTENDED(PotionBase.LINGERING, "STRENGTH", true, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_STRENGTH_2(PotionBase.LINGERING, "STRENGTH", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_SWIFTNESS_1(PotionBase.LINGERING, "SPEED", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_SWIFTNESS_1_EXTENDED(PotionBase.LINGERING, "SPEED", true, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_SWIFTNESS_2(PotionBase.LINGERING, "SPEED", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_THICK(PotionBase.LINGERING, "THICK", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_TURTLE_MASTER_1(PotionBase.LINGERING, "TURTLE_MASTER", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_TURTLE_MASTER_1_EXTENDED(PotionBase.LINGERING, "TURTLE_MASTER", true, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_TURTLE_MASTER_2(PotionBase.LINGERING, "TURTLE_MASTER", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_WATER(PotionBase.LINGERING, "WATER", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_WATER_BREATHING(PotionBase.LINGERING, "WATER_BREATHING", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_WATER_BREATHING_EXTENDED(PotionBase.LINGERING, "WATER_BREATHING", true, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_WEAKNESS(PotionBase.LINGERING, "WEAKNESS", false, false, null, "LINGERING_POTION"),
+    LINGERING_POTION_WEAKNESS_EXTENDED(PotionBase.LINGERING, "WEAKNESS", true, false, null, "LINGERING_POTION"),
     LLAMA_SPAWN_EGG(103, null, null, null, "MONSTER_EGG", null, "LLAMA_SPAWN_EGG"),
     MAGENTA_BANNER(13, "BANNER", null, null, null, null, "MAGENTA_BANNER"),
     MAGENTA_BED(2, "BED", null, null, null, null, "MAGENTA_BED"),
@@ -916,48 +916,48 @@ public enum UMaterial {
     POTATO_ITEM("POTATO_ITEM", null, null, null, null, "POTATO"),
     POTATOES("POTATO", null, null, null, null, "POTATOES"),
     POTION("POTION"),
-    POTION_AWKWARD(new UPotion(PotionBase.NORMAL, "AWKWARD", false, false), 0, "POTION"),
-    POTION_FIRE_RESISTANCE(new UPotion(PotionBase.NORMAL, "FIRE_RESISTANCE", false, false), 0, "POTION"),
-    POTION_FIRE_RESISTANCE_EXTENDED(new UPotion(PotionBase.NORMAL, "FIRE_RESISTANCE", true, false), 0, "POTION"),
-    POTION_HARMING_1(new UPotion(PotionBase.NORMAL, "INSTANT_DAMAGE", false, false), 0, "POTION"),
-    POTION_HARMING_2(new UPotion(PotionBase.NORMAL, "INSTANT_DAMAGE", false, true), 0, "POTION"),
-    POTION_HEALING_1(new UPotion(PotionBase.NORMAL, "INSTANT_HEAL", false, false), 0, "POTION"),
-    POTION_HEALING_2(new UPotion(PotionBase.NORMAL, "INSTANT_HEAL", false, true), 0, "POTION"),
-    POTION_INVISIBILITY(new UPotion(PotionBase.NORMAL, "INVISIBILITY", false, false), 0, "POTION"),
-    POTION_INVISIBILITY_EXTENDED(new UPotion(PotionBase.NORMAL, "INVISIBILITY", true, false), 0, "POTION"),
-    POTION_LEAPING_1(new UPotion(PotionBase.NORMAL, "JUMP", false, false), 0, "POTION"),
-    POTION_LEAPING_1_EXTENDED(new UPotion(PotionBase.NORMAL, "JUMP", true, false), 0, "POTION"),
-    POTION_LEAPING_2(new UPotion(PotionBase.NORMAL, "JUMP", false, true), 0, "POTION"),
-    POTION_LUCK(new UPotion(PotionBase.NORMAL, "LUCK", false, false), 0, "POTION"),
-    POTION_MUNDANE(new UPotion(PotionBase.NORMAL, "MUNDANE", false, false), 0, "POTION"),
-    POTION_NIGHT_VISION(new UPotion(PotionBase.NORMAL, "NIGHT_VISION", false, false), 0, "POTION"),
-    POTION_NIGHT_VISION_EXTENDED(new UPotion(PotionBase.NORMAL, "NIGHT_VISION", true, false), 0, "POTION"),
-    POTION_POISON_1(new UPotion(PotionBase.NORMAL, "POISON", false, false), 0, "POTION"),
-    POTION_POISON_1_EXTENDED(new UPotion(PotionBase.NORMAL, "POISON", true, false), 0, "POTION"),
-    POTION_POISON_2(new UPotion(PotionBase.NORMAL, "POISON", false, true), 0, "POTION"),
-    POTION_REGENERATION_1(new UPotion(PotionBase.NORMAL, "REGEN", false, false), 0, "POTION"),
-    POTION_REGENERATION_1_EXTENDED(new UPotion(PotionBase.NORMAL, "REGEN", true, false), 0, "POTION"),
-    POTION_REGENERATION_2(new UPotion(PotionBase.NORMAL, "REGEN", false, true), 0, "POTION"),
-    POTION_SLOW_FALLING(new UPotion(PotionBase.NORMAL, "SLOW_FALLING", false, false), 0, "POTION"),
-    POTION_SLOW_FALLING_EXTENDED(new UPotion(PotionBase.NORMAL, "SLOW_FALLING", true, false), 0, "POTION"),
-    POTION_SLOWNESS_1(new UPotion(PotionBase.NORMAL, "SLOWNESS", false, false), 0, "POTION"),
-    POTION_SLOWNESS_1_EXTENDED(new UPotion(PotionBase.NORMAL, "SLOWNESS", true, false), 0, "POTION"),
-    POTION_SLOWNESS_2(new UPotion(PotionBase.NORMAL, "SLOWNESS", false, true), 0, "POTION"),
-    POTION_STRENGTH_1(new UPotion(PotionBase.NORMAL, "STRENGTH", false, false), 0, "POTION"),
-    POTION_STRENGTH_1_EXTENDED(new UPotion(PotionBase.NORMAL, "STRENGTH", true, false), 0, "POTION"),
-    POTION_STRENGTH_2(new UPotion(PotionBase.NORMAL, "STRENGTH", false, true), 0, "POTION"),
-    POTION_SWIFTNESS_1(new UPotion(PotionBase.NORMAL, "SPEED", false, false), 0, "POTION"),
-    POTION_SWIFTNESS_1_EXTENDED(new UPotion(PotionBase.NORMAL, "SPEED", true, false), 0, "POTION"),
-    POTION_SWIFTNESS_2(new UPotion(PotionBase.NORMAL, "SPEED", false, true), 0, "POTION"),
-    POTION_THICK(new UPotion(PotionBase.NORMAL, "THICK", false, false), 0, "POTION"),
-    POTION_TURTLE_MASTER_1(new UPotion(PotionBase.NORMAL, "TURTLE_MASTER", false, false), 0, "POTION"),
-    POTION_TURTLE_MASTER_1_EXTENDED(new UPotion(PotionBase.NORMAL, "TURTLE_MASTER", true, false), 0, "POTION"),
-    POTION_TURTLE_MASTER_2(new UPotion(PotionBase.NORMAL, "TURTLE_MASTER", false, true), 0, "POTION"),
-    POTION_WATER(new UPotion(PotionBase.NORMAL, "WATER", false, false), 0, "POTION"),
-    POTION_WATER_BREATHING(new UPotion(PotionBase.NORMAL, "WATER_BREATHING", false, false), 0, "POTION"),
-    POTION_WATER_BREATHING_EXTENDED(new UPotion(PotionBase.NORMAL, "WATER_BREATHING", true, false), 0, "POTION"),
-    POTION_WEAKNESS(new UPotion(PotionBase.NORMAL, "WEAKNESS", false, false), 0, "POTION"),
-    POTION_WEAKNESS_EXTENDED(new UPotion(PotionBase.NORMAL, "WEAKNESS", true, false), 0, "POTION"),
+    POTION_AWKWARD(PotionBase.NORMAL, "AWKWARD", false, false, "POTION"),
+    POTION_FIRE_RESISTANCE(PotionBase.NORMAL, "FIRE_RESISTANCE", false, false, "POTION"),
+    POTION_FIRE_RESISTANCE_EXTENDED(PotionBase.NORMAL, "FIRE_RESISTANCE", true, false, "POTION"),
+    POTION_HARMING_1(PotionBase.NORMAL, "INSTANT_DAMAGE", false, false, "POTION"),
+    POTION_HARMING_2(PotionBase.NORMAL, "INSTANT_DAMAGE", false, false, "POTION"),
+    POTION_HEALING_1(PotionBase.NORMAL, "INSTANT_HEAL", false, false, "POTION"),
+    POTION_HEALING_2(PotionBase.NORMAL, "INSTANT_HEAL", false, false, "POTION"),
+    POTION_INVISIBILITY(PotionBase.NORMAL, "INVISIBILITY", false, false, "POTION"),
+    POTION_INVISIBILITY_EXTENDED(PotionBase.NORMAL, "INVISIBILITY", true, false, "POTION"),
+    POTION_LEAPING_1(PotionBase.NORMAL, "JUMP", false, false, "POTION"),
+    POTION_LEAPING_1_EXTENDED(PotionBase.NORMAL, "JUMP", true, false, "POTION"),
+    POTION_LEAPING_2(PotionBase.NORMAL, "JUMP", false, false, "POTION"),
+    POTION_LUCK(PotionBase.NORMAL, "LUCK", false, false, "POTION"),
+    POTION_MUNDANE(PotionBase.NORMAL, "MUNDANE", false, false, "POTION"),
+    POTION_NIGHT_VISION(PotionBase.NORMAL, "NIGHT_VISION", false, false, "POTION"),
+    POTION_NIGHT_VISION_EXTENDED(PotionBase.NORMAL, "NIGHT_VISION", true, false, "POTION"),
+    POTION_POISON_1(PotionBase.NORMAL, "POISON", false, false, "POTION"),
+    POTION_POISON_1_EXTENDED(PotionBase.NORMAL, "POISON", true, false, "POTION"),
+    POTION_POISON_2(PotionBase.NORMAL, "POISON", false, false, "POTION"),
+    POTION_REGENERATION_1(PotionBase.NORMAL, "REGEN", false, false, "POTION"),
+    POTION_REGENERATION_1_EXTENDED(PotionBase.NORMAL, "REGEN", true, false, "POTION"),
+    POTION_REGENERATION_2(PotionBase.NORMAL, "REGEN", false, false, "POTION"),
+    POTION_SLOW_FALLING(PotionBase.NORMAL, "SLOW_FALLING", false, false, "POTION"),
+    POTION_SLOW_FALLING_EXTENDED(PotionBase.NORMAL, "SLOW_FALLING", true, false, "POTION"),
+    POTION_SLOWNESS_1(PotionBase.NORMAL, "SLOWNESS", false, false, "POTION"),
+    POTION_SLOWNESS_1_EXTENDED(PotionBase.NORMAL, "SLOWNESS", true, false, "POTION"),
+    POTION_SLOWNESS_2(PotionBase.NORMAL, "SLOWNESS", false, false, "POTION"),
+    POTION_STRENGTH_1(PotionBase.NORMAL, "STRENGTH", false, false, "POTION"),
+    POTION_STRENGTH_1_EXTENDED(PotionBase.NORMAL, "STRENGTH", true, false, "POTION"),
+    POTION_STRENGTH_2(PotionBase.NORMAL, "STRENGTH", false, false, "POTION"),
+    POTION_SWIFTNESS_1(PotionBase.NORMAL, "SPEED", false, false, "POTION"),
+    POTION_SWIFTNESS_1_EXTENDED(PotionBase.NORMAL, "SPEED", true, false, "POTION"),
+    POTION_SWIFTNESS_2(PotionBase.NORMAL, "SPEED", false, false, "POTION"),
+    POTION_THICK(PotionBase.NORMAL, "THICK", false, false, "POTION"),
+    POTION_TURTLE_MASTER_1(PotionBase.NORMAL, "TURTLE_MASTER", false, false, "POTION"),
+    POTION_TURTLE_MASTER_1_EXTENDED(PotionBase.NORMAL, "TURTLE_MASTER", true, false, "POTION"),
+    POTION_TURTLE_MASTER_2(PotionBase.NORMAL, "TURTLE_MASTER", false, false, "POTION"),
+    POTION_WATER(PotionBase.NORMAL, "WATER", false, false, "POTION"),
+    POTION_WATER_BREATHING(PotionBase.NORMAL, "WATER_BREATHING", false, false, "POTION"),
+    POTION_WATER_BREATHING_EXTENDED(PotionBase.NORMAL, "WATER_BREATHING", true, false, "POTION"),
+    POTION_WEAKNESS(PotionBase.NORMAL, "WEAKNESS", false, false, "POTION"),
+    POTION_WEAKNESS_EXTENDED(PotionBase.NORMAL, "WEAKNESS", true, false, "POTION"),
     POTTED_ACACIA_SAPLING(null, null, null, null, null, "POTTED_ACACIA_SAPLING"),
     POTTED_ALLIUM(null, null, null, null, null, "POTTED_ALLIUM"),
     POTTED_AZURE_BLUET(null, null, null, null, null, "POTTED_AZURE_BLUET"),
@@ -1127,48 +1127,48 @@ public enum UMaterial {
     SPIDER_EYE("SPIDER_EYE"),
     SPIDER_SPAWN_EGG(52, "MONSTER_EGG", null, null, null, null, "SPIDER_SPAWN_EGG"),
     SPLASH_POTION(null, "SPLASH_POTION"),
-    SPLASH_POTION_AWKWARD(new UPotion(PotionBase.SPLASH, "AWKWARD", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_FIRE_RESISTANCE(new UPotion(PotionBase.SPLASH, "FIRE_RESISTANCE", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_FIRE_RESISTANCE_EXTENDED(new UPotion(PotionBase.SPLASH, "FIRE_RESISTANCE", true, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_HARMING_1(new UPotion(PotionBase.SPLASH, "INSTANT_DAMAGE", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_HARMING_2(new UPotion(PotionBase.SPLASH, "INSTANT_DAMAGE", false, true), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_HEALING_1(new UPotion(PotionBase.SPLASH, "INSTANT_HEAL", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_HEALING_2(new UPotion(PotionBase.SPLASH, "INSTANT_HEAL", false, true), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_INVISIBILITY(new UPotion(PotionBase.SPLASH, "INVISIBILITY", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_INVISIBILITY_EXTENDED(new UPotion(PotionBase.SPLASH, "INVISIBILITY", true, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_LEAPING_1(new UPotion(PotionBase.SPLASH, "JUMP", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_LEAPING_1_EXTENDED(new UPotion(PotionBase.SPLASH, "JUMP", true, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_LEAPING_2(new UPotion(PotionBase.SPLASH, "JUMP", false, true), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_LUCK(new UPotion(PotionBase.SPLASH, "LUCK", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_MUNDANE(new UPotion(PotionBase.SPLASH, "MUNDANE", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_NIGHT_VISION(new UPotion(PotionBase.SPLASH, "NIGHT_VISION", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_NIGHT_VISION_EXTENDED(new UPotion(PotionBase.SPLASH, "NIGHT_VISION", true, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_POISON_1(new UPotion(PotionBase.SPLASH, "POISON", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_POISON_1_EXTENDED(new UPotion(PotionBase.SPLASH, "POISON", true, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_POISON_2(new UPotion(PotionBase.SPLASH, "POISON", false, true), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_REGENERATION_1(new UPotion(PotionBase.SPLASH, "REGEN", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_REGENERATION_1_EXTENDED(new UPotion(PotionBase.SPLASH, "REGEN", true, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_REGENERATION_2(new UPotion(PotionBase.SPLASH, "REGEN", false, true), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_SLOW_FALLING(new UPotion(PotionBase.SPLASH, "SLOW_FALLING", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_SLOW_FALLING_EXTENDED(new UPotion(PotionBase.SPLASH, "SLOW_FALLING", true, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_SLOWNESS_1(new UPotion(PotionBase.SPLASH, "SLOWNESS", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_SLOWNESS_1_EXTENDED(new UPotion(PotionBase.SPLASH, "SLOWNESS", true, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_SLOWNESS_2(new UPotion(PotionBase.SPLASH, "SLOWNESS", false, true), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_STRENGTH_1(new UPotion(PotionBase.SPLASH, "STRENGTH", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_STRENGTH_1_EXTENDED(new UPotion(PotionBase.SPLASH, "STRENGTH", true, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_STRENGTH_2(new UPotion(PotionBase.SPLASH, "STRENGTH", false, true), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_SWIFTNESS_1(new UPotion(PotionBase.SPLASH, "SPEED", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_SWIFTNESS_1_EXTENDED(new UPotion(PotionBase.SPLASH, "SPEED", true, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_SWIFTNESS_2(new UPotion(PotionBase.SPLASH, "SPEED", false, true), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_THICK(new UPotion(PotionBase.SPLASH, "THICK", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_TURTLE_MASTER_1(new UPotion(PotionBase.SPLASH, "TURTLE_MASTER", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_TURTLE_MASTER_1_EXTENDED(new UPotion(PotionBase.SPLASH, "TURTLE_MASTER", true, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_TURTLE_MASTER_2(new UPotion(PotionBase.SPLASH, "TURTLE_MASTER", false, true), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_WATER(new UPotion(PotionBase.SPLASH, "WATER", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_WATER_BREATHING(new UPotion(PotionBase.SPLASH, "WATER_BREATHING", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_WATER_BREATHING_EXTENDED(new UPotion(PotionBase.SPLASH, "WATER_BREATHING", true, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_WEAKNESS(new UPotion(PotionBase.SPLASH, "WEAKNESS", false, false), 0, null, "SPLASH_POTION"),
-    SPLASH_POTION_WEAKNESS_EXTENDED(new UPotion(PotionBase.SPLASH, "WEAKNESS", true, false), 0, null, "SPLASH_POTION"),
+    SPLASH_POTION_AWKWARD(PotionBase.SPLASH, "AWKWARD", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_FIRE_RESISTANCE(PotionBase.SPLASH, "FIRE_RESISTANCE", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_FIRE_RESISTANCE_EXTENDED(PotionBase.SPLASH, "FIRE_RESISTANCE", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_HARMING_1(PotionBase.SPLASH, "INSTANT_DAMAGE", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_HARMING_2(PotionBase.SPLASH, "INSTANT_DAMAGE", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_HEALING_1(PotionBase.SPLASH, "INSTANT_HEAL", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_HEALING_2(PotionBase.SPLASH, "INSTANT_HEAL", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_INVISIBILITY(PotionBase.SPLASH, "INVISIBILITY", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_INVISIBILITY_EXTENDED(PotionBase.SPLASH, "INVISIBILITY", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_LEAPING_1(PotionBase.SPLASH, "JUMP", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_LEAPING_1_EXTENDED(PotionBase.SPLASH, "JUMP", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_LEAPING_2(PotionBase.SPLASH, "JUMP", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_LUCK(PotionBase.SPLASH, "LUCK", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_MUNDANE(PotionBase.SPLASH, "MUNDANE", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_NIGHT_VISION(PotionBase.SPLASH, "NIGHT_VISION", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_NIGHT_VISION_EXTENDED(PotionBase.SPLASH, "NIGHT_VISION", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_POISON_1(PotionBase.SPLASH, "POISON", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_POISON_1_EXTENDED(PotionBase.SPLASH, "POISON", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_POISON_2(PotionBase.SPLASH, "POISON", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_REGENERATION_1(PotionBase.SPLASH, "REGEN", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_REGENERATION_1_EXTENDED(PotionBase.SPLASH, "REGEN", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_REGENERATION_2(PotionBase.SPLASH, "REGEN", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_SLOW_FALLING(PotionBase.SPLASH, "SLOW_FALLING", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_SLOW_FALLING_EXTENDED(PotionBase.SPLASH, "SLOW_FALLING", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_SLOWNESS_1(PotionBase.SPLASH, "SLOWNESS", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_SLOWNESS_1_EXTENDED(PotionBase.SPLASH, "SLOWNESS", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_SLOWNESS_2(PotionBase.SPLASH, "SLOWNESS", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_STRENGTH_1(PotionBase.SPLASH, "STRENGTH", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_STRENGTH_1_EXTENDED(PotionBase.SPLASH, "STRENGTH", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_STRENGTH_2(PotionBase.SPLASH, "STRENGTH", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_SWIFTNESS_1(PotionBase.SPLASH, "SPEED", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_SWIFTNESS_1_EXTENDED(PotionBase.SPLASH, "SPEED", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_SWIFTNESS_2(PotionBase.SPLASH, "SPEED", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_THICK(PotionBase.SPLASH, "THICK", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_TURTLE_MASTER_1(PotionBase.SPLASH, "TURTLE_MASTER", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_TURTLE_MASTER_1_EXTENDED(PotionBase.SPLASH, "TURTLE_MASTER", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_TURTLE_MASTER_2(PotionBase.SPLASH, "TURTLE_MASTER", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_WATER(PotionBase.SPLASH, "WATER", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_WATER_BREATHING(PotionBase.SPLASH, "WATER_BREATHING", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_WATER_BREATHING_EXTENDED(PotionBase.SPLASH, "WATER_BREATHING", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_WEAKNESS(PotionBase.SPLASH, "WEAKNESS", false, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_WEAKNESS_EXTENDED(PotionBase.SPLASH, "WEAKNESS", true, false, null, "SPLASH_POTION"),
     SPONGE("SPONGE"),
     SPRUCE_BOAT("BOAT", null, null, null, "BOAT_SPRUCE", "SPRUCE_BOAT"),
     SPRUCE_BUTTON("WOOD_BUTTON", null, null, null, null, "SPRUCE_BUTTON"),
@@ -1228,48 +1228,48 @@ public enum UMaterial {
     SWEET_BERRY_BUSH(null, null, null, null, null, null, "SWEET_BERRY_BUSH"),
     TALL_GRASS(1, "LONG_GRASS", null, null, null, null, "TALL_GRASS"),
     TALL_GRASS_BOTTOM(2, "DOUBLE_PLANT", null, null, null, null, "TALL_GRASS"),
-    TALL_GRASS_TOP(10, 2, "DOUBLE_PLANT", null, null, null, null, "TALL_GRASS"),
+    TALL_GRASS_TOP(2, "DOUBLE_PLANT", null, null, null, null, "TALL_GRASS"),
     TALL_SEAGRASS(null, null, null, null, null, "TALL_SEAGRASS"),
     TERRACOTTA("HARD_CLAY", null, null, null, null, "TERRACOTTA"),
     TIPPED_ARROW("ARROW", null, null, null, "TIPPED_ARROW"),
-    TIPPED_ARROW_FIRE_RESISTANCE(new UPotion(PotionBase.TIPPED_ARROW, "FIRE_RESISTANCE", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_FIRE_RESISTANCE_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "FIRE_RESISTANCE", true, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_HARMING_1(new UPotion(PotionBase.TIPPED_ARROW, "INSTANT_DAMAGE", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_HARMING_2(new UPotion(PotionBase.TIPPED_ARROW, "INSTANT_DAMAGE", false, true), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_HEALING_1(new UPotion(PotionBase.TIPPED_ARROW, "INSTANT_HEAL", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_HEALING_2(new UPotion(PotionBase.TIPPED_ARROW, "INSTANT_HEAL", false, true), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_INVISIBILITY(new UPotion(PotionBase.TIPPED_ARROW, "INVISIBILITY", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_INVISIBILITY_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "INVISIBILITY", true, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_LEAPING_1(new UPotion(PotionBase.TIPPED_ARROW, "JUMP", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_LEAPING_1_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "JUMP", true, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_LEAPING_2(new UPotion(PotionBase.TIPPED_ARROW, "JUMP", false, true), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_LUCK(new UPotion(PotionBase.TIPPED_ARROW, "LUCK", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_NIGHT_VISION(new UPotion(PotionBase.TIPPED_ARROW, "NIGHT_VISION", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_NIGHT_VISION_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "NIGHT_VISION", true, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_POISON_1(new UPotion(PotionBase.TIPPED_ARROW, "POISON", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_POISON_1_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "POISON", true, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_POISON_2(new UPotion(PotionBase.TIPPED_ARROW, "POISON", false, true), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_REGENERATION_1(new UPotion(PotionBase.TIPPED_ARROW, "REGEN", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_REGENERATION_1_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "REGEN", true, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_REGENERATION_2(new UPotion(PotionBase.TIPPED_ARROW, "REGEN", false, true), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_SLOW_FALLING(new UPotion(PotionBase.TIPPED_ARROW, "SLOW_FALLING", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_SLOW_FALLING_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "SLOW_FALLING", true, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_SLOWNESS_1(new UPotion(PotionBase.TIPPED_ARROW, "SLOWNESS", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_SLOWNESS_1_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "SLOWNESS", true, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_SLOWNESS_2(new UPotion(PotionBase.TIPPED_ARROW, "SLOWNESS", false, true), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_STRENGTH_1(new UPotion(PotionBase.TIPPED_ARROW, "STRENGTH", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_STRENGTH_1_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "STRENGTH", true, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_STRENGTH_2(new UPotion(PotionBase.TIPPED_ARROW, "STRENGTH", false, true), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_SWIFTNESS_1(new UPotion(PotionBase.TIPPED_ARROW, "SPEED", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_SWIFTNESS_1_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "SPEED", true, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_SWIFTNESS_2(new UPotion(PotionBase.TIPPED_ARROW, "SPEED", false, true), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_TURTLE_MASTER_1(new UPotion(PotionBase.TIPPED_ARROW, "TURTLE_MASTER", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_TURTLE_MASTER_1_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "TURTLE_MASTER", true, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_TURTLE_MASTER_2(new UPotion(PotionBase.TIPPED_ARROW, "TURTLE_MASTER", false, true), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_WATER_BREATHING(new UPotion(PotionBase.TIPPED_ARROW, "WATER_BREATHING", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_WATER_BREATHING_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "WATER_BREATHING", true, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_WEAKNESS(new UPotion(PotionBase.TIPPED_ARROW, "WEAKNESS", false, false), 0, "ARROW", "TIPPED_ARROW"),
-    TIPPED_ARROW_WEAKNESS_EXTENDED(new UPotion(PotionBase.TIPPED_ARROW, "WEAKNESS", true, false), 0, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_FIRE_RESISTANCE(PotionBase.TIPPED_ARROW, "FIRE_RESISTANCE", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_FIRE_RESISTANCE_EXTENDED(PotionBase.TIPPED_ARROW, "FIRE_RESISTANCE", true, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_HARMING_1(PotionBase.TIPPED_ARROW, "INSTANT_DAMAGE", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_HARMING_2(PotionBase.TIPPED_ARROW, "INSTANT_DAMAGE", false, true, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_HEALING_1(PotionBase.TIPPED_ARROW, "INSTANT_HEAL", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_HEALING_2(PotionBase.TIPPED_ARROW, "INSTANT_HEAL", false, true, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_INVISIBILITY(PotionBase.TIPPED_ARROW, "INVISIBILITY", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_INVISIBILITY_EXTENDED(PotionBase.TIPPED_ARROW, "INVISIBILITY", true, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_LEAPING_1(PotionBase.TIPPED_ARROW, "JUMP", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_LEAPING_1_EXTENDED(PotionBase.TIPPED_ARROW, "JUMP", true, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_LEAPING_2(PotionBase.TIPPED_ARROW, "JUMP", false, true, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_LUCK(PotionBase.TIPPED_ARROW, "LUCK", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_NIGHT_VISION(PotionBase.TIPPED_ARROW, "NIGHT_VISION", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_NIGHT_VISION_EXTENDED(PotionBase.TIPPED_ARROW, "NIGHT_VISION", true, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_POISON_1(PotionBase.TIPPED_ARROW, "POISON", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_POISON_1_EXTENDED(PotionBase.TIPPED_ARROW, "POISON", true, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_POISON_2(PotionBase.TIPPED_ARROW, "POISON", false, true, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_REGENERATION_1(PotionBase.TIPPED_ARROW, "REGEN", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_REGENERATION_1_EXTENDED(PotionBase.TIPPED_ARROW, "REGEN", true, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_REGENERATION_2(PotionBase.TIPPED_ARROW, "REGEN", false, true, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_SLOW_FALLING(PotionBase.TIPPED_ARROW, "SLOW_FALLING", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_SLOW_FALLING_EXTENDED(PotionBase.TIPPED_ARROW, "SLOW_FALLING", true, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_SLOWNESS_1(PotionBase.TIPPED_ARROW, "SLOWNESS", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_SLOWNESS_1_EXTENDED(PotionBase.TIPPED_ARROW, "SLOWNESS", true, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_SLOWNESS_2(PotionBase.TIPPED_ARROW, "SLOWNESS", false, true, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_STRENGTH_1(PotionBase.TIPPED_ARROW, "STRENGTH", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_STRENGTH_1_EXTENDED(PotionBase.TIPPED_ARROW, "STRENGTH", true, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_STRENGTH_2(PotionBase.TIPPED_ARROW, "STRENGTH", false, true, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_SWIFTNESS_1(PotionBase.TIPPED_ARROW, "SPEED", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_SWIFTNESS_1_EXTENDED(PotionBase.TIPPED_ARROW, "SPEED", true, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_SWIFTNESS_2(PotionBase.TIPPED_ARROW, "SPEED", false, true, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_TURTLE_MASTER_1(PotionBase.TIPPED_ARROW, "TURTLE_MASTER", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_TURTLE_MASTER_1_EXTENDED(PotionBase.TIPPED_ARROW, "TURTLE_MASTER", true, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_TURTLE_MASTER_2(PotionBase.TIPPED_ARROW, "TURTLE_MASTER", false, true, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_WATER_BREATHING(PotionBase.TIPPED_ARROW, "WATER_BREATHING", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_WATER_BREATHING_EXTENDED(PotionBase.TIPPED_ARROW, "WATER_BREATHING", true, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_WEAKNESS(PotionBase.TIPPED_ARROW, "WEAKNESS", false, false, "ARROW", "TIPPED_ARROW"),
+    TIPPED_ARROW_WEAKNESS_EXTENDED(PotionBase.TIPPED_ARROW, "WEAKNESS", true, false, "ARROW", "TIPPED_ARROW"),
     TNT("TNT"),
     TNT_MINECART("EXPLOSIVE_MINECART", null, null, null, null, "TNT_MINECART"),
     TORCH("TORCH"),
@@ -1356,74 +1356,82 @@ public enum UMaterial {
     ZOMBIE_PIGMAN_SPAWN_EGG(57, "MONSTER_EGG", null, null, null, null, "ZOMBIE_PIGMAN_SPAWN_EGG"),
     ZOMBIE_SPAWN_EGG(54, "MONSTER_EGG", null, null, null, null, "ZOMBIE_SPAWN_EGG"),
     ZOMBIE_VILLAGER_SPAWN_EGG(null, null, null, null, null, "ZOMBIE_VILLAGER_SPAWN_EGG"),
-    ZOMBIE_WALL_HEAD(2, "SKULL", null, null, null, null, null, "ZOMBIE_WALL_HEAD"),
+    ZOMBIE_WALL_HEAD(2, "SKULL", null, null, null, null, null, "ZOMBIE_WALL_HEAD")
     ;
+    private static String version = Bukkit.getVersion();
     private static final HashMap<String, UMaterial> inUMemory = new HashMap<>();
     private static final HashMap<String, ItemStack> inMemory = new HashMap<>();
-    private final String version = Bukkit.getVersion();
     private String[] names = new String[8];
-    private ItemStack is;
-    private Material material;
-    private int data;
+    private String versionName, attributes;
+    private byte data;
     UMaterial(String ...names) {
         this(0, names);
     }
     UMaterial(String name, int data) {
         names[0] = name;
-        this.data = data;
-        final Material m = Material.matchMaterial(name);
-        material = m;
-        is = version.contains("1.8") || version.contains("1.9") || version.contains("1.10") || version.contains("1.11") || version.contains("1.12") ? new ItemStack(m, 1, (byte) data) : new ItemStack(m);
+        versionName = name;
+        this.data = (byte) data;
     }
     UMaterial(String name, int spoofedData, Color color) {
         names[0] = name;
-        this.data = spoofedData;
-        final Material m = Material.matchMaterial(name);
-        material = m;
-        is = new ItemStack(m);
-        final LeatherArmorMeta lam = (LeatherArmorMeta) is.getItemMeta();
-        lam.setColor(color);
-        is.setItemMeta(lam);
+        versionName = name;
+        this.data = (byte) spoofedData;
+        attributes = "color=" + color.getRed() + ":" + color.getGreen() + ":" + color.getBlue();
     }
-    UMaterial(UPotion pd, int data, String ...names) {
-        setItemStack(0, names);
-        is = pd.getItemStack();
+    UMaterial(PotionBase base, String type, boolean extended, boolean upgraded, String ...names) {
+        this.names = names;
+        attributes = "upotion=" + base.name() + ":" + type + ":" + extended + ":" + upgraded;
     }
     UMaterial(String name, Enchantment enchant, int level) {
-        doEnchantmentBook(setItemStack(0, name), enchant, level);
+        names[0] = name;
+        versionName = name;
+        data = 0;
+        attributes = "enchant=" + enchant.getName() + ":" + level;
     }
     UMaterial(int data, String ...names) {
         this.names = names;
-        this.data = data;
-        setup(data);
+        this.data = (byte) data;
     }
-    UMaterial(int data, int returnData, String... names) {
-        this.names = names;
-        this.data = data;
-        setup(returnData);
+    public String getVersionName() {
+        if(versionName == null) {
+            final Material m = getMaterial();
+            if(m != null) versionName = m.name();
+        }
+        return versionName;
     }
-    private void setup(int data) {
-        final Material m = getMaterialName();
-        material = m;
-        is = m != null ? version.contains("1.8") || version.contains("1.9") || version.contains("1.10") || version.contains("1.11") || version.contains("1.12") ? new ItemStack(m, 1, (byte) data) : new ItemStack(m) : null;
+    public ItemStack getItemStack() {
+        final String v = getVersionName();
+        final Material m = v != null ? Material.valueOf(v) : null;
+        ItemStack is = m != null ? new ItemStack(m) : null;
+        if(is != null && attributes != null) {
+            for(String s : attributes.split(";")) {
+                if(s.startsWith("color=")) {
+                    final String[] a = s.split(":");
+                    final LeatherArmorMeta me = (LeatherArmorMeta) is.getItemMeta();
+                    me.setColor(Color.fromRGB(Integer.parseInt(a[0]), Integer.parseInt(a[1]), Integer.parseInt(a[2])));
+                    is.setItemMeta(me);
+                } else if(s.startsWith("enchant=")) {
+                    final String[] e = s.split("=")[1].split(":");
+                    final EnchantmentStorageMeta sm = (EnchantmentStorageMeta) is.getItemMeta();
+                    sm.addStoredEnchant(Enchantment.getByName(e[0]), Integer.parseInt(e[1]), true);
+                    is.setItemMeta(sm);
+                } else if(s.startsWith("upotion=")) {
+                    final String[] p = s.split("=")[1].split(":");
+                    is = new UPotion(PotionBase.valueOf(p[0]), p[1], Boolean.parseBoolean(p[2]), Boolean.parseBoolean(p[3])).getItemStack();
+                }
+            }
+        }
+        return is;
     }
-    private void doEnchantmentBook(ItemStack m, Enchantment enchant, int level) {
-        final EnchantmentStorageMeta sm = (EnchantmentStorageMeta) m.getItemMeta();
-        sm.addStoredEnchant(enchant, level, true);
-        m.setItemMeta(sm);
-        this.is = m;
-    }
-    public Material getMaterial() { return material; }
-    public ItemStack getItemStack() { return is != null ? is.clone() : null; }
-    public byte getData() { return (byte) data; }
+    public byte getData() { return data; }
     // 0 = 1.8.8
     // 1 = 1.9.4
     // 2 = 1.10.2
     // 3 = 1.11.2
     // 4 = 1.12.2
     // 5 = 1.13.2
-    // 6 = 1.14.0
-    private Material getMaterialName() {
+    // 6 = 1.14.2
+    public Material getMaterial() {
         final int ver = version.contains("1.8") ? 0 : version.contains("1.9") ? 1 : version.contains("1.10") ? 2 : version.contains("1.11") ? 3 : version.contains("1.12") ? 4 : version.contains("1.13") ? 5 : version.contains("1.14") ? 6 : names.length-1;
         int realver = names.length <= ver ? names.length-1 : ver;
         if(names[realver] == null) {
@@ -1437,13 +1445,6 @@ public enum UMaterial {
         }
         final String t = names[realver], t2 = names.length > ver ? names[ver] : names[names.length-1];
         return t != null || t2 != null ? Material.matchMaterial(t != null ? t : t2) : null;
-    }
-    private ItemStack setItemStack(int data, String ...names) {
-        this.names = names;
-        this.data = data;
-        final Material m = getMaterialName();
-        material = m;
-        return m != null ? version.contains("1.8") || version.contains("1.9") || version.contains("1.10") || version.contains("1.11") || version.contains("1.12") ? new ItemStack(m, 1, (byte) data) : new ItemStack(m) : null;
     }
     public static ItemStack getEnchantmentBook(Enchantment enchant, int level, int amount) {
         final LinkedHashMap<Enchantment, Integer> e = new LinkedHashMap<>();
@@ -1692,12 +1693,16 @@ public enum UMaterial {
 class UPotion {
     private static final String v = Bukkit.getVersion();
     private static boolean eight = v.contains("1.8"), nine = v.contains("1.9"), ten = v.contains("1.10"), eleven = v.contains("1.11"), twelve = v.contains("1.12");
+    private final UMaterial.PotionBase base;
     private final ItemStack potion;
+    private final PotionType type;
     private final Object potiondata;
     public UPotion(UMaterial.PotionBase base, String type, boolean extended, boolean upgraded) {
+        this.base = base;
         type = type.toUpperCase();
         final PotionType t = eight && (type.equals("AWKWARD") || type.equals("LUCK") || type.equals("MUNDANE") || type.equals("THICK")) || (eight || nine || ten || eleven || twelve) && (type.equals("TURTLE_MASTER") || type.equals("SLOW_FALLING"))
                 ? PotionType.WATER : PotionType.valueOf(type);
+        this.type = t;
         final String bn = base.name();
         if(eight) {
             potion = t.equals(PotionType.WATER) ? new Potion(t).toItemStack(1) : new Potion(t, upgraded ? 2 : 1, bn.equals("SPLASH")).toItemStack(1);
@@ -1719,6 +1724,8 @@ class UPotion {
             potion = is;
         }
     }
+    public UMaterial.PotionBase getBase() { return base; }
+    public PotionType getType() { return type; }
     public ItemStack getItemStack() { return potion.clone(); }
     public Object getPotionData() { return potiondata; }
 }
