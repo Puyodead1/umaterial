@@ -14,13 +14,10 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.potion.PotionType;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /*
-    UMaterial Version: 6
+    UMaterial Version: 7
 
     This software is created and owned by RandomHashTags, and is licensed under the GNU Affero General Public License v3.0 (https://choosealicense.com/licenses/agpl-3.0/)
     You can only find this software at https://gitlab.com/RandomHashTags/umaterial
@@ -37,10 +34,10 @@ import java.util.Map;
  */
 public enum UMaterial {
     /*
-        <item>(1.8.9, 1.9.4, 1.10.2, 1.11.2, 1.12.2, 1.13.2, 1.14.2)
+        <item>(1.8.9, 1.9.4, 1.10.2, 1.11.2, 1.12.2, 1.13.2, 1.14.3)
         1.8.9 = http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Material.html
         1.13.2 = ?
-        1.14.2 = https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+        1.14.3 = https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
         visual = https://www.digminecraft.com/lists/item_id_list_pc.php
         Special blocks = https://www.planetminecraft.com/blog/secret-blocks-vanilla/
     */
@@ -639,7 +636,7 @@ public enum UMaterial {
     JUNGLE_WOOD(15, "LOG", null, null, null, null, "JUNGLE_WOOD"),
     KELP(null, null, null, null, null, "KELP"),
     KELP_PLANT(null, null, null, null, null, "KELP_PLANT"),
-    KNOWLEDGE_BOOK(null, null, null, null, "KNOWLEDGE_BOOK"),
+    KNOWLEDGE_BOOK("BOOK", null, null, null, "KNOWLEDGE_BOOK"),
     LADDER("LADDER"),
     LANTERN(null, null, null, null, null, null, "LANTERN"),
     LAPIS_BLOCK("LAPIS_BLOCK"),
@@ -1037,7 +1034,7 @@ public enum UMaterial {
     RED_CARPET(14, "CARPET", null, null, null, null, "RED_CARPET"),
     RED_CONCRETE(14, null, null, null, null, "CONCRETE", "RED_CONCRETE"),
     RED_CONCRETE_POWDER(14, null, null, null, null, "CONCRETE_POWDER", "RED_CONCRETE_POWDER"),
-    RED_DYE(1, "INK_SACK", null, null, null, "ROSE_RED", null, "RED_DYE"),
+    RED_DYE(1, "INK_SACK", null, null, null, "RED_ROSE", "ROSE_RED", "RED_DYE"),
     RED_GLAZED_TERRACOTTA(null, null, null, null, "RED_GLAZED_TERRACOTTA"),
     RED_LEATHER_BOOTS("LEATHER_BOOTS", 14, Color.fromRGB(153, 51, 51)),
     RED_LEATHER_CHESTPLATE("LEATHER_CHESTPLATE", 14, Color.fromRGB(153, 51, 51)),
@@ -1127,48 +1124,48 @@ public enum UMaterial {
     SPIDER_EYE("SPIDER_EYE"),
     SPIDER_SPAWN_EGG(52, "MONSTER_EGG", null, null, null, null, "SPIDER_SPAWN_EGG"),
     SPLASH_POTION(null, "SPLASH_POTION"),
-    SPLASH_POTION_AWKWARD(PotionBase.SPLASH, "AWKWARD", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_FIRE_RESISTANCE(PotionBase.SPLASH, "FIRE_RESISTANCE", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_FIRE_RESISTANCE_EXTENDED(PotionBase.SPLASH, "FIRE_RESISTANCE", true, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_HARMING_1(PotionBase.SPLASH, "INSTANT_DAMAGE", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_HARMING_2(PotionBase.SPLASH, "INSTANT_DAMAGE", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_HEALING_1(PotionBase.SPLASH, "INSTANT_HEAL", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_HEALING_2(PotionBase.SPLASH, "INSTANT_HEAL", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_INVISIBILITY(PotionBase.SPLASH, "INVISIBILITY", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_INVISIBILITY_EXTENDED(PotionBase.SPLASH, "INVISIBILITY", true, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_LEAPING_1(PotionBase.SPLASH, "JUMP", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_LEAPING_1_EXTENDED(PotionBase.SPLASH, "JUMP", true, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_LEAPING_2(PotionBase.SPLASH, "JUMP", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_LUCK(PotionBase.SPLASH, "LUCK", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_MUNDANE(PotionBase.SPLASH, "MUNDANE", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_NIGHT_VISION(PotionBase.SPLASH, "NIGHT_VISION", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_NIGHT_VISION_EXTENDED(PotionBase.SPLASH, "NIGHT_VISION", true, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_POISON_1(PotionBase.SPLASH, "POISON", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_POISON_1_EXTENDED(PotionBase.SPLASH, "POISON", true, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_POISON_2(PotionBase.SPLASH, "POISON", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_REGENERATION_1(PotionBase.SPLASH, "REGEN", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_REGENERATION_1_EXTENDED(PotionBase.SPLASH, "REGEN", true, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_REGENERATION_2(PotionBase.SPLASH, "REGEN", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_SLOW_FALLING(PotionBase.SPLASH, "SLOW_FALLING", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_SLOW_FALLING_EXTENDED(PotionBase.SPLASH, "SLOW_FALLING", true, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_SLOWNESS_1(PotionBase.SPLASH, "SLOWNESS", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_SLOWNESS_1_EXTENDED(PotionBase.SPLASH, "SLOWNESS", true, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_SLOWNESS_2(PotionBase.SPLASH, "SLOWNESS", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_STRENGTH_1(PotionBase.SPLASH, "STRENGTH", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_STRENGTH_1_EXTENDED(PotionBase.SPLASH, "STRENGTH", true, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_STRENGTH_2(PotionBase.SPLASH, "STRENGTH", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_SWIFTNESS_1(PotionBase.SPLASH, "SPEED", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_SWIFTNESS_1_EXTENDED(PotionBase.SPLASH, "SPEED", true, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_SWIFTNESS_2(PotionBase.SPLASH, "SPEED", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_THICK(PotionBase.SPLASH, "THICK", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_TURTLE_MASTER_1(PotionBase.SPLASH, "TURTLE_MASTER", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_TURTLE_MASTER_1_EXTENDED(PotionBase.SPLASH, "TURTLE_MASTER", true, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_TURTLE_MASTER_2(PotionBase.SPLASH, "TURTLE_MASTER", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_WATER(PotionBase.SPLASH, "WATER", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_WATER_BREATHING(PotionBase.SPLASH, "WATER_BREATHING", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_WATER_BREATHING_EXTENDED(PotionBase.SPLASH, "WATER_BREATHING", true, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_WEAKNESS(PotionBase.SPLASH, "WEAKNESS", false, false, null, "SPLASH_POTION"),
-    SPLASH_POTION_WEAKNESS_EXTENDED(PotionBase.SPLASH, "WEAKNESS", true, false, null, "SPLASH_POTION"),
+    SPLASH_POTION_AWKWARD(PotionBase.SPLASH, "AWKWARD", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_FIRE_RESISTANCE(PotionBase.SPLASH, "FIRE_RESISTANCE", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_FIRE_RESISTANCE_EXTENDED(PotionBase.SPLASH, "FIRE_RESISTANCE", true, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_HARMING_1(PotionBase.SPLASH, "INSTANT_DAMAGE", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_HARMING_2(PotionBase.SPLASH, "INSTANT_DAMAGE", false, true, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_HEALING_1(PotionBase.SPLASH, "INSTANT_HEAL", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_HEALING_2(PotionBase.SPLASH, "INSTANT_HEAL", false, true, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_INVISIBILITY(PotionBase.SPLASH, "INVISIBILITY", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_INVISIBILITY_EXTENDED(PotionBase.SPLASH, "INVISIBILITY", true, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_LEAPING_1(PotionBase.SPLASH, "JUMP", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_LEAPING_1_EXTENDED(PotionBase.SPLASH, "JUMP", true, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_LEAPING_2(PotionBase.SPLASH, "JUMP", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_LUCK(PotionBase.SPLASH, "LUCK", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_MUNDANE(PotionBase.SPLASH, "MUNDANE", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_NIGHT_VISION(PotionBase.SPLASH, "NIGHT_VISION", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_NIGHT_VISION_EXTENDED(PotionBase.SPLASH, "NIGHT_VISION", true, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_POISON_1(PotionBase.SPLASH, "POISON", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_POISON_1_EXTENDED(PotionBase.SPLASH, "POISON", true, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_POISON_2(PotionBase.SPLASH, "POISON", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_REGENERATION_1(PotionBase.SPLASH, "REGEN", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_REGENERATION_1_EXTENDED(PotionBase.SPLASH, "REGEN", true, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_REGENERATION_2(PotionBase.SPLASH, "REGEN", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_SLOW_FALLING(PotionBase.SPLASH, "SLOW_FALLING", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_SLOW_FALLING_EXTENDED(PotionBase.SPLASH, "SLOW_FALLING", true, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_SLOWNESS_1(PotionBase.SPLASH, "SLOWNESS", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_SLOWNESS_1_EXTENDED(PotionBase.SPLASH, "SLOWNESS", true, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_SLOWNESS_2(PotionBase.SPLASH, "SLOWNESS", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_STRENGTH_1(PotionBase.SPLASH, "STRENGTH", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_STRENGTH_1_EXTENDED(PotionBase.SPLASH, "STRENGTH", true, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_STRENGTH_2(PotionBase.SPLASH, "STRENGTH", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_SWIFTNESS_1(PotionBase.SPLASH, "SPEED", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_SWIFTNESS_1_EXTENDED(PotionBase.SPLASH, "SPEED", true, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_SWIFTNESS_2(PotionBase.SPLASH, "SPEED", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_THICK(PotionBase.SPLASH, "THICK", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_TURTLE_MASTER_1(PotionBase.SPLASH, "TURTLE_MASTER", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_TURTLE_MASTER_1_EXTENDED(PotionBase.SPLASH, "TURTLE_MASTER", true, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_TURTLE_MASTER_2(PotionBase.SPLASH, "TURTLE_MASTER", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_WATER(PotionBase.SPLASH, "WATER", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_WATER_BREATHING(PotionBase.SPLASH, "WATER_BREATHING", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_WATER_BREATHING_EXTENDED(PotionBase.SPLASH, "WATER_BREATHING", true, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_WEAKNESS(PotionBase.SPLASH, "WEAKNESS", false, false, "POTION", "SPLASH_POTION"),
+    SPLASH_POTION_WEAKNESS_EXTENDED(PotionBase.SPLASH, "WEAKNESS", true, false, "POTION", "SPLASH_POTION"),
     SPONGE("SPONGE"),
     SPRUCE_BOAT("BOAT", null, null, null, "BOAT_SPRUCE", "SPRUCE_BOAT"),
     SPRUCE_BUTTON("WOOD_BUTTON", null, null, null, null, "SPRUCE_BUTTON"),
@@ -1393,16 +1390,13 @@ public enum UMaterial {
         this.data = (byte) data;
     }
     public String getVersionName() {
-        if(versionName == null) {
-            final Material m = getMaterial();
-            if(m != null) versionName = m.name();
-        }
+        if(versionName == null) versionName = setupVersionName();
         return versionName;
     }
     public ItemStack getItemStack() {
         final String v = getVersionName();
         final Material m = v != null ? Material.valueOf(v) : null;
-        ItemStack is = m != null ? new ItemStack(m) : null;
+        ItemStack is = m != null ? version.contains("1.8") || version.contains("1.9") || version.contains("1.10") || version.contains("1.11") || version.contains("1.12") ? new ItemStack(m, 1, data) : new ItemStack(m) : null;
         if(is != null && attributes != null) {
             for(String s : attributes.split(";")) {
                 if(s.startsWith("color=")) {
@@ -1430,8 +1424,8 @@ public enum UMaterial {
     // 3 = 1.11.2
     // 4 = 1.12.2
     // 5 = 1.13.2
-    // 6 = 1.14.2
-    public Material getMaterial() {
+    // 6 = 1.14.3
+    private String setupVersionName() {
         final int ver = version.contains("1.8") ? 0 : version.contains("1.9") ? 1 : version.contains("1.10") ? 2 : version.contains("1.11") ? 3 : version.contains("1.12") ? 4 : version.contains("1.13") ? 5 : version.contains("1.14") ? 6 : names.length-1;
         int realver = names.length <= ver ? names.length-1 : ver;
         if(names[realver] == null) {
@@ -1444,7 +1438,11 @@ public enum UMaterial {
             }
         }
         final String t = names[realver], t2 = names.length > ver ? names[ver] : names[names.length-1];
-        return t != null || t2 != null ? Material.matchMaterial(t != null ? t : t2) : null;
+        return t != null ? t : t2;
+    }
+    public Material getMaterial() {
+        final String i = getVersionName();
+        return i != null ? Material.matchMaterial(i) : null;
     }
     public static ItemStack getEnchantmentBook(Enchantment enchant, int level, int amount) {
         final LinkedHashMap<Enchantment, Integer> e = new LinkedHashMap<>();
@@ -1547,54 +1545,60 @@ public enum UMaterial {
         }
         return null;
     }
-    public static UMaterial matchPotion(ItemStack potion, PotionBase base) {
+    public static UMaterial matchPotion(ItemStack potion) {
         if(potion != null && potion.getItemMeta() instanceof PotionMeta) {
             final String v = Bukkit.getVersion();
             final PotionMeta p = (PotionMeta) potion.getItemMeta();
             final List<PotionEffect> ce = p.getCustomEffects();
             if(ce.size() == 0) {
+                final String base;
                 final PotionEffectType t;
                 final int l, max;
                 final boolean extended;
                 if(v.contains("1.8")) {
                     final Potion po = Potion.fromItemStack(potion);
-                    t = ((PotionEffect) po.getEffects().toArray()[0]).getType();
+                    base = po.isSplash() ? "SPLASH_POTION_" : "POTION_";
+                    final Collection<PotionEffect> e = po.getEffects();
+                    t = e.size() > 0 ? ((PotionEffect) e.toArray()[0]).getType() : null;
                     l = po.getLevel();
-                    max = po.getType().getMaxLevel();
+                    final PotionType ty = po.getType();
+                    max = ty != null ? ty.getMaxLevel() : 0;
                     extended = po.hasExtendedDuration();
                 } else {
                     final org.bukkit.potion.PotionData pd = p.getBasePotionData();
                     final PotionType type = pd.getType();
+                    base = potion.getType().name() + "_";
                     t = type.getEffectType();
                     l = type.isUpgradeable() && pd.isUpgraded() ? 2 : 1;
                     max = type.getMaxLevel();
                     extended = type.isExtendable() && pd.isExtended();
                 }
-                final String a = t.getName(), T = base.equals(PotionBase.NORMAL) ? "POTION_" : base.equals(PotionBase.SPLASH) ? "SPLASH_POTION_" : base.equals(PotionBase.LINGERING) ? "LINGERING_POTION_" : null,
-                        type = a.equals("SPEED") ? "SWIFTNESS"
+                final String a = t != null ? t.getName() : null,
+                        type = a != null ? a.equals("SPEED") ? "SWIFTNESS"
                                 : a.equals("SLOW") ? "SLOWNESS"
                                 : a.equals("INCREASE_DAMAGE") ? "STRENGTH"
                                 : a.equals("HEAL") ? "HEALING"
                                 : a.equals("HARM") ? "HARMING"
                                 : a.equals("JUMP") ? "LEAPING"
-                                : a;
-                final String g = T + type + (l <= max ? "_" + l : "") + (extended ? "_EXTENDED" : "");
-                return T != null ? match(g) : null;
+                                : a : null;
+                if(type != null) {
+                    final String g = base + type + (max != 1 && l <= max ? "_" + l : "") + (extended ? "_EXTENDED" : "");
+                    return valueOf(g);
+                }
             }
         }
         return null;
     }
-    @Deprecated
     public static UMaterial match(ItemStack item) {
-        if(item != null) {
-            final String n = item.getType().name(), v = Bukkit.getVersion();
-            if(!v.contains("1.8") && !v.contains("1.9") && !v.contains("1.10") && !v.contains("1.11") && !v.contains("1.12")) {
-                return match(n);
+        if(item != null && !item.getType().equals(Material.AIR)) {
+            String un = item.getType().name();
+            if(version.contains("1.8") || version.contains("1.9") || version.contains("1.10") || version.contains("1.11") || version.contains("1.12")) {
+                final byte d = un.equals("FLINT_AND_STEEL") ? 0 : item.getData().getData();
+                final UMaterial u = match(un, d), potion = u == null ? matchPotion(item) : null;
+                un = u != null ? u.name() : potion != null ? potion.name() : null;
+                if(un != null) return valueOf(un);
             }
-            final byte d = n.equals("FLINT_AND_STEEL") ? 0 : item.getData().getData();
-            final UMaterial u = match(n, d);
-            final String un = u.name();
-            return un.contains("SPAWN_EGG") ? matchSpawnEgg(item) : un.contains("ENCHANTED_BOOK") ? matchEnchantedBook(item) : un.contains("POTION") ? matchPotion(item, PotionBase.valueOf(un.contains("SPLASH") ? "SPLASH" : un.contains("LINGERING") ? "LINGERING" : "NORMAL")) : u;
+            return un != null ? un.contains("SPAWN_EGG") ? matchSpawnEgg(item) : un.contains("ENCHANTED_BOOK") ? matchEnchantedBook(item) : un.contains("POTION") ? matchPotion(item) : valueOf(un) : null;
         }
         return null;
     }
@@ -1651,7 +1655,7 @@ public enum UMaterial {
         } else if(m.equals("COCOA")) {
             return UMaterial.COCOA_BEANS;
         } else if(m.equals("BREWING_STAND") || m.equals("CAULDRON")) {
-            return UMaterial.valueOf(m + "_ITEM");
+            return valueOf(m + "_ITEM");
         } else if(m.startsWith("DIODE")) {
             return UMaterial.REPEATER;
         } else if(m.startsWith("REDSTONE_COMPARATOR")) {
@@ -1663,7 +1667,7 @@ public enum UMaterial {
     }
     public static UMaterial match(String name) {
         try {
-            return UMaterial.valueOf(name.toUpperCase());
+            return valueOf(name.toUpperCase());
         } catch (Exception e) {
             final byte d = name.contains(":") ? Byte.parseByte(name.split(":")[1]) : 0;
             name = name.split(":")[0].toUpperCase();
@@ -1710,10 +1714,10 @@ class UPotion {
         } else {
             final ItemStack is = new ItemStack(Material.matchMaterial(bn.equals("NORMAL") ? "POTION" : bn.contains("ARROW") ? bn.contains("TIPPED") ? "TIPPED_ARROW" : "ARROW" : bn + "_POTION"));
             final boolean a = !is.getType().equals(Material.ARROW);
-            org.bukkit.inventory.meta.PotionMeta pm = null;
+            PotionMeta pm = null;
             org.bukkit.potion.PotionData pd = null;
             if(a) {
-                pm = (org.bukkit.inventory.meta.PotionMeta) is.getItemMeta();
+                pm = (PotionMeta) is.getItemMeta();
                 pd = new org.bukkit.potion.PotionData(t, t.isExtendable() && extended, t.isUpgradeable() && upgraded);
             }
             potiondata = pd;
