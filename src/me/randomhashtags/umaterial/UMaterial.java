@@ -1,6 +1,5 @@
-package me.randomHashTags.UMaterial;
+package me.randomhashtags.umaterial;
 
-import com.sun.istack.internal.NotNull;
 import org.bukkit.Bukkit;
 import org.bukkit.Color;
 import org.bukkit.Material;
@@ -18,20 +17,18 @@ import org.bukkit.potion.PotionType;
 import java.util.*;
 
 /*
-    UMaterial Version: 8
+    UMaterial Version: 9
 
     This software is created and owned by RandomHashTags, and is licensed under the GNU Affero General Public License v3.0 (https://choosealicense.com/licenses/agpl-3.0/)
     You can only find this software at https://gitlab.com/RandomHashTags/umaterial
     You can find RandomHashTags on
         Discord - RandomHashTags#1948
-        Discord Server - https://discord.gg/CPTsc5X
         Dlive - https://dlive.tv/RandomHashTags
         Email - imrandomhashtags@gmail.com
         GitHub - https://github.com/RandomHashTags
         GitLab - https://gitlab.com/RandomHashTags
         MCMarket - https://www.mc-market.org/members/20858/
         Minecraft - RandomHashTags
-        Mixer - https://mixer.com/randomhashtags
         PayPal - imrandomhashtags@gmail.com
         Reddit - https://www.reddit.com/user/randomhashtags/
         SpigotMC - https://www.spigotmc.org/members/76364/
@@ -40,17 +37,18 @@ import java.util.*;
         Subnautica Mods - https://www.nexusmods.com/users/77115308
         Twitch - https://www.twitch.tv/randomhashtags/
         Twitter - https://twitter.com/irandomhashtags
+        Wikipedia - https://en.wikipedia.org/wiki/User%3ARandomHashTags
         YouTube - https://www.youtube.com/channel/UC3L6Egnt0xuMoz8Ss5k51jw
  */
-public interface Versionable {
+interface Versionable {
     String VERSION = Bukkit.getVersion();
-    boolean EIGHT = VERSION.contains("1.8"), NINE = VERSION.contains("1.9"), TEN = VERSION.contains("1.10"), ELEVEN = VERSION.contains("1.11"), TWELVE = VERSION.contains("1.12"), THIRTEEN = VERSION.contains("1.13"), FOURTEEN = VERSION.contains("1.14"), FIFTEEN = VERSION.contains("1.15");
+    boolean EIGHT = VERSION.contains("1.8"), NINE = VERSION.contains("1.9"), TEN = VERSION.contains("1.10"), ELEVEN = VERSION.contains("1.11"), TWELVE = VERSION.contains("1.12"), THIRTEEN = VERSION.contains("1.13"), FOURTEEN = VERSION.contains("1.14"), FIFTEEN = VERSION.contains("1.15"), SIXTEEN = VERSION.contains("1.16");
     boolean LEGACY = EIGHT || NINE || TEN || ELEVEN || TWELVE;
 }
 
 public enum UMaterial implements Versionable {
     /*
-        <item>(1.8.9, 1.9.4, 1.10.2, 1.11.2, 1.12.2, 1.13.2, 1.14.4, 1.15.0)
+        <item>(1.8.9, 1.9.4, 1.10.2, 1.11.2, 1.12.2, 1.13.2, 1.14.4, 1.15.2, 1.16.4)
         1.8.9 = http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Material.html
         1.13.2 = ?
         1.14.4 = ?
@@ -77,6 +75,7 @@ public enum UMaterial implements Versionable {
     ACTIVATOR_RAIL("ACTIVATOR_RAIL"),
     AIR("AIR"),
     ALLIUM(2, "RED_ROSE", null, null, null, null, "ALLIUM"),
+    ANCIENT_DEBRIS(null, null, null, null, null, null, null, null, "ANCIENT_DEBRIS"),
     ANDESITE(5, "STONE", null, null, null, null, "ANDESITE"),
     ANDESITE_SLAB(null, null, null, null, null, null, "ANDESITE_SLAB"),
     ANDESITE_STAIRS(null, null, null, null, null, null, "ANDESITE_STAIRS"),
@@ -92,6 +91,7 @@ public enum UMaterial implements Versionable {
     BAMBOO_SAPLING(null, null, null, null, null, null, "BAMBOO_SAPLING"),
     BARREL(null, null, null, null, null, null, "BARREL"),
     BARRIER("BARRIER"),
+    BASALT(null, null, null, null, null, null, null, null, "BASALT"),
     BAT_SPAWN_EGG(65, "MONSTER_EGG", null, null, null, null, "BAT_SPAWN_EGG"),
     BEACON("BEACON"),
     BEDROCK("BEDROCK"),
@@ -136,6 +136,10 @@ public enum UMaterial implements Versionable {
     BLACK_STAINED_GLASS_PANE(15, "STAINED_GLASS_PANE", null, null, null, null, "BLACK_STAINED_GLASS_PANE"),
     BLACK_TERRACOTTA(15, "STAINED_CLAY", null, null, null, null, "BLACK_TERRACOTTA"),
     BLACK_WOOL(15, "WOOL", null, null, null, null, "BLACK_WOOL"),
+    BLACKSTONE(null, null, null, null, null, null, null, null, "BLACKSTONE"),
+    BLACKSTONE_SLAB(null, null, null, null, null, null, null, null, "BLACKSTONE_SLAB"),
+    BLACKSTONE_STAIRS(null, null, null, null, null, null, null, null, "BLACKSTONE_STAIRS"),
+    BLACKSTONE_WALL(null, null, null, null, null, null, null, null, "BLACKSTONE_WALL"),
     BLAST_FURNACE(null, null, null, null, null, null, "BLAST_FURNACE"),
     BLAZE_POWDER("BLAZE_POWDER"),
     BLAZE_ROD("BLAZE_ROD"),
@@ -212,10 +216,12 @@ public enum UMaterial implements Versionable {
     CARROT_ON_A_STICK("CARROT_STICK", null, null, null, null, "CARROT_ON_A_STICK"),
     CARTOGRAPHY_TABLE(null, null, null, null, null, null, "CARTOGRAPHY_TABLE"),
     CARVED_PUMPKIN("PUMPKIN", null, null, null, null, "CARVED_PUMPKIN"),
+    CAT_SPAWN_EGG(null, null, null, null, null, null, "CAT_SPAWN_EGG"),
     CAULDRON("CAULDRON"),
     CAULDRON_ITEM("CAULDRON_ITEM", null, null, null, null, "CAULDRON"),
     CAVE_AIR("AIR", null, null, null, null, "CAVE_AIR"),
     CAVE_SPIDER_SPAWN_EGG(59, "MONSTER_EGG", null, null, null, null, "CAVE_SPIDER_SPAWN_EGG"),
+    CHAIN(null, null, null, null, null, null, null, null, "CHAIN"),
     CHAIN_COMMAND_BLOCK("COMMAND", "COMMAND_CHAIN", null, null, null, "CHAIN_COMMAND_BLOCK"),
     CHAINMAIL_BOOTS("CHAINMAIL_BOOTS"),
     CHAINMAIL_CHESTPLATE("CHAINMAIL_CHESTPLATE"),
@@ -227,6 +233,8 @@ public enum UMaterial implements Versionable {
     CHICKEN("RAW_CHICKEN", null, null, null, null, "CHICKEN"),
     CHICKEN_SPAWN_EGG(93, "MONSTER_EGG", null, null, null, null, "CHICKEN_SPAWN_EGG"),
     CHIPPED_ANVIL(1, "ANVIL", null, null, null, null, "CHIPPED_ANVIL"),
+    CHISELED_NETHER_BRICKS(null, null, null, null, null, null, null, null, "CHISELED_NETHER_BRICKS"),
+    CHISELED_POLISHED_BLACKSTONE(null, null, null, null, null, null, null, null, "CHISELED_POLISHED_BLACKSTONE"),
     CHISELED_QUARTZ_BLOCK(1, "QUARTZ_BLOCK", null, null, null, null, "CHISELED_QUARTZ_BLOCK"),
     CHISELED_RED_SANDSTONE(1, "RED_SANDSTONE", null, null, null, null, "CHISELED_RED_SANDSTONE"),
     CHISELED_SANDSTONE(1, "SANDSTONE", null, null, null, null, "CHISELED_SANDSTONE"),
@@ -267,13 +275,32 @@ public enum UMaterial implements Versionable {
     COOKIE("COOKIE"),
     CORNFLOWER(null, null, null, null, null, null, "CORNFLOWER"),
     COW_SPAWN_EGG(92, "MONSTER_EGG", null, null, null, null, "COW_SPAWN_EGG"),
+    CRACKED_NETHER_BRICKS(null, null, null, null, null, null, null, null, "CRACKED_NETHER_BRICKS"),
+    CRACKED_POLISHED_BLACKSTONE_BRICKS(null, null, null, null, null, null, null, null, "CRACKED_POLISHED_BLACKSTONE_BRICKS"),
     CRACKED_STONE_BRICKS(2, "SMOOTH_BRICK", null, null, null, null, "CRACKED_STONE_BRICKS"),
     CRAFTING_TABLE("WORKBENCH", null, null, null, null, "CRAFTING_TABLE"),
     CREEPER_BANNER_PATTERN(null, null, null, null, null, null, "CREEPER_BANNER_PATTERN"),
     CREEPER_HEAD(4, "SKULL_ITEM", null, null, null, null, "CREEPER_HEAD"),
     CREEPER_SPAWN_EGG(50, "MONSTER_EGG", null, null, null, null, "CREEPER_SPAWN_EGG"),
     CREEPER_WALL_HEAD(3, "SKULL", null, null, null, null, "CREEPER_WALL_HEAD"),
+    CRIMSON_BUTTON(null, null, null, null, null, null, null, null, "CRIMSON_BUTTON"),
+    CRIMSON_DOOR(null, null, null, null, null, null, null, null, "CRIMSON_DOOR"),
+    CRIMSON_FENCE(null, null, null, null, null, null, null, null, "CRIMSON_FENCE"),
+    CRIMSON_FENCE_GATE(null, null, null, null, null, null, null, null, "CRIMSON_FENCE_GATE"),
+    CRIMSON_FUNGUS(null, null, null, null, null, null, null, null, "CRIMSON_FUNGUS"),
+    CRIMSON_HYPHAE(null, null, null, null, null, null, null, null, "CRIMSON_HYPHAE"),
+    CRIMSON_NYLIUM(null, null, null, null, null, null, null, null, "CRIMSON_NYLIUM"),
+    CRIMSON_PLANKS(null, null, null, null, null, null, null, null, "CRIMSON_PLANKS"),
+    CRIMSON_PRESSURE_PLATE(null, null, null, null, null, null, null, null, "CRIMSON_PRESSURE_PLATE"),
+    CRIMSON_ROOTS(null, null, null, null, null, null, null, null, "CRIMSON_ROOTS"),
+    CRIMSON_SIGN(null, null, null, null, null, null, null, null, "CRIMSON_SIGN"),
+    CRIMSON_SLAB(null, null, null, null, null, null, null, null, "CRIMSON_SLAB"),
+    CRIMSON_STAIRS(null, null, null, null, null, null, null, null, "CRIMSON_STAIRS"),
+    CRIMSON_STEM(null, null, null, null, null, null, null, null, "CRIMSON_STEM"),
+    CRIMSON_TRAPDOOR(null, null, null, null, null, null, null, null, "CRIMSON_TRAPDOOR"),
+    CRIMSON_WALL_SIGN(null, null, null, null, null, null, null, null, "CRIMSON_WALL_SIGN"),
     CROSSBOW(null, null, null, null, null, null, "CROSSBOW"),
+    CRYING_OBSIDIAN(null, null, null, null, null, null, null, null, "CRYING_OBSIDIAN"),
     CUT_RED_SANDSTONE(2, "RED_SANDSTONE", null, null, null, null, "CUT_RED_SANDSTONE"),
     CUR_RED_SANDSTONE_SLAB(null, null, null, null, null, null, "CUT_RED_SANDSTONE_SLAB"),
     CUT_SANDSTONE(2, "SANDSTONE", null, null, null, null, "CUT_SANDSTONE"),
@@ -476,6 +503,9 @@ public enum UMaterial implements Versionable {
     ENCHANTED_BOOK_SMITE_3("ENCHANTED_BOOK", Enchantment.DAMAGE_UNDEAD, 3),
     ENCHANTED_BOOK_SMITE_4("ENCHANTED_BOOK", Enchantment.DAMAGE_UNDEAD, 4),
     ENCHANTED_BOOK_SMITE_5("ENCHANTED_BOOK", Enchantment.DAMAGE_UNDEAD, 5),
+    ENCHANTED_BOOK_SOUL_SPEED_1("ENCHANTED_BOOK", Enchantment.getByName(Enchantment.getByName("SOUL_SPEED") != null ? "SOUL_SPEED" : "FEATHER_FALLING"), 1),
+    ENCHANTED_BOOK_SOUL_SPEED_2("ENCHANTED_BOOK", Enchantment.getByName(Enchantment.getByName("SOUL_SPEED") != null ? "SOUL_SPEED" : "FEATHER_FALLING"), 2),
+    ENCHANTED_BOOK_SOUL_SPEED_3("ENCHANTED_BOOK", Enchantment.getByName(Enchantment.getByName("SOUL_SPEED") != null ? "SOUL_SPEED" : "FEATHER_FALLING"), 3),
     ENCHANTED_BOOK_SWEEPING_EDGE_1("ENCHANTED_BOOK", Enchantment.getByName(Enchantment.getByName("SWEEPING_EDGE") != null ? "SWEEPING_EDGE" : "DAMAGE_UNDEAD"), 1),
     ENCHANTED_BOOK_SWEEPING_EDGE_2("ENCHANTED_BOOK", Enchantment.getByName(Enchantment.getByName("SWEEPING_EDGE") != null ? "SWEEPING_EDGE" : "DAMAGE_UNDEAD"), 2),
     ENCHANTED_BOOK_SWEEPING_EDGE_3("ENCHANTED_BOOK", Enchantment.getByName(Enchantment.getByName("SWEEPING_EDGE") != null ? "SWEEPING_EDGE" : "DAMAGE_UNDEAD"), 3),
@@ -530,6 +560,7 @@ public enum UMaterial implements Versionable {
     FURNACE_MINECART("POWERED_MINECART", null, null, null, null, "FURNACE_MINECART"),
     GHAST_SPAWN_EGG(56, "MONSTER_EGG", null, null, null, null, "GHAST_SPAWN_EGG"),
     GHAST_TEAR("GHAST_TEAR"),
+    GILDED_BLACKSTONE(null, null, null, null, null, null, null, null, "GILDED_BLACKSTONE"),
     GLASS("GLASS"),
     GLASS_BOTTLE("GLASS_BOTTLE"),
     GLASS_PANE("THIN_GLASS", null, null, null, null, "GLASS_PANE"),
@@ -602,6 +633,7 @@ public enum UMaterial implements Versionable {
     HAY_BLOCK("HAY_BLOCK"),
     HEART_OF_THE_SEA(null, null, null, null, null, "HEART_OF_THE_SEA"),
     HEAVY_WEIGHTED_PRESSURE_PLATE("IRON_PLATE", null, null, null, null, "HEAVY_WEIGHTED_PRESSURE_PLATE"),
+    HOGLIN_SPAWN_EGG(null, null, null, null, null, null, null, null, "HOGLIN_SPAWN_EGG"),
     HONEY_BLOCK(null, null, null, null, null, null, null, "HONEY_BLOCK"),
     HONEY_BOTTLE(null, null, null, null, null, null, null, "HONEY_BOTTLE"),
     HONEYCOMB(null, null, null, null, null, null, null, "HONEYCOMB"),
@@ -780,6 +812,7 @@ public enum UMaterial implements Versionable {
     LINGERING_POTION_WEAKNESS(PotionBase.LINGERING, "WEAKNESS", false, false, null, "LINGERING_POTION"),
     LINGERING_POTION_WEAKNESS_EXTENDED(PotionBase.LINGERING, "WEAKNESS", true, false, null, "LINGERING_POTION"),
     LLAMA_SPAWN_EGG(103, null, null, null, "MONSTER_EGG", null, "LLAMA_SPAWN_EGG"),
+    LODESTONE(null, null, null, null, null, null, null, null, "LODESTONE"),
     LOOM(null, null, null, null, null, null, "LOOM"),
     MAGENTA_BANNER(13, "BANNER", null, null, null, null, "MAGENTA_BANNER"),
     MAGENTA_BED(2, "BED", null, null, null, null, "MAGENTA_BED"),
@@ -830,6 +863,7 @@ public enum UMaterial implements Versionable {
     MUSIC_DISC_FAR("RECORD_5", null, null, null, null, "MUSIC_DISC_FAR"),
     MUSIC_DISC_MALL("RECORD_6", null, null, null, null, "MUSIC_DISC_MALL"),
     MUSIC_DISC_MELLOHI("RECORD_7", null, null, null, null, "MUSIC_DISC_MELLOHI"),
+    MUSIC_DISC_PIGSTEP(null, null, null, null, null, null, null, null, "MUSIC_DISC_PIGSTEP"),
     MUSIC_DISC_STAL("RECORD_8", null, null, null, null, "MUSIC_DISC_STAL"),
     MUSIC_DISC_STRAD("RECORD_9", null, null, null, null, "MUSIC_DISC_STRAD"),
     MUSIC_DISC_WAIT("RECORD_12", null, null, null, null, "MUSIC_DISC_WAIT"),
@@ -844,11 +878,25 @@ public enum UMaterial implements Versionable {
     NETHER_BRICK_STAIRS("NETHER_BRICK_STAIRS"),
     NETHER_BRICK_WALL(null, null, null, null, null, null, "NETHER_BRICK_WALL"),
     NETHER_BRICKS("NETHER_BRICK", null, null, null, null, "NETHER_BRICKS"),
+    NETHER_GOLD_ORE(null, null, null, null, null, null, null, null, "NETHER_GOLD_ORE"),
     NETHER_PORTAL("PORTAL", null, null, null, null, "NETHER_PORTAL"),
     NETHER_QUARTZ_ORE("QUARTZ_ORE", null, null, null, null, "NETHER_QUARTZ_ORE"),
+    NETHER_SPROUTS(null, null, null, null, null, null, null, null, "NETHER_SPROUTS"),
     NETHER_STAR("NETHER_STAR"),
     NETHER_WART("NETHER_STALK", null, null, null, null, "NETHER_WART"),
     NETHER_WART_BLOCK("NETHER_WARTS", null, "NETHER_WART_BLOCK"),
+    NETHERITE_AXE(null, null, null, null, null, null, null, null, "NETHERITE_AXE"),
+    NETHERITE_BLOCK(null, null, null, null, null, null, null, null, "NETHERITE_BLOCK"),
+    NETHERITE_BOOTS(null, null, null, null, null, null, null, null, "NETHERITE_BOOTS"),
+    NETHERITE_CHESTPLATE(null, null, null, null, null, null, null, null, "NETHERITE_CHESTPLATE"),
+    NETHERITE_HELMET(null, null, null, null, null, null, null, null, "NETHERITE_HELMET"),
+    NETHERITE_HOE(null, null, null, null, null, null, null, null, "NETHERITE_HOE"),
+    NETHERITE_INGOT(null, null, null, null, null, null, null, null, "NETHERITE_INGOT"),
+    NETHERITE_LEGGINGS(null, null, null, null, null, null, null, null, "NETHERITE_LEGGINGS"),
+    NETHERITE_PICKAXE(null, null, null, null, null, null, null, null, "NETHERITE_PICKAXE"),
+    NETHERITE_SCRAP(null, null, null, null, null, null, null, null, "NETHERITE_SCRAP"),
+    NETHERITE_SHOVEL(null, null, null, null, null, null, null, null, "NETHERITE_SHOVEL"),
+    NETHERITE_SWORD(null, null, null, null, null, null, null, null, "NETHERITE_SWORD"),
     NETHERRACK("NETHERRACK"),
     NOTE_BLOCK("NOTE_BLOCK"),
     OAK_BOAT("BOAT", null, null, null, null, "OAK_BOAT"),
@@ -892,6 +940,7 @@ public enum UMaterial implements Versionable {
     OXEYE_DAISY(8, "RED_ROSE", null, null, null, null, "OXEYE_DAISY"),
     PACKED_ICE("PACKED_ICE"),
     PAINTING("PAINTING"),
+    PANDA_SPAWN_EGG(null, null, null, null, null, null, "PANDA_SPAWN_EGG"),
     PAPER("PAPER"),
     PARROT_SPAWN_EGG(105, null, null, null, null, "MONSTER_EGG", "PARROT_SPAWN_EGG"),
     PEONY(5, "DOUBLE_PLANT", null, null, null, null, "PEONY"),
@@ -899,6 +948,9 @@ public enum UMaterial implements Versionable {
     PHANTOM_MEMBRANE(null, null, null, null, null, "PHANTOM_MEMBRANE"),
     PHANTOM_SPAWN_EGG(null, null, null, null, null, "PHANTOM_SPAWN_EGG"),
     PIG_SPAWN_EGG(90, "MONSTER_EGG", null, null, null, null, "PIG_SPAWN_EGG"),
+    PIGLIN_BANNER_PATTERN(null, null, null, null, null, null, null, null, "PIGLIN_BANNER_PATTERN"),
+    PIGLIN_BRUTE_SPAWN_EGG(null, null, null, null, null, null, null, null, "PIGLIN_BRUTE_SPAWN_EGG"),
+    PIGLIN_SPAWN_EGG(null, null, null, null, null, null, null, null, "PIGLIN_SPAWN_EGG"),
     PILLAGER_SPAWN_EGG(null, null, null, null, null, null, "PILLAGER_SPAWN_EGG"),
     PINK_BANNER(9, "BANNER", null, null, null, null, "PINK_BANNER"),
     PINK_BED(6, "BED", null, null, null, null, "PINK_BED"),
@@ -929,6 +981,16 @@ public enum UMaterial implements Versionable {
     POLISHED_ANDESITE(6, "STONE", null, null, null, null, "POLISHED_ANDESITE"),
     POLISHED_ANDESITE_SLAB(null, null, null, null, null, null, "POLISHED_ANDESITE_SLAB"),
     POLISHED_ANDESITE_STAIRS(null, null, null, null, null, null, "POLISHED_ANDESITE_STAIRS"),
+    POLISHED_BASALT(null, null, null, null, null, null, null, null, "POLISHED_BASALT"),
+    POLISHED_BLACKSTONE_BRICK_SLAB(null, null, null, null, null, null, null, null, "POLISHED_BLACKSTONE_BRICK_SLAB"),
+    POLISHED_BLACKSTONE_BRICK_STAIRS(null, null, null, null, null, null, null, null, "POLISHED_BLACKSTONE_BRICK_STAIRS"),
+    POLISHED_BLACKSTONE_BRICK_WALL(null, null, null, null, null, null, null, null, "POLISHED_BLACKSTONE_BRICK_WALL"),
+    POLISHED_BLACKSTONE_BRICKS(null, null, null, null, null, null, null, null, "POLISHED_BLACKSTONE_BRICKS"),
+    POLISHED_BLACKSTONE_BUTTON(null, null, null, null, null, null, null, null, "POLISHED_BLACKSTONE_BUTTON"),
+    POLISHED_BLACKSTONE_PRESSURE_PLATE(null, null, null, null, null, null, null, null, "POLISHED_BLACKSTONE_PRESSURE_PLATE"),
+    POLISHED_BLACKSTONE_SLAB(null, null, null, null, null, null, null, null, "POLISHED_BLACKSTONE_SLAB"),
+    POLISHED_BLACKSTONE_STAIRS(null, null, null, null, null, null, null, null, "POLISHED_BLACKSTONE_STAIRS"),
+    POLISHED_BLACKSTONE_WALL(null, null, null, null, null, null, null, null, "POLISHED_BLACKSTONE_WALL"),
     POLISHED_DIORITE(4, "STONE", null, null, null, null, "POLISHED_DIORITE"),
     POLISHED_DIORITE_SLAB(null, null, null, null, null, null, "POLISHED_DIORITE_SLAB"),
     POLISHED_DIORITE_STAIRS(null, null, null, null, null, null, "POLISHED_DIORITE_STAIRS"),
@@ -991,6 +1053,9 @@ public enum UMaterial implements Versionable {
     POTTED_BLUE_ORCHID(null, null, null, null, null, "POTTED_BLUE_ORCHID"),
     POTTED_BROWN_MUSHROOM(null, null, null, null, null, "POTTED_BROWN_MUSHROOM"),
     POTTED_CACTUS(null, null, null, null, null, "POTTED_CACTUS"),
+    POTTED_CORNFLOWER(null, null, null, null, null, null, "POTTED_CORNFLOWER"),
+    POTTED_CRIMSON_FUNGUS(null, null, null, null, null, null, null, null, "POTTED_CRIMSON_FUNGUS"),
+    POTTED_CRIMSON_ROOTS(null, null, null, null, null, null, null, null, "POTTED_CRIMSON_ROOTS"),
     POTTED_DANDELION(null, null, null, null, null, "POTTED_DANDELION"),
     POTTED_DARK_OAK_SAPLING(null, null, null, null, null, "POTTED_DARK_OAK_SAPLING"),
     POTTED_DEAD_BUSH(null, null, null, null, null, "POTTED_DEAD_BUSH"),
@@ -1005,6 +1070,8 @@ public enum UMaterial implements Versionable {
     POTTED_RED_MUSHROOM(null, null, null, null, null, "POTTED_RED_MUSHROOM"),
     POTTED_RED_TULIP(null, null, null, null, null, "POTTED_RED_TULIP"),
     POTTED_SPRUCE_SAPLING(null, null, null, null, null, "POTTED_SPRUCE_SAPLING"),
+    POTTED_WARPED_FUNGUS(null, null, null, null, null, null, null, null, "POTTED_WARPED_FUNGUS"),
+    POTTED_WARPED_ROOTS(null, null, null, null, null, null, null, null, "POTTED_WARPED_ROOTS"),
     POTTED_WHITE_TULIP(null, null, null, null, null, "POTTED_WHITE_TULIP"),
     POTTED_WITHER_ROSE(null, null, null, null, null, null, "POTTED_WITHER_ROSE"),
     POWERED_RAIL("POWERED_RAIL"),
@@ -1047,6 +1114,7 @@ public enum UMaterial implements Versionable {
     PURPUR_STAIRS(null, "PURPUR_STAIRS"),
     QUARTZ("QUARTZ"),
     QUARTZ_BLOCK("QUARTZ_BLOCK"),
+    QUARTZ_BRICKS(null, null, null, null, null, null, null, null, "QUARTZ_BRICKS"),
     QUARTZ_PILLAR(2, "QUARTZ_BLOCK", null, null, null, null, "QUARTZ_PILLAR"),
     QUARTZ_SLAB(7, "STEP", null, null, null, null, "QUARTZ_SLAB"),
     QUARTZ_STAIRS("QUARTZ_STAIRS"),
@@ -1097,6 +1165,7 @@ public enum UMaterial implements Versionable {
     REDSTONE_WIRE("REDSTONE_WIRE"),
     REPEATER("DIODE", null, null, null, null, "REPEATER"),
     REPEATING_COMMAND_BLOCK("COMMAND", "COMMAND_REPEATING", null, null, null, "REPEATING_COMMAND_BLOCK"),
+    RESPAWN_ANCHOR(null, null, null, null, null, null, null, null, "RESPAWN_ANCHOR"),
     ROSE_BUSH(4, "DOUBLE_PLANT", null, null, null, null, "ROSE_BUSH"),
     ROTTEN_FLESH("ROTTEN_FLESH"),
     SADDLE("SADDLE"),
@@ -1116,6 +1185,7 @@ public enum UMaterial implements Versionable {
     SHEARS("SHEARS"),
     SHEEP_SPAWN_EGG(91, "MONSTER_EGG", null, null, null, null, "SHEEP_SPAWN_EGG"),
     SHIELD(null, "SHIELD"),
+    SHROOMLIGHT(null, null, null, null, null, null, null, null, "SHROOMLIGHT"),
     SHULKER_BOX(null, null, null, "WHITE_SHULKER_BOX"),
     SHULKER_SHELL(null, null, null, "SHULKER_SHELL"),
     SHULKER_SPAWN_EGG(69, null, null, null, "MONSTER_EGG", null, "SHULKER_SPAWN_EGG"),
@@ -1145,7 +1215,13 @@ public enum UMaterial implements Versionable {
     SNOW("SNOW"),
     SNOW_BLOCK("SNOW_BLOCK"),
     SNOWBALL("SNOW_BALL", null, null, null, null, "SNOWBALL"),
+    SOUL_CAMPFIRE(null, null, null, null, null, null, null, null, "SOUL_CAMPFIRE"),
+    SOUL_FIRE(null, null, null, null, null, null, null, null, "SOUL_FIRE"),
+    SOUL_LANTERN(null, null, null, null, null, null, null, null, "SOUL_LANTERN"),
     SOUL_SAND("SOUL_SAND"),
+    SOUL_SOIL(null, null, null, null, null, null, null, null, "SOUL_SOIL"),
+    SOUL_TORCH(null, null, null, null, null, null, null, null, "SOUL_TORCH"),
+    SOUL_WALL_TORCH(null, null, null, null, null, null, null, null, "SOUL_WALL_TORCH"),
     SPAWN_EGG("MONSTER_EGG", null, null, null, null, "LEGACY_MONSTER_EGG"),
     SPAWNER("MOB_SPAWNER", null, null, null, null, "SPAWNER"),
     SPECTRAL_ARROW("ARROW", "SPECTRAL_ARROW"),
@@ -1231,11 +1307,14 @@ public enum UMaterial implements Versionable {
     STONE_SWORD("STONE_SWORD"),
     STONECUTTER(null, null, null, null, null, null, "STONECUTTER"),
     STRAY_SPAWN_EGG(null, null, "MONSTER_EGG", null, null, "STRAY_SPAWN_EGG"),
+    STRIDER_SPAWN_EGG(null, null, null, null, null, null, null, null, "STRIDER_SPAWN_EGG"),
     STRING("STRING"),
     STRIPPED_ACACIA_LOG(null, null, null, null, null, "STRIPPED_ACACIA_LOG"),
     STRIPPED_ACACIA_WOOD(null, null, null, null, null, "STRIPPED_ACACIA_WOOD"),
     STRIPPED_BIRCH_LOG(null, null, null, null, null, "STRIPPED_BIRCH_LOG"),
     STRIPPED_BIRCH_WOOD(null, null, null, null, null, "STRIPPED_BIRCH_WOOD"),
+    STRIPPED_CRIMSON_HYPHAE(null, null, null, null, null, null, null, null, "STRIPPED_CRIMSON_HYPHAE"),
+    STRIPPED_CRIMSON_STEM(null, null, null, null, null, null, null, null, "STRIPPED_CRIMSON_STEM"),
     STRIPPED_DARK_OAK_LOG(null, null, null, null, null, "STRIPPED_DARK_OAK_LOG"),
     STRIPPED_DARK_OAK_WOOD(null, null, null, null, null, "STRIPPED_DARK_OAK_WOOD"),
     STRIPPED_JUNGLE_LOG(null, null, null, null, null, "STRIPPED_JUNGLE_LOG"),
@@ -1244,6 +1323,8 @@ public enum UMaterial implements Versionable {
     STRIPPED_OAK_WOOD(null, null, null, null, null, "STRIPPED_OAK_WOOD"),
     STRIPPED_SPRUCE_LOG(null, null, null, null, null, "STRIPPED_SPRUCE_LOG"),
     STRIPPED_SPRUCE_WOOD(null, null, null, null, null, "STRIPPED_SPRUCE_WOOD"),
+    STRIPPED_WARPED_HYPHAE(null, null, null, null, null, null, null, null, "STRIPPED_WARPED_HYPHAE"),
+    STRIPPED_WARPED_STEM(null, null, null, null, null, null, null, null, "STRIPPED_WARPED_STEM"),
     STRUCTURE_BLOCK(null, "STRUCTURE_BLOCK"),
     STRUCTURE_VOID(null, null, "STRUCTURE_VOID"),
     SUGAR("SUGAR"),
@@ -1256,6 +1337,7 @@ public enum UMaterial implements Versionable {
     TALL_GRASS_BOTTOM(2, "DOUBLE_PLANT", null, null, null, null, "TALL_GRASS"),
     TALL_GRASS_TOP(2, "DOUBLE_PLANT", null, null, null, null, "TALL_GRASS"),
     TALL_SEAGRASS(null, null, null, null, null, "TALL_SEAGRASS"),
+    TARGET(null, null, null, null, null, null, null, null, "TARGET"),
     TERRACOTTA("HARD_CLAY", null, null, null, null, "TERRACOTTA"),
     TIPPED_ARROW("ARROW", null, null, null, "TIPPED_ARROW"),
     TIPPED_ARROW_FIRE_RESISTANCE(PotionBase.TIPPED_ARROW, "FIRE_RESISTANCE", false, false, "ARROW", "TIPPED_ARROW"),
@@ -1315,6 +1397,8 @@ public enum UMaterial implements Versionable {
     TURTLE_EGG(null, null, null, null, null, "TURTLE_EGG"),
     TURTLE_HELMET(null, null, null, null, null, "TURTLE_HELMET"),
     TURTLE_SPAWN_EGG(null, null, null, null, null, "TURTLE_SPAWN_EGG"),
+    TWISTING_VINES(null, null, null, null, null, null, null, null, "TWISTING_VINES"),
+    TWISTING_VINES_PLANT(null, null, null, null, null, null, null, null, "TWISTING_VINES_PLANT"),
     VEX_SPAWN_EGG(35, null, null, null, "MONSTER_EGG", null, "VEX_SPAWN_EGG"),
     VILLAGER_SPAWN_EGG(120, "MONSTER_EGG", null, null, null, null, "VILLAGER_SPAWN_EGG"),
     VINDICATOR_SPAWN_EGG(36, null, null, null, "MONSTER_EGG", null, "VINDICATOR_SPAWN_EGG"),
@@ -1322,8 +1406,28 @@ public enum UMaterial implements Versionable {
     VOID_AIR("AIR", null, null, null, null, "VOID_AIR"),
     WALL_TORCH(null, null, null, null, null, "WALL_TORCH"),
     WANDERING_TRADER_SPAWN_EGG(null, null, null, null, null, null, "WANDERING_TRADER_SPAWN_EGG"),
+    WARPED_BUTTON(null, null, null, null, null, null, null, null, "WARPED_BUTTON"),
+    WARPED_DOOR(null, null, null, null, null, null, null, null, "WARPED_DOOR"),
+    WARPED_FENCE(null, null, null, null, null, null, null, null, "WARPED_FENCE"),
+    WARPED_FENCE_GATE(null, null, null, null, null, null, null, null, "WARPED_FENCE_GATE"),
+    WARPED_FUNGUS(null, null, null, null, null, null, null, null, "WARPED_FUNGUS"),
+    WARPED_FUNGUS_ON_A_STICK(null, null, null, null, null, null, null, null, "WARPED_FUNGUS_ON_A_STICK"),
+    WARPED_HYPHAE(null, null, null, null, null, null, null, null, "WARPED_HYPHAE"),
+    WARPED_NYLIUM(null, null, null, null, null, null, null, null, "WARPED_NYLIUM"),
+    WARPED_PLANKS(null, null, null, null, null, null, null, null, "WARPED_PLANKS"),
+    WARPED_PRESSURE_PLATE(null, null, null, null, null, null, null, null, "WARPED_PRESSURE_PLATE"),
+    WARPED_ROOTS(null, null, null, null, null, null, null, null, "WARPED_ROOTS"),
+    WARPED_SIGN(null, null, null, null, null, null, null, null, "WARPED_SIGN"),
+    WARPED_SLAB(null, null, null, null, null, null, null, null, "WARPED_SLAB"),
+    WARPED_STAIRS(null, null, null, null, null, null, null, null, "WARPED_STAIRS"),
+    WARPED_STEM(null, null, null, null, null, null, null, null, "WARPED_STEM"),
+    WARPED_TRAPDOOR(null, null, null, null, null, null, null, null, "WARPED_TRAPDOOR"),
+    WARPED_WALL_SIGN(null, null, null, null, null, null, null, null, "WARPED_WALL_SIGN"),
+    WARPED_WART_BLOCK(null, null, null, null, null, null, null, null, "WARPED_WART_BLOCK"),
     WATER("WATER"),
     WATER_BUCKET("WATER_BUCKET"),
+    WEEPING_VINES(null, null, null, null, null, null, null, null, "WEEPING_VINES"),
+    WEEPING_VINES_PLANT(null, null, null, null, null, null, null, null, "WEEPING_VINES_PLANT"),
     WET_SPONGE(1, "SPONGE", null, null, null, null, "WET_SPONGE"),
     WHEAT("WHEAT"),
     WHEAT_SEEDS("SEEDS", null, null, null, null, "WHEAT_SEEDS"),
@@ -1376,6 +1480,7 @@ public enum UMaterial implements Versionable {
     YELLOW_TERRACOTTA(4, "STAINED_CLAY", null, null, null, null, "YELLOW_TERRACOTTA"),
     YELLOW_WALL_BANNER(11, "BANNER", null, null, null, null, "YELLOW_WALL_BANNER"),
     YELLOW_WOOL(4, "WOOL", null, null, null, null, "YELLOW_WOOL"),
+    ZOGLIN_SPAWN_EGG(null, null, null, null, null, null, null, null, "ZOGLIN_SPAWN_EGG"),
     ZOMBIE_HEAD(2, "SKULL", null, null, null, null, "ZOMBIE_HEAD"),
     ZOMBIE_HEAD_ITEM(2, "SKULL_ITEM", null, null, null, null, "ZOMBIE_HEAD"),
     ZOMBIE_HORSE_SPAWN_EGG(null, null, null, null, null, "ZOMBIE_HORSE_SPAWN_EGG"),
@@ -1384,11 +1489,12 @@ public enum UMaterial implements Versionable {
     ZOMBIE_VILLAGER_SPAWN_EGG(null, null, null, null, null, "ZOMBIE_VILLAGER_SPAWN_EGG"),
     ZOMBIE_WALL_HEAD(2, "SKULL", null, null, null, null, null, "ZOMBIE_WALL_HEAD")
     ;
-    private static final HashMap<String, UMaterial> CACHE = new HashMap<>();
-    private static final HashMap<String, ItemStack> inMemory = new HashMap<>();
+    private static final HashMap<String, UMaterial> CACHED_UMATERIALS = new HashMap<>();
+    private static final HashMap<String, ItemStack> CACHED_ITEMSTACKS = new HashMap<>();
     private String[] names = new String[8];
     private String versionName, attributes;
     private byte data;
+
     UMaterial(String ...names) {
         this(0, names);
     }
@@ -1418,84 +1524,88 @@ public enum UMaterial implements Versionable {
         this.data = (byte) data;
     }
     public String getVersionName() {
-        if(versionName == null) versionName = setupVersionName();
+        if(versionName == null) {
+            versionName = setupVersionName();
+        }
         return versionName;
     }
     public ItemStack getItemStack() {
-        final String v = getVersionName();
-        final Material m = v != null ? Material.valueOf(v) : null;
-        ItemStack is = m != null ? EIGHT || NINE || TEN || ELEVEN || TWELVE ? new ItemStack(m, 1, data) : new ItemStack(m) : null;
-        if(is != null && attributes != null) {
-            for(String s : attributes.split(";")) {
-                if(s.startsWith("color=")) {
-                    final String[] a = s.split(":");
-                    final LeatherArmorMeta me = (LeatherArmorMeta) is.getItemMeta();
-                    me.setColor(Color.fromRGB(Integer.parseInt(a[0]), Integer.parseInt(a[1]), Integer.parseInt(a[2])));
-                    is.setItemMeta(me);
-                } else if(s.startsWith("enchant=")) {
-                    final String[] e = s.split("=")[1].split(":");
-                    final EnchantmentStorageMeta sm = (EnchantmentStorageMeta) is.getItemMeta();
-                    sm.addStoredEnchant(Enchantment.getByName(e[0]), Integer.parseInt(e[1]), true);
-                    is.setItemMeta(sm);
-                } else if(s.startsWith("upotion=")) {
-                    final String[] p = s.split("=")[1].split(":");
-                    is = new UPotion(PotionBase.valueOf(p[0]), p[1], Boolean.parseBoolean(p[2]), Boolean.parseBoolean(p[3])).getItemStack();
+        final String materialName = getVersionName();
+        final Material material = materialName != null ? Material.valueOf(materialName) : null;
+        ItemStack item = material != null ? EIGHT || NINE || TEN || ELEVEN || TWELVE ? new ItemStack(material, 1, data) : new ItemStack(material) : null;
+        if(item != null && attributes != null) {
+            for(String attribute : attributes.split(";")) {
+                final String[] values = attribute.split("=")[1].split(":");
+                if(attribute.startsWith("color=")) {
+                    final LeatherArmorMeta meta = (LeatherArmorMeta) item.getItemMeta();
+                    meta.setColor(Color.fromRGB(Integer.parseInt(values[0]), Integer.parseInt(values[1]), Integer.parseInt(values[2])));
+                    item.setItemMeta(meta);
+                } else if(attribute.startsWith("enchant=")) {
+                    final EnchantmentStorageMeta meta = (EnchantmentStorageMeta) item.getItemMeta();
+                    meta.addStoredEnchant(Enchantment.getByName(values[0]), Integer.parseInt(values[1]), true);
+                    item.setItemMeta(meta);
+                } else if(attribute.startsWith("upotion=")) {
+                    item = new UPotion(PotionBase.valueOf(values[0]), values[1], Boolean.parseBoolean(values[2]), Boolean.parseBoolean(values[3])).getItemStack();
                 }
             }
         }
-        return is;
+        return item;
     }
-    public byte getData() { return data; }
+    public byte getData() {
+        return data;
+    }
 
     private String setupVersionName() {
-        final int ver = EIGHT ? 0 : NINE ? 1 : TEN ? 2 : ELEVEN ? 3 : TWELVE ? 4 : THIRTEEN ? 5 : FOURTEEN ? 6 : FIFTEEN ? 7 : names.length-1;
-        int realver = names.length <= ver ? names.length-1 : ver;
-        if(names[realver] == null) {
-            boolean did = false;
-            for(int i = realver; i >= 0; i--) {
-                if(!did && names[i] != null) {
-                    realver = i;
-                    did = true;
+        final int nameLength = names.length;
+        final int targetVersion = EIGHT ? 0 : NINE ? 1 : TEN ? 2 : ELEVEN ? 3 : TWELVE ? 4 : THIRTEEN ? 5 : FOURTEEN ? 6 : FIFTEEN ? 7 : SIXTEEN ? 8 : names.length-1;
+        int latestVersion = nameLength <= targetVersion ? nameLength-1 : targetVersion;
+        if(names[latestVersion] == null) {
+            for(int i = latestVersion; i >= 0; i--) {
+                if(names[i] != null) {
+                    latestVersion = i;
+                    break;
                 }
             }
         }
-        final String t = names[realver], t2 = names.length > ver ? names[ver] : names[names.length-1];
-        return t != null ? t : t2;
+        final String latestMaterial = names[latestVersion], targetMaterial = nameLength > targetVersion ? names[targetVersion] : names[nameLength-1];
+        return latestMaterial != null ? latestMaterial : targetMaterial;
     }
     public Material getMaterial() {
-        final String i = getVersionName();
-        return i != null ? Material.matchMaterial(i) : null;
+        final String versionMaterial = getVersionName();
+        return versionMaterial != null ? Material.matchMaterial(versionMaterial) : null;
     }
     public static ItemStack getEnchantmentBook(Enchantment enchant, int level, int amount) {
-        final LinkedHashMap<Enchantment, Integer> e = new LinkedHashMap<Enchantment, Integer>() {{ put(enchant, level); }};
-        return getEnchantmentBook(e, amount);
+        final LinkedHashMap<Enchantment, Integer> enchants = new LinkedHashMap<Enchantment, Integer>() {{ put(enchant, level); }};
+        return getEnchantmentBook(enchants, amount);
     }
     public static ItemStack getEnchantmentBook(LinkedHashMap<Enchantment, Integer> enchants, int amount) {
-        final ItemStack s = new ItemStack(Material.ENCHANTED_BOOK, amount);
-        final EnchantmentStorageMeta sm = (EnchantmentStorageMeta) s;
+        final ItemStack item = new ItemStack(Material.ENCHANTED_BOOK, amount);
+        final EnchantmentStorageMeta meta = (EnchantmentStorageMeta) item.getItemMeta();
         for(Enchantment enchant : enchants.keySet()) {
-            sm.addStoredEnchant(enchant, enchants.get(enchant), true);
+            meta.addStoredEnchant(enchant, enchants.get(enchant), true);
         }
-        s.setItemMeta(sm);
-        return s;
+        item.setItemMeta(meta);
+        return item;
     }
-    public static ItemStack getColoredLeather(Material m, int amount, int red, int green, int blue) {
-        final ItemStack i = new ItemStack(m, amount);
-        final LeatherArmorMeta lam = (LeatherArmorMeta) i.getItemMeta();
-        lam.setColor(Color.fromRGB(red, green, blue));
-        i.setItemMeta(lam);
-        return i;
+    public static ItemStack getColoredLeather(Material material, int amount, int red, int green, int blue) {
+        final ItemStack item = new ItemStack(material, amount);
+        final LeatherArmorMeta meta = (LeatherArmorMeta) item.getItemMeta();
+        meta.setColor(Color.fromRGB(red, green, blue));
+        item.setItemMeta(meta);
+        return item;
     }
     @Deprecated
     public static UMaterial match(String name, byte data) {
         name = name.toUpperCase();
-        if(CACHE.containsKey(name + data)) return CACHE.get(name + data);
-        for(UMaterial u : values()) {
-            if(u.getData() == data) {
-                for(String n : u.names) {
-                    if(n != null && n.equals(name)) {
-                        CACHE.put(name + data, u);
-                        return u;
+        if(CACHED_UMATERIALS.containsKey(name + data)) {
+            return CACHED_UMATERIALS.get(name + data);
+        }
+        for(UMaterial umaterial : values()) {
+            if(umaterial.getData() == data) {
+                for(String umaterialName : umaterial.names) {
+                    if(name.equals(umaterialName)) {
+                        CACHED_UMATERIALS.put(name + data, umaterial);
+                        return umaterial;
                     }
                 }
             }
@@ -1505,14 +1615,16 @@ public enum UMaterial implements Versionable {
     @Deprecated
     public static ItemStack valueOf(String name, byte data) {
         name = name.toUpperCase();
-        if(inMemory.containsKey(name+data)) return inMemory.get(name+data).clone();
-        for(UMaterial u : values()) {
-            if(u.getData() == data) {
-                for(String n : u.names) {
-                    if(n != null && n.equals(name)) {
-                        final ItemStack i = u.getItemStack();
-                        inMemory.put(name+data, i);
-                        return i;
+        if(CACHED_ITEMSTACKS.containsKey(name+data)) {
+            return CACHED_ITEMSTACKS.get(name+data).clone();
+        }
+        for(UMaterial umaterial : values()) {
+            if(umaterial.getData() == data) {
+                for(String umaterialName : umaterial.names) {
+                    if(name.equals(umaterialName)) {
+                        final ItemStack item = umaterial.getItemStack();
+                        CACHED_ITEMSTACKS.put(name+data, item);
+                        return item;
                     }
                 }
             }
@@ -1534,76 +1646,74 @@ public enum UMaterial implements Versionable {
     }
     public static UMaterial matchEnchantedBook(ItemStack book) {
         if(book != null && book.getItemMeta() instanceof EnchantmentStorageMeta) {
-            final EnchantmentStorageMeta m = (EnchantmentStorageMeta) book.getItemMeta();
-            final Map<Enchantment, Integer> s = m.getStoredEnchants();
-            if(s.size() == 1) {
-                final Enchantment e = (Enchantment) s.keySet().toArray()[0];
-                final int l = s.get(e);
-                final String n = e.getName(), name =
-                        n.equals("PROTECTION_ENVIRONMENTAL") ? "PROTECTION"
-                                : n.equals("PROTECTION_FIRE") ? "FIRE_PROTECTION"
-                                : n.equals("PROTECTION_FALL") ? "FEATHER_FALLING"
-                                : n.equals("PROTECTION_EXPLOSIONS") ? "BLAST_PROTECTION"
-                                : n.equals("PROTECTION_PROJECTILE") ? "PROJECTILE_PROTECTION"
-                                : n.equals("OXYGEN") ? "AQUA_AFFINITY"
-                                : n.equals("WATER_WORKER") ? "RESPIRATION"
-                                : n.equals("DAMAGE_ALL") ? "SHARPNESS"
-                                : n.equals("DAMAGE_UNDEAD") ? "SMITE"
-                                : n.equals("DAMAGE_ARTHROPODS") ? "BANE_OF_ARTHROPODS"
-                                : n.equals("LOOT_BONUS_MOBS") ? "LOOTING"
-                                : n.equals("SWEEPING_EDGE") ? "SWEEPING"
-                                : n.equals("DIG_SPEED") ? "EFFICIENCY"
-                                : n.equals("DURABILITY") ? "UNBREAKING"
-                                : n.equals("LOOT_BONUS_BLOCKS") ? "FORTUNE"
-                                : n.equals("ARROW_DAMAGE") ? "POWER"
-                                : n.equals("ARROW_KNOCKBACK") ? "PUNCH"
-                                : n.equals("ARROW_FIRE") ? "FLAME"
-                                : n.equals("ARROW_INFINITE") ? "INFINITY"
-                                : n.equals("LUCK") ? "LUCK_OF_THE_SEA"
-                                : n;
-                return match("ENCHANTED_BOOK_" + (e.getMaxLevel() != 1 ? name + "_" + l : name));
+            final EnchantmentStorageMeta meta = (EnchantmentStorageMeta) book.getItemMeta();
+            final Map<Enchantment, Integer> enchants = meta.getStoredEnchants();
+            if(enchants.size() == 1) {
+                final Enchantment enchant = (Enchantment) enchants.keySet().toArray()[0];
+                final int level = enchants.get(enchant);
+                final String name = toVanillaEnchantName(enchant);
+                return match("ENCHANTED_BOOK_" + (enchant.getMaxLevel() != 1 ? name + "_" + level : name));
             }
         }
         return null;
     }
+    private static String toVanillaEnchantName(Enchantment enchant) {
+        final String name = enchant.getName();
+        switch (name) {
+            case "PROTECTION_ENVIRONMENTAL": return "PROTECTION";
+            case "PROTECTION_FIRE": return "FIRE_PROTECTION";
+            case "PROTECTION_FALL": return "FEATHER_FALLING";
+            case "PROTECTION_EXPLOSIONS": return "BLAST_PROTECTION";
+            case "PROTECTION_PROJECTILE": return "PROJECTILE_PROTECTION";
+            case "OXYGEN": return "AQUA_AFFINITY";
+            case "WATER_WORKER": return "RESPIRATION";
+            case "DAMAGE_ALL": return "SHARPNESS";
+            case "DAMAGE_UNDEAD": return "SMITE";
+            case "DAMAGE_ARTHROPODS": return "BANE_OF_ARTHROPODS";
+            case "LOOT_BONUS_MOBS": return "LOOTING";
+            case "SWEEPING_EDGE": return "SWEEPING";
+            case "DIG_SPEED": return "EFFICIENCY";
+            case "DURABILITY": return "UNBREAKING";
+            case "LOOT_BONUS_BLOCKS": return "FORTUNE";
+            case "ARROW_DAMAGE": return "POWER";
+            case "ARROW_KNOCKBACK": return "PUNCH";
+            case "ARROW_FIRE": return "FLAME";
+            case "ARROW_INFINITE": return "INFINITY";
+            case "LUCK": return "LUCK_OF_THE_SEA";
+            default: return name;
+        }
+    }
     public static UMaterial matchPotion(ItemStack potion) {
         if(potion != null && potion.getItemMeta() instanceof PotionMeta) {
-            final PotionMeta p = (PotionMeta) potion.getItemMeta();
-            final List<PotionEffect> ce = p.getCustomEffects();
-            if(ce.size() == 0) {
+            final PotionMeta meta = (PotionMeta) potion.getItemMeta();
+            final List<PotionEffect> customEffects = meta.getCustomEffects();
+            if(customEffects.size() == 0) {
                 final String base;
-                final PotionEffectType t;
-                final int l, max;
-                final boolean extended;
+                final PotionEffectType potionEffect;
+                final int level, max;
+                final boolean isExtended;
                 if(EIGHT) {
-                    final Potion po = Potion.fromItemStack(potion);
-                    base = po.isSplash() ? "SPLASH_POTION_" : "POTION_";
-                    final Collection<PotionEffect> e = po.getEffects();
-                    t = e.size() > 0 ? ((PotionEffect) e.toArray()[0]).getType() : null;
-                    l = po.getLevel();
-                    final PotionType ty = po.getType();
-                    max = ty != null ? ty.getMaxLevel() : 0;
-                    extended = po.hasExtendedDuration();
+                    final Potion realPotion = Potion.fromItemStack(potion);
+                    base = realPotion.isSplash() ? "SPLASH_POTION_" : "POTION_";
+                    final Collection<PotionEffect> effects = realPotion.getEffects();
+                    potionEffect = effects.size() > 0 ? ((PotionEffect) effects.toArray()[0]).getType() : null;
+                    level = realPotion.getLevel();
+                    final PotionType potionType = realPotion.getType();
+                    max = potionType.getMaxLevel();
+                    isExtended = realPotion.hasExtendedDuration();
                 } else {
-                    final org.bukkit.potion.PotionData pd = p.getBasePotionData();
-                    final PotionType type = pd.getType();
+                    final org.bukkit.potion.PotionData potionData = meta.getBasePotionData();
+                    final PotionType type = potionData.getType();
                     base = potion.getType().name() + "_";
-                    t = type.getEffectType();
-                    l = type.isUpgradeable() && pd.isUpgraded() ? 2 : 1;
+                    potionEffect = type.getEffectType();
+                    level = type.isUpgradeable() && potionData.isUpgraded() ? 2 : 1;
                     max = type.getMaxLevel();
-                    extended = type.isExtendable() && pd.isExtended();
+                    isExtended = type.isExtendable() && potionData.isExtended();
                 }
-                final String a = t != null ? t.getName() : null,
-                        type = a != null ? a.equals("SPEED") ? "SWIFTNESS"
-                                : a.equals("SLOW") ? "SLOWNESS"
-                                : a.equals("INCREASE_DAMAGE") ? "STRENGTH"
-                                : a.equals("HEAL") ? "HEALING"
-                                : a.equals("HARM") ? "HARMING"
-                                : a.equals("JUMP") ? "LEAPING"
-                                : a : null;
+                final String type = toVanillaPotionEffectName(potionEffect);
                 if(type != null) {
-                    final String g = base + type + (max != 1 && l <= max ? "_" + l : "") + (extended ? "_EXTENDED" : "");
-                    return valueOf(g);
+                    final String materialName = base + type + (max != 1 && level <= max ? "_" + level : "") + (isExtended ? "_EXTENDED" : "");
+                    return valueOf(materialName);
                 } else {
                     return UMaterial.POTION;
                 }
@@ -1611,112 +1721,127 @@ public enum UMaterial implements Versionable {
         }
         return null;
     }
+    private static String toVanillaPotionEffectName(PotionEffectType effect) {
+        if(effect != null) {
+            final String name = effect.getName();
+            switch (name) {
+                case "SPEED": return "SWIFTNESS";
+                case "SLOW": return "SLOWNESS";
+                case "INCREASE_DAMAGE": return "STRENGTH";
+                case "HEAL": return "HEALING";
+                case "HARM": return "HARMING";
+                case "JUMP": return "LEAPING";
+                default: return name;
+            }
+        }
+        return null;
+    }
     public static UMaterial match(ItemStack item) {
         if(item != null && !item.getType().equals(Material.AIR)) {
-            String un = item.getType().name();
+            String material = item.getType().name();
             if(EIGHT || NINE || TEN || ELEVEN || TWELVE) {
-                final byte d = un.equals("FLINT_AND_STEEL") ? 0 : item.getData().getData();
-                final UMaterial u = match(un, d), potion = u == null ? matchPotion(item) : null;
-                un = u != null ? u.name() : potion != null ? potion.name() : null;
-                if(un != null) {
-                    return valueOf(un);
+                final byte data = material.equals("FLINT_AND_STEEL") ? 0 : item.getData().getData();
+                final UMaterial umaterial = match(material, data), potion = umaterial == null ? matchPotion(item) : null;
+                material = umaterial != null ? umaterial.name() : potion != null ? potion.name() : null;
+                if(material != null) {
+                    return valueOf(material);
                 }
             }
-            return un != null ? un.contains("SPAWN_EGG") ? matchSpawnEgg(item) : un.contains("ENCHANTED_BOOK") ? matchEnchantedBook(item) : un.contains("POTION") ? matchPotion(item) : match(un) : null;
+            return material != null ? material.contains("SPAWN_EGG") ? matchSpawnEgg(item) : material.contains("ENCHANTED_BOOK") ? matchEnchantedBook(item) : material.contains("POTION") ? matchPotion(item) : match(material) : null;
         }
         return null;
     }
     public static UMaterial getItem(Block block) {
         final Material type = block.getType();
-        final String m = type.name();
-        final byte d = block.getData();
-        UMaterial t = null;
-        if(!EIGHT && !NINE && !TEN && !ELEVEN && !TWELVE || m.contains("TERRACOTTA") || m.startsWith("TORCH") || m.startsWith("REDSTONE_TORCH") || m.contains("STAIRS") || m.equals("FLINT_AND_STEEL") || m.equals("SOIL") || m.equals("LADDER") || m.equals("BONE_BLOCK") || m.equals("OBSERVER") || m.contains("FENCE_GATE") || m.contains("TRAPDOOR") || m.contains("CHEST")
-                || m.equals("DISPENSER") || m.equals("DROPPER") || m.equals("JACK_O_LANTERN") || m.equals("PUMPKIN") || m.equals("HAY_BLOCK") || m.contains("SHULKER_BOX") || m.equals("LEVER") || m.contains("BUTTON") || m.contains("RAIL") || m.equals("FURNACE") || m.equals("VINE") || m.equals("TRIPWIRE_HOOK") || m.equals("HOPPER") || m.equals("END_ROD")) {
-            return match(m);
-        } else if(m.startsWith("LOG")) {
-            final boolean log2 = m.equals("LOG_2");
-            if(d == 8) {
-                t = UMaterial.ACACIA_WOOD;
-            } else if(d == 12) {
-                t = log2 ? UMaterial.ACACIA_WOOD : UMaterial.OAK_WOOD;
-            } else if(d == 13) {
-                t = log2 ? UMaterial.DARK_OAK_WOOD : UMaterial.SPRUCE_WOOD;
-            } else if(d == 14) {
-                t = UMaterial.BIRCH_WOOD;
-            } else if(d == 15) {
-                t = UMaterial.JUNGLE_WOOD;
+        final String material = type.name();
+        final byte data = block.getData();
+        UMaterial umaterial = null;
+        if(!EIGHT && !NINE && !TEN && !ELEVEN && !TWELVE || material.contains("TERRACOTTA") || material.startsWith("TORCH") || material.startsWith("REDSTONE_TORCH") || material.contains("STAIRS") || material.equals("FLINT_AND_STEEL") || material.equals("SOIL") || material.equals("LADDER") || material.equals("BONE_BLOCK") || material.equals("OBSERVER") || material.contains("FENCE_GATE") || material.contains("TRAPDOOR") || material.contains("CHEST")
+                || material.equals("DISPENSER") || material.equals("DROPPER") || material.equals("JACK_O_LANTERN") || material.equals("PUMPKIN") || material.equals("HAY_BLOCK") || material.contains("SHULKER_BOX") || material.equals("LEVER") || material.contains("BUTTON") || material.contains("RAIL") || material.equals("FURNACE") || material.equals("VINE") || material.equals("TRIPWIRE_HOOK") || material.equals("HOPPER") || material.equals("END_ROD")) {
+            return match(material);
+        } else if(material.startsWith("LOG")) {
+            final boolean log2 = material.equals("LOG_2");
+            if(data == 8) {
+                umaterial = UMaterial.ACACIA_WOOD;
+            } else if(data == 12) {
+                umaterial = log2 ? UMaterial.ACACIA_WOOD : UMaterial.OAK_WOOD;
+            } else if(data == 13) {
+                umaterial = log2 ? UMaterial.DARK_OAK_WOOD : UMaterial.SPRUCE_WOOD;
+            } else if(data == 14) {
+                umaterial = UMaterial.BIRCH_WOOD;
+            } else if(data == 15) {
+                umaterial = UMaterial.JUNGLE_WOOD;
             }
-        } else if(m.startsWith("LEAVES")) {
-            final org.bukkit.material.Leaves l = new org.bukkit.material.Leaves(type, d);
-            t = match(l.getSpecies().name().replace("GENERIC", "OAK").replace("REDWOOD", "SPRUCE") + "_LEAVES");
-        } else if(m.contains("SAPLING")) {
+        } else if(material.startsWith("LEAVES")) {
+            final org.bukkit.material.Leaves l = new org.bukkit.material.Leaves(type, data);
+            umaterial = match(l.getSpecies().name().replace("GENERIC", "OAK").replace("REDWOOD", "SPRUCE") + "_LEAVES");
+        } else if(material.contains("SAPLING")) {
             if(EIGHT) {
-                t = match("SAPLING", d);
+                umaterial = match("SAPLING", data);
             } else {
-                final org.bukkit.material.Sapling s = new org.bukkit.material.Sapling(type, d);
-                t = match(s.getSpecies().name().replace("GENERIC", "OAK").replace("REDWOOD", "SPRUCE") + "_SAPLING");
+                final org.bukkit.material.Sapling s = new org.bukkit.material.Sapling(type, data);
+                umaterial = match(s.getSpecies().name().replace("GENERIC", "OAK").replace("REDWOOD", "SPRUCE") + "_SAPLING");
             }
-        } else if(m.contains("_DOOR")) {
-            t = match(type.name().replace("WOODEN_DOOR", "OAK_DOOR"));
-        } else if(m.contains("STEP")) {
-            final org.bukkit.material.WoodenStep s = new org.bukkit.material.WoodenStep(type, d);
-            t = match(s.getSpecies().name().replace("GENERIC", "OAK").replace("REDWOOD", "SPRUCE") + "_SLAB");
-        } else if(m.contains("BED_BLOCK")) {
+        } else if(material.contains("_DOOR")) {
+            umaterial = match(type.name().replace("WOODEN_DOOR", "OAK_DOOR"));
+        } else if(material.contains("STEP")) {
+            final org.bukkit.material.WoodenStep s = new org.bukkit.material.WoodenStep(type, data);
+            umaterial = match(s.getSpecies().name().replace("GENERIC", "OAK").replace("REDWOOD", "SPRUCE") + "_SLAB");
+        } else if(material.contains("BED_BLOCK")) {
             if(TWELVE) {
                 final org.bukkit.block.Bed b = (org.bukkit.block.Bed) block.getState();
-                t = match(b.getColor().name() + "_BED");
+                umaterial = match(b.getColor().name() + "_BED");
             } else {
                 return UMaterial.WHITE_BED;
             }
-        } else if(m.contains("CROP")) {
+        } else if(material.contains("CROP")) {
             return UMaterial.AIR;
-        } else if(m.contains("PISTON_")) {
-            return m.contains("_STICKY_") ? UMaterial.STICKY_PISTON : UMaterial.PISTON;
-        } else if(m.contains("BANNER")) {
+        } else if(material.contains("PISTON_")) {
+            return material.contains("_STICKY_") ? UMaterial.STICKY_PISTON : UMaterial.PISTON;
+        } else if(material.contains("BANNER")) {
             final org.bukkit.block.Banner b = (org.bukkit.block.Banner) block.getState();
-            t = match(b.getBaseColor().name() + "_BANNER");
-        } else if(m.contains("SIGN")) {
+            umaterial = match(b.getBaseColor().name() + "_BANNER");
+        } else if(material.contains("SIGN")) {
             return UMaterial.OAK_SIGN;
-        } else if(m.equals("COCOA")) {
+        } else if(material.equals("COCOA")) {
             return UMaterial.COCOA_BEANS;
-        } else if(m.equals("BREWING_STAND") || m.equals("CAULDRON")) {
-            return valueOf(m + "_ITEM");
-        } else if(m.startsWith("DIODE")) {
+        } else if(material.equals("BREWING_STAND") || material.equals("CAULDRON")) {
+            return valueOf(material + "_ITEM");
+        } else if(material.startsWith("DIODE")) {
             return UMaterial.REPEATER;
-        } else if(m.startsWith("REDSTONE_COMPARATOR")) {
+        } else if(material.startsWith("REDSTONE_COMPARATOR")) {
             return UMaterial.COMPARATOR;
-        } else if(m.startsWith("END") && m.endsWith("_PORTAL_FAME")) {
+        } else if(material.startsWith("END") && material.endsWith("_PORTAL_FAME")) {
             return UMaterial.END_PORTAL_FRAME;
         }
-        return t != null ? t : match(m, d);
+        return umaterial != null ? umaterial : match(material, data);
     }
-    public static UMaterial match(@NotNull String name) {
+    public static UMaterial match(String name) {
         name = name.toUpperCase();
         try {
             final UMaterial material = valueOf(name);
-            CACHE.put(name, material);
+            CACHED_UMATERIALS.put(name, material);
             return material;
         } catch (Exception e) {
             final byte targetData = name.contains(":") ? Byte.parseByte(name.split(":")[1]) : 0;
             name = name.split(":")[0];
-            if(CACHE.containsKey(name + targetData)) {
-                return CACHE.get(name + targetData);
+            if(CACHED_UMATERIALS.containsKey(name + targetData)) {
+                return CACHED_UMATERIALS.get(name + targetData);
             }
-            for(UMaterial u : values()) {
-                if(name.equals(u.name())) {
-                    CACHE.put(name, u);
-                    return u;
+            for(UMaterial umaterial : values()) {
+                if(name.equals(umaterial.name())) {
+                    CACHED_UMATERIALS.put(name, umaterial);
+                    return umaterial;
                 }
-                final byte data = u.getData();
+                final byte data = umaterial.getData();
                 if(data == targetData) {
-                    final String[] names = u.names;
-                    for(String n : names) {
-                        if(name.equals(n)) {
-                            for(String na : names) {
-                                CACHE.put(na, u);
+                    final String[] names = umaterial.names;
+                    for(String umaterialName : names) {
+                        if(name.equals(umaterialName)) {
+                            for(String umaterialAlias : names) {
+                                CACHED_UMATERIALS.put(umaterialAlias, umaterial);
                             }
-                            return u;
+                            return umaterial;
                         }
                     }
                 }
@@ -1724,7 +1849,14 @@ public enum UMaterial implements Versionable {
         }
         return null;
     }
-    public enum PotionBase { NORMAL, ARROW, TIPPED_ARROW, LINGERING, SPLASH, }
+    public enum PotionBase {
+        NORMAL,
+        ARROW,
+        TIPPED_ARROW,
+        LINGERING,
+        SPLASH,
+        ;
+    }
 }
 
 class UPotion implements Versionable {
@@ -1735,32 +1867,40 @@ class UPotion implements Versionable {
     public UPotion(UMaterial.PotionBase base, String type, boolean extended, boolean upgraded) {
         this.base = base;
         type = type.toUpperCase();
-        final PotionType t = EIGHT && (type.equals("AWKWARD") || type.equals("LUCK") || type.equals("MUNDANE") || type.equals("THICK")) || (EIGHT || NINE || TEN || ELEVEN || TWELVE) && (type.equals("TURTLE_MASTER") || type.equals("SLOW_FALLING"))
+        final PotionType potionType = EIGHT && (type.equals("AWKWARD") || type.equals("LUCK") || type.equals("MUNDANE") || type.equals("THICK")) || (EIGHT || NINE || TEN || ELEVEN || TWELVE) && (type.equals("TURTLE_MASTER") || type.equals("SLOW_FALLING"))
                 ? PotionType.WATER : PotionType.valueOf(type);
-        this.type = t;
-        final String bn = base.name();
+        this.type = potionType;
+        final String potionBaseName = base.name();
         if(EIGHT) {
-            potion = t.equals(PotionType.WATER) ? new Potion(t).toItemStack(1) : new Potion(t, upgraded ? 2 : 1, bn.equals("SPLASH")).toItemStack(1);
+            potion = potionType.equals(PotionType.WATER) ? new Potion(potionType).toItemStack(1) : new Potion(potionType, upgraded ? 2 : 1, potionBaseName.equals("SPLASH")).toItemStack(1);
             potiondata = potion.getItemMeta();
         } else {
-            final ItemStack is = new ItemStack(Material.matchMaterial(bn.equals("NORMAL") ? "POTION" : bn.contains("ARROW") ? bn.contains("TIPPED") ? "TIPPED_ARROW" : "ARROW" : bn + "_POTION"));
-            final boolean a = !is.getType().equals(Material.ARROW);
+            final ItemStack is = new ItemStack(Material.matchMaterial(potionBaseName.equals("NORMAL") ? "POTION" : potionBaseName.contains("ARROW") ? potionBaseName.contains("TIPPED") ? "TIPPED_ARROW" : "ARROW" : potionBaseName + "_POTION"));
+            final boolean isNotArrow = !is.getType().equals(Material.ARROW);
             PotionMeta pm = null;
             org.bukkit.potion.PotionData pd = null;
-            if(a) {
+            if(isNotArrow) {
                 pm = (PotionMeta) is.getItemMeta();
-                pd = new org.bukkit.potion.PotionData(t, t.isExtendable() && extended, t.isUpgradeable() && upgraded);
+                pd = new org.bukkit.potion.PotionData(potionType, potionType.isExtendable() && extended, potionType.isUpgradeable() && upgraded);
             }
             potiondata = pd;
-            if(a) {
+            if(isNotArrow) {
                 pm.setBasePotionData(pd);
                 is.setItemMeta(pm);
             }
             potion = is;
         }
     }
-    public UMaterial.PotionBase getBase() { return base; }
-    public PotionType getType() { return type; }
-    public ItemStack getItemStack() { return potion.clone(); }
-    public Object getPotionData() { return potiondata; }
+    public UMaterial.PotionBase getBase() {
+        return base;
+    }
+    public PotionType getType() {
+        return type;
+    }
+    public ItemStack getItemStack() {
+        return potion.clone();
+    }
+    public Object getPotionData() {
+        return potiondata;
+    }
 }
