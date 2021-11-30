@@ -17,7 +17,7 @@ import org.bukkit.potion.PotionType;
 import java.util.*;
 
 /*
-    UMaterial Version: 11
+    UMaterial Version: 12
 
     This software is created and owned by RandomHashTags, and is licensed under the GNU Affero General Public License v3.0 (https://choosealicense.com/licenses/agpl-3.0/)
     You can only find this software at https://gitlab.com/RandomHashTags/umaterial
@@ -945,6 +945,7 @@ public enum UMaterial implements Versionable {
     MUSIC_DISC_FAR("RECORD_5"),
     MUSIC_DISC_MALL("RECORD_6"),
     MUSIC_DISC_MELLOHI("RECORD_7"),
+    MUSIC_DISC_OTHERSIDE,
     MUSIC_DISC_PIGSTEP,
     MUSIC_DISC_STAL("RECORD_8"),
     MUSIC_DISC_STRAD("RECORD_9"),
